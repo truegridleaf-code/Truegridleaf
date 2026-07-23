@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Truegridleaf | Professional Website Design &amp; Development for Local Businesses</title>
+  <meta name="description" content="Truegridleaf crafts modern, responsive, SEO-friendly websites that help local businesses grow online. Affordable plans starting at ₹999/month." />
+  <meta name="keywords" content="website designer, website development, professional website design, affordable website design, local business website, responsive website development, SEO-friendly website design" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://truegridleaf.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://truegridleaf.com/" />
+  <meta property="og:title" content="Truegridleaf | Professional Website Design &amp; Development" />
+  <meta property="og:description" content="Modern, responsive, SEO-friendly websites for local businesses. Plans from ₹999/month." />
+  <meta property="og:image" content="https://truegridleaf.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Truegridleaf","url":"https://truegridleaf.com","description":"Professional website design and development for local businesses.","priceRange":"₹999 - ₹11,999","areaServed":"India","serviceType":["Website Design","Website Development","SEO-Friendly Websites","Responsive Web Design"]}
+  </script>
+
+  <style>
+    /* === TOKENS === */
+    :root {
+      --primary:#4f46e5; --primary-dark:#3730a3; --primary-light:#818cf8;
+      --accent:#10b981; --accent-warm:#f59e0b; --orange:#f97316; --pink:#ec4899;
+      --navy:#0f172a; --slate-900:#1e293b; --slate-700:#334155;
+      --slate-500:#64748b; --slate-300:#cbd5e1; --slate-100:#f1f5f9;
+      --white:#ffffff; --bg:#f8faff;
+      --radius-lg:20px; --radius-xl:28px;
+      --shadow-card:0 4px 24px rgba(79,70,229,.08),0 1px 4px rgba(0,0,0,.06);
+      --shadow-hover:0 16px 48px rgba(79,70,229,.18),0 4px 12px rgba(0,0,0,.08);
+      --shadow-pop:0 24px 64px rgba(79,70,229,.28);
+      --tr:all .28s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* === RESET === */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;font-size:16px;}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--slate-700);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    img{max-width:100%;height:auto;display:block;}
+    a{text-decoration:none;color:inherit;}
+    button{cursor:pointer;font-family:inherit;}
+    ul{list-style:none;}
+
+    /* === TYPOGRAPHY === */
+    .font-display{font-family:'Outfit',sans-serif;}
+    .text-gradient{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 50%,#a78bfa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .text-gradient-warm{background:linear-gradient(135deg,var(--orange),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+
+    /* === LAYOUT === */
+    .container{max-width:1180px;margin:0 auto;padding:0 20px;}
+    .section{padding:96px 0;}
+    .section-sm{padding:72px 0;}
+    .section-tag{display:inline-flex;align-items:center;gap:8px;font-family:'Outfit',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);background:rgba(79,70,229,.08);border:1px solid rgba(79,70,229,.18);border-radius:999px;padding:6px 16px;margin-bottom:16px;}
+    .section-title{font-family:'Outfit',sans-serif;font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;color:var(--navy);line-height:1.18;margin-bottom:16px;}
+    .section-subtitle{font-size:1.05rem;color:var(--slate-500);line-height:1.7;max-width:600px;margin:0 auto;}
+    .text-center{text-align:center;}
+
+    /* === BUTTONS === */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Outfit',sans-serif;font-weight:700;font-size:.95rem;padding:14px 28px;border-radius:14px;border:none;transition:var(--tr);white-space:nowrap;cursor:pointer;}
+    .btn-primary{background:linear-gradient(135deg,var(--primary),#6366f1);color:#fff;box-shadow:0 6px 24px rgba(79,70,229,.35);}
+    .btn-primary:hover{background:linear-gradient(135deg,var(--primary-dark),var(--primary));transform:translateY(-2px);box-shadow:0 12px 32px rgba(79,70,229,.45);}
+    .btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary);}
+    .btn-outline:hover{background:var(--primary);color:#fff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(79,70,229,.3);}
+    .btn-white{background:#fff;color:var(--primary);box-shadow:0 4px 16px rgba(0,0,0,.12);}
+    .btn-white:hover{background:var(--primary);color:#fff;transform:translateY(-2px);}
+    .btn-whatsapp{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;box-shadow:0 6px 24px rgba(37,211,102,.35);}
+    .btn-whatsapp:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(37,211,102,.45);}
+    .btn-lg{padding:16px 36px;font-size:1.05rem;border-radius:16px;}
+
+    /* === NAVBAR === */
+    #navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(203,213,225,.6);transition:var(--tr);}
+    #navbar.scrolled{box-shadow:0 4px 24px rgba(79,70,229,.1);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;}
+    .nav-logo{display:flex;align-items:center;gap:10px;font-family:'Outfit',sans-serif;font-weight:800;font-size:1.45rem;color:var(--navy);}
+    .nav-logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--primary),#6366f1);border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(79,70,229,.35);}
+    .nav-logo-icon i{color:#fff;font-size:1.1rem;}
+    .nav-links{display:flex;align-items:center;gap:36px;}
+    .nav-links a{font-family:'Inter',sans-serif;font-weight:500;font-size:.93rem;color:var(--slate-700);position:relative;transition:color .2s;}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:2px;background:var(--primary);border-radius:2px;transition:width .25s ease;}
+    .nav-links a:hover{color:var(--primary);}
+    .nav-links a:hover::after{width:100%;}
+    .nav-cta{display:flex;align-items:center;gap:12px;}
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:pointer;z-index:1001;}
+    .hamburger span{display:block;width:24px;height:2.5px;background:var(--navy);border-radius:2px;transition:var(--tr);}
+    .hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
+    .hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+    .hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);}
+    #mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(16px);border-bottom:1px solid var(--slate-300);padding:24px 20px 32px;z-index:999;flex-direction:column;gap:4px;transform:translateY(-10px);opacity:0;transition:var(--tr);box-shadow:0 16px 48px rgba(0,0,0,.12);}
+    #mobile-nav.open{display:flex;opacity:1;transform:translateY(0);}
+    #mobile-nav a{font-family:'Inter',sans-serif;font-weight:500;font-size:1rem;color:var(--slate-700);padding:14px 16px;border-radius:12px;transition:var(--tr);}
+    #mobile-nav a:hover{background:rgba(79,70,229,.06);color:var(--primary);}
+    .mobile-nav-btns{display:flex;flex-direction:column;gap:10px;margin-top:12px;padding-top:16px;border-top:1px solid var(--slate-300);}
+
+    /* === HERO === */
+    #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:72px;background:var(--white);}
+    .hero-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+    .hero-blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.18;}
+    .hero-blob-1{width:700px;height:700px;background:var(--primary);top:-200px;right:-100px;}
+    .hero-blob-2{width:500px;height:500px;background:#a78bfa;bottom:-150px;left:-100px;}
+    .hero-blob-3{width:300px;height:300px;background:var(--accent);top:40%;left:30%;opacity:.08;}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(79,70,229,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(79,70,229,.05) 1px,transparent 1px);background-size:40px 40px;}
+    .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2;padding:80px 0 60px;}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--primary);background:rgba(79,70,229,.08);border:1px solid rgba(79,70,229,.2);border-radius:999px;padding:6px 16px;margin-bottom:24px;animation:fadeInDown .6s ease both;}
+    .hero-badge .dot{width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulseDot 1.5s infinite;}
+    @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.7);}}
+    .hero-h1{font-family:'Outfit',sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:900;color:var(--navy);line-height:1.1;margin-bottom:20px;animation:fadeInUp .7s .1s ease both;}
+    .hero-sub{font-size:1.1rem;color:var(--slate-500);line-height:1.72;margin-bottom:36px;animation:fadeInUp .7s .2s ease both;}
+    .hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px;animation:fadeInUp .7s .3s ease both;}
+    .hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:24px;animation:fadeInUp .7s .4s ease both;}
+    .hero-trust-item{display:flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:var(--slate-700);}
+    .trust-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem;}
+    .ti-g{background:rgba(16,185,129,.12);color:var(--accent);}
+    .ti-b{background:rgba(79,70,229,.1);color:var(--primary);}
+    .ti-a{background:rgba(245,158,11,.12);color:var(--accent-warm);}
+    .hero-visual{position:relative;display:flex;justify-content:center;align-items:center;animation:fadeInRight .8s .2s ease both;}
+    .hero-mockup-wrap{position:relative;width:100%;max-width:540px;}
+    .hero-mockup-img{width:100%;border-radius:20px;box-shadow:0 32px 80px rgba(79,70,229,.25),0 8px 24px rgba(0,0,0,.15);}
+    .float-card{position:absolute;background:#fff;border-radius:16px;padding:10px 16px;box-shadow:0 8px 32px rgba(79,70,229,.18);font-family:'Outfit',sans-serif;font-size:.8rem;font-weight:700;white-space:nowrap;border:1px solid rgba(79,70,229,.1);}
+    .fc1{top:-16px;left:-20px;color:var(--accent);animation:float 3s 0s ease-in-out infinite;}
+    .fc2{bottom:40px;right:-24px;color:var(--primary);animation:float 3s 1s ease-in-out infinite;}
+    .fc3{bottom:-12px;left:20px;color:var(--accent-warm);animation:float 3s .5s ease-in-out infinite;}
+    @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+    @keyframes fadeInDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeInRight{from{opacity:0;transform:translateX(30px);}to{opacity:1;transform:translateX(0);}}
+
+    /* === STATS BAR === */
+    #stats{background:linear-gradient(135deg,var(--primary),#6366f1,#8b5cf6);padding:40px 0;}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
+    .stat-num{font-family:'Outfit',sans-serif;font-size:2.2rem;font-weight:900;color:#fff;line-height:1;margin-bottom:6px;}
+    .stat-label{font-size:.88rem;font-weight:500;color:rgba(255,255,255,.75);}
+
+    /* === SERVICES === */
+    #services{background:var(--bg);}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;}
+    .service-card{background:#fff;border:1px solid rgba(203,213,225,.7);border-radius:var(--radius-xl);padding:36px 28px;transition:var(--tr);position:relative;overflow:hidden;}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--primary-light));transform:scaleX(0);transform-origin:left;transition:transform .35s ease;}
+    .service-card:hover{transform:translateY(-6px);border-color:rgba(79,70,229,.25);box-shadow:var(--shadow-hover);}
+    .service-card:hover::before{transform:scaleX(1);}
+    .service-icon{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:20px;transition:var(--tr);}
+    .service-card:hover .service-icon{transform:scale(1.1) rotate(-5deg);}
+    .si-i{background:rgba(79,70,229,.1);color:var(--primary);}
+    .si-g{background:rgba(16,185,129,.1);color:var(--accent);}
+    .si-a{background:rgba(245,158,11,.1);color:var(--accent-warm);}
+    .si-p{background:rgba(236,72,153,.1);color:var(--pink);}
+    .si-s{background:rgba(14,165,233,.1);color:#0ea5e9;}
+    .si-v{background:rgba(139,92,246,.1);color:#8b5cf6;}
+    .service-card h3{font-family:'Outfit',sans-serif;font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:10px;}
+    .service-card p{font-size:.9rem;color:var(--slate-500);line-height:1.65;}
+
+    /* === WHY === */
+    #why{background:#fff;}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px;}
+    .why-card{background:var(--bg);border:1px solid rgba(203,213,225,.6);border-radius:var(--radius-lg);padding:32px 24px;display:flex;flex-direction:column;gap:12px;transition:var(--tr);}
+    .why-card:hover{transform:translateY(-4px);border-color:rgba(79,70,229,.2);box-shadow:var(--shadow-card);}
+    .why-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;}
+    .why-card h3{font-family:'Outfit',sans-serif;font-weight:700;font-size:1.05rem;color:var(--navy);}
+    .why-card p{font-size:.88rem;color:var(--slate-500);line-height:1.65;}
+
+    /* === PRICING === */
+    #pricing{background:linear-gradient(180deg,var(--bg) 0%,rgba(79,70,229,.03) 100%);}
+    .pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;align-items:start;}
+    .pricing-card{background:#fff;border:2px solid var(--slate-300);border-radius:var(--radius-xl);padding:32px 24px 28px;position:relative;transition:var(--tr);display:flex;flex-direction:column;}
+    .pricing-card:hover{border-color:var(--primary);box-shadow:var(--shadow-hover);transform:translateY(-6px);}
+    .pricing-card.popular{border-color:var(--primary);background:linear-gradient(145deg,#f0f0ff 0%,#fff 60%);box-shadow:var(--shadow-pop);transform:translateY(-12px) scale(1.02);}
+    .pricing-card.popular:hover{transform:translateY(-18px) scale(1.02);}
+    .popular-badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f97316,#ec4899);color:#fff;font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:800;padding:5px 18px;border-radius:999px;white-space:nowrap;letter-spacing:.04em;box-shadow:0 4px 16px rgba(249,115,22,.4);}
+    .plan-label{font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--slate-500);text-align:center;margin-bottom:12px;}
+    .popular .plan-label{color:var(--primary);}
+    .plan-price-block{text-align:center;margin-bottom:4px;}
+    .plan-currency{font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;color:var(--navy);vertical-align:top;line-height:1.6;}
+    .plan-amount{font-family:'Outfit',sans-serif;font-size:2.8rem;font-weight:900;color:var(--navy);line-height:1;}
+    .popular .plan-amount{color:var(--primary);}
+    .plan-per{text-align:center;font-size:.85rem;font-weight:500;color:var(--slate-500);margin-bottom:6px;}
+    .plan-total{text-align:center;font-size:.88rem;font-weight:600;color:var(--primary);margin-bottom:4px;}
+    .plan-duration{text-align:center;font-size:.82rem;color:var(--slate-500);margin-bottom:20px;}
+    .plan-divider{height:1px;background:var(--slate-300);margin-bottom:20px;}
+    .plan-features{flex-grow:1;margin-bottom:24px;}
+    .plan-features li{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:var(--slate-700);padding:6px 0;}
+    .chk{color:var(--accent);font-size:.8rem;margin-top:1px;flex-shrink:0;}
+    .sav{color:var(--accent-warm);font-size:.8rem;margin-top:1px;flex-shrink:0;}
+    .plan-btn{width:100%;padding:14px 0;border-radius:14px;font-family:'Outfit',sans-serif;font-weight:700;font-size:.95rem;border:2px solid var(--primary);background:transparent;color:var(--primary);transition:var(--tr);}
+    .plan-btn:hover{background:var(--primary);color:#fff;transform:translateY(-1px);box-shadow:0 8px 24px rgba(79,70,229,.3);}
+    .plan-btn-primary{background:linear-gradient(135deg,var(--primary),#6366f1);color:#fff;border-color:transparent;box-shadow:0 6px 20px rgba(79,70,229,.35);}
+    .plan-btn-primary:hover{background:linear-gradient(135deg,var(--primary-dark),var(--primary));transform:translateY(-2px);box-shadow:0 12px 32px rgba(79,70,229,.45);}
+    .savings-strip{background:linear-gradient(135deg,#eef2ff 0%,#f0fdf4 100%);border:1px solid rgba(79,70,229,.15);border-radius:16px;padding:16px 24px;text-align:center;margin-top:36px;font-size:.9rem;color:var(--primary-dark);}
+    .savings-strip strong{color:var(--primary);}
+
+    /* === PORTFOLIO === */
+    #portfolio{background:#fff;}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;}
+    .portfolio-card{border-radius:var(--radius-xl);overflow:hidden;border:1px solid rgba(203,213,225,.6);background:#fff;box-shadow:var(--shadow-card);transition:var(--tr);position:relative;}
+    .portfolio-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);}
+    .portfolio-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+    .portfolio-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(15,23,42,.85) 100%);opacity:0;transition:var(--tr);display:flex;align-items:flex-end;padding:24px;}
+    .portfolio-card:hover .portfolio-overlay{opacity:1;}
+    .portfolio-info h3{font-family:'Outfit',sans-serif;font-weight:700;color:#fff;font-size:1.1rem;margin-bottom:4px;}
+    .portfolio-info p{font-size:.85rem;color:rgba(255,255,255,.7);}
+    .portfolio-meta{padding:18px 22px;}
+    .portfolio-meta h3{font-family:'Outfit',sans-serif;font-weight:700;color:var(--navy);font-size:1rem;margin-bottom:4px;}
+    .portfolio-meta p{font-size:.85rem;color:var(--slate-500);}
+    .ptag{display:inline-block;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:999px;margin-top:8px;}
+    .pt-g{background:rgba(16,185,129,.1);color:var(--accent);}
+    .pt-b{background:rgba(79,70,229,.1);color:var(--primary);}
+    .pt-a{background:rgba(245,158,11,.1);color:var(--accent-warm);}
+
+    /* === TESTIMONIALS === */
+    #testimonials{background:var(--bg);}
+    .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;}
+    .test-card{background:#fff;border:1px solid rgba(203,213,225,.6);border-radius:var(--radius-xl);padding:32px 28px;transition:var(--tr);position:relative;}
+    .test-card::before{content:'\201C';position:absolute;top:20px;right:24px;font-size:5rem;line-height:1;font-family:Georgia,serif;color:rgba(79,70,229,.08);pointer-events:none;}
+    .test-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:rgba(79,70,229,.2);}
+    .stars{color:#fbbf24;font-size:.9rem;margin-bottom:14px;letter-spacing:2px;}
+    .test-text{font-size:.93rem;color:var(--slate-700);line-height:1.75;margin-bottom:24px;font-style:italic;}
+    .test-author{display:flex;align-items:center;gap:12px;}
+    .avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:#fff;flex-shrink:0;}
+    .av1{background:linear-gradient(135deg,var(--primary),#818cf8);}
+    .av2{background:linear-gradient(135deg,var(--accent),#34d399);}
+    .av3{background:linear-gradient(135deg,var(--orange),var(--pink));}
+    .author-name{font-family:'Outfit',sans-serif;font-weight:700;font-size:.95rem;color:var(--navy);}
+    .author-role{font-size:.82rem;color:var(--slate-500);}
+    .demo-note{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--slate-500);background:rgba(203,213,225,.4);border-radius:999px;padding:4px 12px;margin-top:32px;}
+
+    /* === TERMS === */
+    #terms{background:#fff;}
+    .terms-box{background:var(--bg);border:1px solid rgba(203,213,225,.7);border-radius:var(--radius-xl);padding:48px;margin-top:40px;}
+    .terms-header{display:flex;align-items:center;gap:14px;margin-bottom:32px;}
+    .terms-header-icon{width:52px;height:52px;background:linear-gradient(135deg,var(--primary),#6366f1);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;flex-shrink:0;}
+    .terms-header h2{font-family:'Outfit',sans-serif;font-size:1.5rem;font-weight:800;color:var(--navy);}
+    .terms-header p{font-size:.88rem;color:var(--slate-500);}
+    .terms-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+    .term-item{background:#fff;border-radius:16px;padding:22px 24px;border:1px solid rgba(203,213,225,.5);display:flex;gap:14px;}
+    .term-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;}
+    .tii{background:rgba(79,70,229,.1);color:var(--primary);}
+    .tig{background:rgba(16,185,129,.1);color:var(--accent);}
+    .tia{background:rgba(245,158,11,.1);color:var(--accent-warm);}
+    .tiv{background:rgba(139,92,246,.1);color:#8b5cf6;}
+    .tis{background:rgba(14,165,233,.1);color:#0ea5e9;}
+    .tip{background:rgba(236,72,153,.1);color:var(--pink);}
+    .term-body h4{font-family:'Outfit',sans-serif;font-weight:700;font-size:.95rem;color:var(--navy);margin-bottom:5px;}
+    .term-body p{font-size:.85rem;color:var(--slate-500);line-height:1.6;}
+
+    /* === CTA === */
+    #cta{background:linear-gradient(135deg,var(--navy) 0%,#1e1b4b 100%);position:relative;overflow:hidden;}
+    .cta-blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.15;pointer-events:none;}
+    .cb1{width:500px;height:500px;background:var(--primary);top:-150px;right:-100px;}
+    .cb2{width:400px;height:400px;background:#8b5cf6;bottom:-100px;left:-80px;}
+    .cta-inner{position:relative;z-index:2;text-align:center;padding:96px 0;}
+    .cta-title{font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:900;color:#fff;margin-bottom:16px;line-height:1.15;}
+    .cta-sub{font-size:1.05rem;color:rgba(255,255,255,.68);margin-bottom:44px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7;}
+    .cta-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:40px;}
+    .cta-contact-strip{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:32px;}
+    .cca{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.7);font-size:.9rem;}
+    .cca i{color:rgba(255,255,255,.5);}
+    .cca a{color:rgba(255,255,255,.85);font-weight:500;}
+    .cca a:hover{color:#fff;}
+
+    /* === FOOTER === */
+    #footer{background:var(--navy);padding:56px 0 28px;}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08);}
+    .footer-logo{display:flex;align-items:center;gap:10px;font-family:'Outfit',sans-serif;font-weight:800;font-size:1.35rem;color:#fff;margin-bottom:14px;}
+    .fli{width:36px;height:36px;background:linear-gradient(135deg,var(--primary),#6366f1);border-radius:9px;display:flex;align-items:center;justify-content:center;}
+    .fli i{color:#fff;font-size:.95rem;}
+    .footer-desc{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.7;max-width:260px;margin-bottom:20px;}
+    .footer-social{display:flex;gap:10px;}
+    .footer-social a{width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.9rem;transition:var(--tr);}
+    .footer-social a:hover{background:var(--primary);border-color:var(--primary);color:#fff;transform:translateY(-2px);}
+    .footer-col h4{font-family:'Outfit',sans-serif;font-weight:700;font-size:.9rem;color:#fff;margin-bottom:16px;}
+    .footer-col ul{display:flex;flex-direction:column;gap:10px;}
+    .footer-col ul a{font-size:.85rem;color:rgba(255,255,255,.5);transition:color .2s;}
+    .footer-col ul a:hover{color:rgba(255,255,255,.85);}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;flex-wrap:wrap;gap:12px;}
+    .footer-copy{font-size:.83rem;color:rgba(255,255,255,.35);}
+    .footer-copy span{color:rgba(255,255,255,.55);}
+    .footer-links{display:flex;gap:20px;}
+    .footer-links a{font-size:.83rem;color:rgba(255,255,255,.35);transition:color .2s;}
+    .footer-links a:hover{color:rgba(255,255,255,.7);}
+
+    /* === FLOATING WHATSAPP === */
+    #wa-float{position:fixed;bottom:28px;right:28px;z-index:900;display:flex;flex-direction:column;align-items:flex-end;gap:10px;}
+    .wa-tip{background:#fff;color:var(--navy);font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:600;padding:8px 14px;border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.15);white-space:nowrap;opacity:0;transform:translateX(8px);transition:var(--tr);pointer-events:none;}
+    #wa-float:hover .wa-tip{opacity:1;transform:translateX(0);}
+    .wa-btn{width:58px;height:58px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.6rem;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:var(--tr);text-decoration:none;animation:pulseWa 2.5s infinite;}
+    .wa-btn:hover{transform:scale(1.1);}
+    @keyframes pulseWa{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.45);}50%{box-shadow:0 6px 32px rgba(37,211,102,.7),0 0 0 8px rgba(37,211,102,.1);}}
+
+    /* === SCROLL REVEAL === */
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .65s ease,transform .65s ease;}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+    .rd1{transition-delay:.1s;} .rd2{transition-delay:.2s;} .rd3{transition-delay:.3s;} .rd4{transition-delay:.4s;} .rd5{transition-delay:.5s;}
+
+    /* === RESPONSIVE === */
+    @media(max-width:1024px){
+      .pricing-grid{grid-template-columns:repeat(2,1fr);}
+      .pricing-card.popular{transform:none;}
+      .pricing-card.popular:hover{transform:translateY(-6px);}
+      .footer-top{grid-template-columns:1fr 1fr;}
+      .services-grid{grid-template-columns:repeat(2,1fr);}
+    }
+    @media(max-width:900px){
+      .hero-content{grid-template-columns:1fr;text-align:center;}
+      .hero-btns,.hero-trust{justify-content:center;}
+      .hero-visual{margin-top:32px;}
+      .why-grid{grid-template-columns:repeat(2,1fr);}
+      .testimonials-grid{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto;}
+      .terms-grid{grid-template-columns:1fr;}
+      .terms-box{padding:32px 24px;}
+      .stats-grid{grid-template-columns:repeat(2,1fr);gap:28px;}
+    }
+    @media(max-width:768px){
+      .section{padding:72px 0;}
+      .nav-links,.nav-cta{display:none;}
+      .hamburger{display:flex;}
+      .services-grid{grid-template-columns:1fr;max-width:460px;margin-left:auto;margin-right:auto;}
+      .portfolio-grid{grid-template-columns:1fr;max-width:440px;margin-left:auto;margin-right:auto;}
+      .portfolio-overlay{opacity:1;}
+      .footer-top{grid-template-columns:1fr;gap:32px;}
+      .footer-bottom{flex-direction:column;text-align:center;}
+    }
+    @media(max-width:640px){
+      .pricing-grid{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto;}
+      .why-grid{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto;}
+      .cta-btns,.hero-btns{flex-direction:column;align-items:center;}
+      .fc1,.fc2,.fc3{display:none;}
+    }
+    @media(max-width:480px){
+      .stats-grid{grid-template-columns:1fr 1fr;}
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo font-display" aria-label="Truegridleaf Home">
+        <div class="nav-logo-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
+        Truegridleaf
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#pricing" class="btn btn-outline" style="padding:10px 22px;font-size:.88rem;">View Pricing</a>
+        <a href="https://wa.me/+919582113764?text=Hi%20Truegridleaf!%20I%20want%20to%20get%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 22px;font-size:.88rem;" id="nav-wa-btn">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Get Started
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="mobile-nav" role="navigation" aria-label="Mobile Navigation">
+  <a href="#services" class="ml">Services</a>
+  <a href="#why" class="ml">Why Truegridleaf</a>
+  <a href="#pricing" class="ml">Pricing</a>
+  <a href="#portfolio" class="ml">Portfolio</a>
+  <a href="#contact" class="ml">Contact</a>
+  <div class="mobile-nav-btns">
+    <a href="#pricing" class="btn btn-outline" style="justify-content:center;">View Pricing</a>
+    <a href="https://wa.me/+919582113764?text=Hi%20Truegridleaf!%20I%20want%20to%20get%20a%20website." target="_blank" rel="noopener" class="btn btn-whatsapp" style="justify-content:center;">
+      <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section id="hero" aria-label="Hero Section">
+  <div class="hero-bg">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Premium Website Design &amp; Development
+        </div>
+        <h1 class="hero-h1">
+          Your Business Deserves a<br>
+          <span class="text-gradient">Website That Wins</span>
+        </h1>
+        <p class="hero-sub">
+          We build modern, responsive, SEO-friendly websites that help local businesses
+          grow online — attracting more customers, building trust, and delivering real results.
+        </p>
+        <div class="hero-btns">
+          <a href="https://wa.me/+919582113764?text=Hi%20Truegridleaf!%20I%20want%20to%20get%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-primary btn-lg" id="hero-main-cta">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Get Your Website
+          </a>
+          <a href="#pricing" class="btn btn-outline btn-lg" id="hero-pricing-cta">
+            <i class="fa-solid fa-tags" aria-hidden="true"></i> View Pricing
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item">
+            <div class="trust-icon ti-g"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+            Mobile-First Design
+          </div>
+          <div class="hero-trust-item">
+            <div class="trust-icon ti-b"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            SEO-Optimised
+          </div>
+          <div class="hero-trust-item">
+            <div class="trust-icon ti-a"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+            Fast Loading
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-mockup-wrap">
+          <img src="hero_mockup.jpg" alt="Truegridleaf premium website design displayed on laptop and mobile devices" class="hero-mockup-img" id="hero-img" loading="eager" />
+          <div class="float-card fc1">✅ 100% Responsive</div>
+          <div class="float-card fc2">🚀 Live in 7 Days</div>
+          <div class="float-card fc3">💰 Starts ₹999/mo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ STATS ═══════════════════════ -->
+<section id="stats" aria-label="Company Statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><div class="stat-num">50+</div><div class="stat-label">Websites Delivered</div></div>
+      <div class="stat-item reveal rd1"><div class="stat-num">100%</div><div class="stat-label">Mobile Responsive</div></div>
+      <div class="stat-item reveal rd2"><div class="stat-num">4.9★</div><div class="stat-label">Client Rating</div></div>
+      <div class="stat-item reveal rd3"><div class="stat-num">7 Days</div><div class="stat-label">Avg. Delivery</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+<section id="services" class="section" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-tag"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> Our Services</div>
+      <h2 class="section-title" id="services-heading">Everything Your Business Needs<br><span class="text-gradient">to Succeed Online</span></h2>
+      <p class="section-subtitle">From initial design to ongoing maintenance — complete website solutions tailored for local businesses and professionals.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-icon si-i"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div>
+        <h3>Website Design</h3>
+        <p>Stunning, conversion-focused designs that reflect your brand identity and make a powerful first impression on every visitor.</p>
+      </article>
+      <article class="service-card reveal rd1">
+        <div class="service-icon si-g"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+        <h3>Website Development</h3>
+        <p>Clean, fast, reliable code built to modern web standards — optimised for performance and long-term scalability.</p>
+      </article>
+      <article class="service-card reveal rd2">
+        <div class="service-icon si-a"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
+        <h3>Responsive Web Design</h3>
+        <p>Flawless experiences across all screen sizes — smartphones, tablets, laptops, and desktops — with a mobile-first approach.</p>
+      </article>
+      <article class="service-card reveal rd1">
+        <div class="service-icon si-p"><i class="fa-solid fa-store" aria-hidden="true"></i></div>
+        <h3>Local Business Websites</h3>
+        <p>Purpose-built websites for restaurants, clinics, salons, and shops — designed to attract and convert local customers.</p>
+      </article>
+      <article class="service-card reveal rd2">
+        <div class="service-icon si-s"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+        <h3>SEO-Friendly Websites</h3>
+        <p>Every website follows SEO best practices — semantic HTML, fast load times, optimised metadata — improving your Google visibility.</p>
+      </article>
+      <article class="service-card reveal rd3">
+        <div class="service-icon si-v"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+        <h3>Website Maintenance</h3>
+        <p>Ongoing content updates, performance checks, and technical support to keep your website running smoothly at all times.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WHY TRUEGRIDLEAF ═══════════════════════ -->
+<section id="why" class="section" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-tag"><i class="fa-solid fa-leaf" aria-hidden="true"></i> Why Truegridleaf</div>
+      <h2 class="section-title" id="why-heading">Built Different, Delivered <span class="text-gradient">Better</span></h2>
+      <p class="section-subtitle">We combine design excellence, technical expertise, and business insight to create websites that genuinely help you grow.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon si-i"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+        <h3>Modern &amp; Premium Designs</h3>
+        <p>Visually stunning websites that feel fresh and professional — giving your business an instant, lasting edge.</p>
+      </div>
+      <div class="why-card reveal rd1">
+        <div class="why-icon si-g"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
+        <h3>Mobile-First Development</h3>
+        <p>With 70%+ of traffic on mobile, every site is built mobile-first for flawless performance anywhere.</p>
+      </div>
+      <div class="why-card reveal rd2">
+        <div class="why-icon si-a"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+        <h3>SEO-Friendly Structure</h3>
+        <p>Clean semantics, proper metadata, and speed-optimised code — the best foundation for Google rankings.</p>
+      </div>
+      <div class="why-card reveal rd1">
+        <div class="why-icon si-s"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
+        <h3>Fast Loading Performance</h3>
+        <p>Optimised assets and code mean faster load times — reducing bounce rates and keeping visitors engaged.</p>
+      </div>
+      <div class="why-card reveal rd2">
+        <div class="why-icon si-p"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+        <h3>Business-Focused Solutions</h3>
+        <p>Every design decision is guided by your business goals — ensuring your site looks great and converts visitors.</p>
+      </div>
+      <div class="why-card reveal rd3">
+        <div class="why-icon si-v"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+        <h3>Ongoing Support</h3>
+        <p>We're with you beyond launch — providing ongoing updates, support, and guidance as your business grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PRICING ═══════════════════════ -->
+<section id="pricing" class="section" aria-labelledby="pricing-heading">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-tag"><i class="fa-solid fa-tags" aria-hidden="true"></i> Transparent Pricing</div>
+      <h2 class="section-title" id="pricing-heading">Simple, Honest Plans<br><span class="text-gradient">No Hidden Charges</span></h2>
+      <p class="section-subtitle">Choose a plan that fits your needs. Longer commitments save you more — the Yearly plan gives you the best value of all.</p>
+    </div>
+    <div class="pricing-grid" style="margin-top:56px;" role="list">
+
+      <!-- Monthly -->
+      <div class="pricing-card reveal" role="listitem">
+        <div class="plan-label">Monthly</div>
+        <div class="plan-price-block">
+          <span class="plan-currency">₹</span><span class="plan-amount">1,299</span>
+        </div>
+        <div class="plan-per">/month</div>
+        <div class="plan-total">Total: ₹1,299</div>
+        <div class="plan-duration"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Duration: 1 Month</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> 2 Content Updates</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Standard Support</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Mobile Responsive</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> SSL &amp; Security</li>
+        </ul>
+        <button class="plan-btn" onclick="choosePlan('Monthly','₹1,299/month','1 Month','₹1,299')" aria-label="Choose Monthly plan">Choose Plan</button>
+      </div>
+
+      <!-- Quarterly -->
+      <div class="pricing-card reveal rd1" role="listitem">
+        <div class="plan-label">Quarterly</div>
+        <div class="plan-price-block">
+          <span class="plan-currency">₹</span><span class="plan-amount">1,166</span>
+        </div>
+        <div class="plan-per">/month</div>
+        <div class="plan-total">Total: ₹3,499</div>
+        <div class="plan-duration"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Duration: 3 Months</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> 6 Content Updates</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Standard Support</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Mobile Responsive</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> SSL &amp; Security</li>
+          <li><i class="fa-solid fa-star sav" aria-hidden="true"></i> Save ₹398 (~10% off)</li>
+        </ul>
+        <button class="plan-btn" onclick="choosePlan('Quarterly','₹1,166/month','3 Months','₹3,499')" aria-label="Choose Quarterly plan">Choose Plan</button>
+      </div>
+
+      <!-- Yearly – Most Popular -->
+      <div class="pricing-card popular reveal rd2" role="listitem">
+        <div class="popular-badge">🔥 Most Popular</div>
+        <div class="plan-label">Yearly</div>
+        <div class="plan-price-block">
+          <span class="plan-currency">₹</span><span class="plan-amount">999</span>
+        </div>
+        <div class="plan-per">/month</div>
+        <div class="plan-total">Total: ₹11,999</div>
+        <div class="plan-duration"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Duration: 12 Months</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Unlimited Small Updates</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Priority Support</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Mobile Responsive</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> SSL &amp; Security</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> 14-Day Traffic Report</li>
+          <li><i class="fa-solid fa-star sav" aria-hidden="true"></i> <strong>Save ₹3,589 (~23%)</strong></li>
+        </ul>
+        <button class="plan-btn plan-btn-primary" onclick="choosePlan('Yearly','₹999/month','12 Months','₹11,999 (Best Value – Save ₹3,589!)')" aria-label="Choose Yearly plan – best value">
+          Choose Yearly 🔥
+        </button>
+      </div>
+
+      <!-- Half-Yearly -->
+      <div class="pricing-card reveal rd3" role="listitem">
+        <div class="plan-label">Half-Yearly</div>
+        <div class="plan-price-block">
+          <span class="plan-currency">₹</span><span class="plan-amount">1,083</span>
+        </div>
+        <div class="plan-per">/month</div>
+        <div class="plan-total">Total: ₹6,499</div>
+        <div class="plan-duration"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Duration: 6 Months</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> 15 Content Updates</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Priority Support</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> Mobile Responsive</li>
+          <li><i class="fa-solid fa-check chk" aria-hidden="true"></i> SSL &amp; Security</li>
+          <li><i class="fa-solid fa-star sav" aria-hidden="true"></i> Save ₹1,295 (~17% off)</li>
+        </ul>
+        <button class="plan-btn" onclick="choosePlan('Half-Yearly','₹1,083/month','6 Months','₹6,499')" aria-label="Choose Half-Yearly plan">Choose Plan</button>
+      </div>
+
+    </div>
+
+    <div class="savings-strip reveal" role="note">
+      <i class="fa-solid fa-piggy-bank" style="color:var(--accent-warm);" aria-hidden="true"></i>
+      The <strong>Yearly Plan</strong> saves you the most — up to <strong>₹3,589 per year</strong>. That's a full month free + more!
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PORTFOLIO ═══════════════════════ -->
+<section id="portfolio" class="section" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-tag"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Our Work</div>
+      <h2 class="section-title" id="portfolio-heading">Websites That Make<br><span class="text-gradient">Businesses Shine</span></h2>
+      <p class="section-subtitle">A glimpse of premium websites we've crafted for local businesses and professionals across various industries.</p>
+    </div>
+    <div class="portfolio-grid">
+      <article class="portfolio-card reveal">
+        <div style="position:relative;overflow:hidden;">
+          <img src="portfolio_restaurant.jpg" alt="Premium restaurant website design with online reservation system" class="portfolio-img" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-info"><h3>Restaurant &amp; Dining</h3><p>Online menu, reservation system &amp; food photography</p></div>
+          </div>
+        </div>
+        <div class="portfolio-meta">
+          <h3>Restaurant Website</h3>
+          <p>Modern dining experience with online table reservations</p>
+          <span class="ptag pt-a">Food &amp; Dining</span>
+        </div>
+      </article>
+      <article class="portfolio-card reveal rd1">
+        <div style="position:relative;overflow:hidden;">
+          <img src="portfolio_clinic.jpg" alt="Professional medical clinic website with appointment booking system" class="portfolio-img" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-info"><h3>Healthcare &amp; Clinic</h3><p>Appointment booking, doctor profiles &amp; services</p></div>
+          </div>
+        </div>
+        <div class="portfolio-meta">
+          <h3>Medical Clinic Website</h3>
+          <p>Clean, trustworthy design with online appointment system</p>
+          <span class="ptag pt-g">Healthcare</span>
+        </div>
+      </article>
+      <article class="portfolio-card reveal rd2">
+        <div style="position:relative;overflow:hidden;">
+          <img src="portfolio_realtor.jpg" alt="Luxury real estate agency website with property listings" class="portfolio-img" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-info"><h3>Real Estate Agency</h3><p>Property listings, interactive map &amp; lead capture</p></div>
+          </div>
+        </div>
+        <div class="portfolio-meta">
+          <h3>Real Estate Website</h3>
+          <p>Luxury property listings with interactive search filters</p>
+          <span class="ptag pt-b">Real Estate</span>
+        </div>
+      </article>
+    </div>
+    <div class="text-center" style="margin-top:48px;">
+      <p style="color:var(--slate-500);margin-bottom:20px;font-size:.95rem;">Want a website like these for your business?</p>
+      <a href="https://wa.me/+919582113764?text=Hi%20Truegridleaf!%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20website." target="_blank" rel="noopener" class="btn btn-primary btn-lg" id="portfolio-cta">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Start Your Project
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TESTIMONIALS ═══════════════════════ -->
+<section id="testimonials" class="section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-tag"><i class="fa-solid fa-star" aria-hidden="true"></i> Client Reviews</div>
+      <h2 class="section-title" id="testimonials-heading">What Our Clients <span class="text-gradient">Say About Us</span></h2>
+      <p class="section-subtitle">Real feedback from businesses we've helped establish a powerful online presence.</p>
+    </div>
+    <div class="testimonials-grid">
+      <article class="test-card reveal">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"Truegridleaf built our restaurant website in just a week. It looks incredible on mobile and our online reservations have gone up significantly. The team was professional and very responsive."</p>
+        <div class="test-author">
+          <div class="avatar av1" aria-hidden="true">RK</div>
+          <div><div class="author-name">Rajesh Kumar</div><div class="author-role">Owner, Spice Garden Restaurant</div></div>
+        </div>
+      </article>
+      <article class="test-card reveal rd1">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"We needed a professional clinic website urgently. Truegridleaf delivered a beautiful, easy-to-navigate site that patients love. The booking system works perfectly and Google is showing us in local results."</p>
+        <div class="test-author">
+          <div class="avatar av2" aria-hidden="true">PS</div>
+          <div><div class="author-name">Dr. Priya Sharma</div><div class="author-role">Director, HealthPlus Clinic</div></div>
+        </div>
+      </article>
+      <article class="test-card reveal rd2">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"The Yearly plan is amazing value. My property listings site looks like it cost lakhs. Truegridleaf understood exactly what I needed and delivered beyond expectations. Highly recommended!"</p>
+        <div class="test-author">
+          <div class="avatar av3" aria-hidden="true">AM</div>
+          <div><div class="author-name">Anita Mehta</div><div class="author-role">Principal Agent, Prime Properties</div></div>
+        </div>
+      </article>
+    </div>
+    <div class="text-center">
+      <span class="demo-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Sample testimonials shown for demonstration. Genuine client reviews will replace these.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TERMS ═══════════════════════ -->
+<section id="terms" class="section-sm" aria-labelledby="terms-heading">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-tag"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Transparency First</div>
+      <h2 class="section-title" id="terms-heading">Transparent &amp; <span class="text-gradient">Safe for You</span></h2>
+      <p class="section-subtitle">We believe in complete transparency. Here's everything you need to know before choosing a plan.</p>
+    </div>
+    <div class="terms-box reveal">
+      <div class="terms-header">
+        <div class="terms-header-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+        <div><h2>Our Commitment to You</h2><p>Honest policies that protect both you and us.</p></div>
+      </div>
+      <div class="terms-grid">
+        <div class="term-item">
+          <div class="term-icon tii"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></div>
+          <div class="term-body"><h4>Refund Policy</h4><p>Once a maintenance plan has started, refunds are generally not available if you simply change your mind. Please review your plan carefully before subscribing.</p></div>
+        </div>
+        <div class="term-item">
+          <div class="term-icon tig"><i class="fa-solid fa-arrow-up-right-dots" aria-hidden="true"></i></div>
+          <div class="term-body"><h4>Plan Upgrades &amp; Changes</h4><p>You may upgrade or change your plan at any time, subject to applicable terms. Our team will guide you through the transition smoothly.</p></div>
+        </div>
+        <div class="term-item">
+          <div class="term-icon tia"><i class="fa-solid fa-wrench" aria-hidden="true"></i></div>
+          <div class="term-body"><h4>Issue Resolution</h4><p>If an issue is caused by Truegridleaf, we will work diligently to resolve it at no extra cost. Your satisfaction is our priority.</p></div>
+        </div>
+        <div class="term-item">
+          <div class="term-icon tiv"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></div>
+          <div class="term-body"><h4>7-Day Resolution Guarantee</h4><p>If an eligible issue caused by us is not resolved within 7 days of being reported, you may qualify for a refund per our refund policy.</p></div>
+        </div>
+        <div class="term-item">
+          <div class="term-icon tis"><i class="fa-brands fa-google" aria-hidden="true"></i></div>
+          <div class="term-body"><h4>SEO is a Long-Term Process</h4><p>Rankings may take 1–2 months or longer depending on competition, industry, and algorithms. We never guarantee a specific Google ranking.</p></div>
+        </div>
+        <div class="term-item">
+          <div class="term-icon tip"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+          <div class="term-body"><h4>Traffic Monitoring (14 Days)</h4><p>Website traffic monitoring and basic reporting is provided for the first 14 days after your site goes live, helping you understand initial performance.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CTA / CONTACT ═══════════════════════ -->
+<section id="contact" aria-labelledby="cta-heading">
+  <div id="cta">
+    <div class="cta-blob cb1" aria-hidden="true"></div>
+    <div class="cta-blob cb2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="cta-inner">
+        <div class="section-tag" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff;margin-bottom:20px;">
+          <i class="fa-solid fa-rocket" aria-hidden="true"></i> Let's Build Together
+        </div>
+        <h2 class="cta-title" id="cta-heading">
+          Ready to Take Your Business<br><span class="text-gradient-warm">Online?</span>
+        </h2>
+        <p class="cta-sub">Join businesses that have established a strong online presence with Truegridleaf. Let's build something great together — reach out today.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/+919582113764?text=Hi%20Truegridleaf!%20I%20want%20to%20get%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" id="cta-wa-btn">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
+          </a>
+          <a href="#pricing" class="btn btn-white btn-lg" id="cta-pricing-btn">
+            <i class="fa-solid fa-tags" aria-hidden="true"></i> Get Your Website
+          </a>
+        </div>
+        <div class="cta-contact-strip">
+          <div class="cca">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp: <a href="https://wa.me/+919582113764" target="_blank" rel="noopener">+91 95821 13764</a></span>
+          </div>
+          <div class="cca">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            <span>Website: <a href="https://truegridleaf.com" target="_blank" rel="noopener">truegridleaf.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo font-display">
+          <div class="fli"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
+          Truegridleaf
+        </div>
+        <p class="footer-desc">Professional website design &amp; development for local businesses and professionals. Modern. Responsive. Results-Driven.</p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://wa.me/+919582113764" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://truegridleaf.com" target="_blank" rel="noopener" aria-label="Website"><i class="fa-solid fa-globe" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Website Design</a></li>
+          <li><a href="#services">Website Development</a></li>
+          <li><a href="#services">Responsive Design</a></li>
+          <li><a href="#services">SEO-Friendly Websites</a></li>
+          <li><a href="#services">Website Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">Why Truegridleaf</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#terms">Our Policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Plans</h4>
+        <ul>
+          <li><a href="#pricing">Monthly – ₹1,299</a></li>
+          <li><a href="#pricing">Quarterly – ₹3,499</a></li>
+          <li><a href="#pricing">Half-Yearly – ₹6,499</a></li>
+          <li><a href="#pricing">Yearly – ₹11,999 🔥</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="footer-year">2024</span> <span>Truegridleaf</span>. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#terms">Policies</a>
+        <a href="#contact">Contact</a>
+        <a href="https://truegridleaf.com" target="_blank" rel="noopener">truegridleaf.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════ FLOATING WHATSAPP ═══════════════════════ -->
+<div id="wa-float" aria-label="Contact via WhatsApp">
+  <div class="wa-tip">Chat with us 👋</div>
+  <a href="https://wa.me/+919582113764?text=Hi%20Truegridleaf!%20I%20want%20to%20get%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="wa-btn" aria-label="WhatsApp Truegridleaf" id="float-wa-btn">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</div>
+
+<!-- ═══════════════════════ SCRIPTS ═══════════════════════ -->
+<script>
+  /* Footer year */
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  /* Navbar scroll */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); }, { passive:true });
+
+  /* Hamburger */
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+  let navOpen = false;
+  function toggleNav() {
+    navOpen = !navOpen;
+    hamburger.classList.toggle('open', navOpen);
+    mobileNav.classList.toggle('open', navOpen);
+    hamburger.setAttribute('aria-expanded', navOpen);
+    document.body.style.overflow = navOpen ? 'hidden' : '';
+  }
+  hamburger.addEventListener('click', toggleNav);
+  document.querySelectorAll('.ml, #mobile-nav .btn').forEach(l => l.addEventListener('click', () => { if(navOpen) toggleNav(); }));
+  document.addEventListener('click', e => { if(navOpen && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) toggleNav(); });
+
+  /* Scroll reveal */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  /* WhatsApp plan chooser */
+  function choosePlan(name, price, duration, total) {
+    const msg = encodeURIComponent(
+      `Hi Truegridleaf! I'd like to choose the *${name} Plan*.\n\n` +
+      `• Plan: ${name}\n• Price: ${price}\n• Duration: ${duration}\n• Total: ${total}\n\nPlease help me get started!`
+    );
+    window.open(`https://wa.me/+919582113764?text=${msg}`, '_blank', 'noopener');
+  }
+
+  /* Smooth scroll */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const t = document.querySelector(this.getAttribute('href'));
+      if(t){ e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 80, behavior:'smooth' }); }
+    });
+  });
+
+  /* Hero image fallback */
+  const heroImg = document.getElementById('hero-img');
+  if(heroImg) {
+    heroImg.onerror = function() {
+      const wrap = this.closest('.hero-mockup-wrap');
+      if(wrap) {
+        this.style.display = 'none';
+        const fallback = document.createElement('div');
+        fallback.style.cssText = 'width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#0f172a,#1e1b4b);border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 32px 80px rgba(79,70,229,.25);position:relative;overflow:hidden;';
+        fallback.innerHTML = '<div style="text-align:center;padding:24px;"><div style="font-family:Outfit,sans-serif;font-size:2.8rem;font-weight:900;background:linear-gradient(135deg,#4f46e5,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Truegridleaf</div><div style="color:rgba(255,255,255,.6);font-size:.9rem;margin-top:8px;">Premium Website Design &amp; Development</div><div style="display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap;"><span style="background:rgba(79,70,229,.2);color:#818cf8;padding:6px 14px;border-radius:8px;font-size:.8rem;font-weight:600;">✅ Responsive</span><span style="background:rgba(16,185,129,.2);color:#34d399;padding:6px 14px;border-radius:8px;font-size:.8rem;font-weight:600;">🚀 Fast</span><span style="background:rgba(245,158,11,.2);color:#fbbf24;padding:6px 14px;border-radius:8px;font-size:.8rem;font-weight:600;">🔍 SEO</span></div></div>';
+        wrap.insertBefore(fallback, wrap.firstChild);
+      }
+    };
+  }
+</script>
+</body>
+</html>
