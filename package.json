@@ -1,7 +1,7 @@
 ﻿{
   "name": "truegridleaf",
   "version": "1.0.0",
-  "description": "Truegridleaf - Professional Website Design & Development Agency. Premium static website.",
+  "description": "Truegridleaf - Professional Website Design & Development Agency. Pure static HTML website.",
   "main": "index.html",
   "scripts": {
     "start": "npx serve .",
@@ -16,5 +16,8 @@
   "author": "Truegridleaf <truegridleaf@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
-  "homepage": "https://truegridleaf.com"
+  "homepage": "https://truegridleaf.com",
+  "engines": {
+    "node": ">=18"
+  }
 }
