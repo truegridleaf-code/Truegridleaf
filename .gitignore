@@ -4,3 +4,5 @@ Thumbs.db
 *.log
 .env
 .env.local
+.agents/
+skills-lock.json
