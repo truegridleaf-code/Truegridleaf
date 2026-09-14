@@ -1,708 +1,927 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lalit Pigeon Net Bamboo Chick Blind Shop – Expert bird control solutions with durable nets and stylish bamboo chick blinds in Gurugram, Haryana. Open 24 hours, 7 days a week." />
-  <meta name="keywords" content="pigeon net, bamboo chick blind, bird control, Gurugram, Gurgaon, balcony net, window net, pigeon proofing" />
-  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Lalit Pigeon Net Bamboo Chick Blind Shop – Expert bird control solutions, durable pigeon nets, and stylish bamboo chick blinds in Gurugram, Haryana. Open 24 Hours, 7 Days a week." />
+  <meta name="keywords" content="pigeon net, bamboo chick blind, bird control service, bird netting Gurugram, balcony net, window blinds, Sector 12 Gurugram" />
+  <meta name="theme-color" content="#1b5e20" />
+  
+  <title>Lalit Pigeon Net &amp; Bamboo Chick Blind Shop | 24/7 Bird Control Gurugram</title>
+
+  <!-- Google Fonts: Inter & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    {
-      const colorScheme = localStorage.getItem("color-scheme");
-      if (colorScheme) {
-        document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        screens: {
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            accent: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            },
+            whatsapp: '#25D366',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+            script: ['"Dancing Script"', 'cursive'],
+          }
+        }
       }
     }
   </script>
-  <title>Lalit Pigeon Net &amp; Bamboo Chick Blind Shop | Gurugram</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
   <style>
-    :root {
-      --clr-primary: #2e7d32;
-      --clr-primary-light: #4caf50;
-      --clr-primary-dark: #1b5e20;
-      --clr-accent: #ff8f00;
-      --clr-accent-light: #ffb300;
-      --clr-whatsapp: #25d366;
-      --clr-bg-light: #f9fafb;
-      --clr-bg-dark: #0f1117;
-      --clr-surface-light: #ffffff;
-      --clr-surface-dark: #1a1d27;
-      --clr-card-light: #ffffff;
-      --clr-card-dark: #22263a;
-      --clr-text-light: #1a1a2e;
-      --clr-text-dark: #e8eaf6;
-      --clr-muted-light: #5c6370;
-      --clr-muted-dark: #9da3b4;
-      --clr-border-light: #e0e7ef;
-      --clr-border-dark: #2c3050;
-      --clr-bg: var(--clr-bg-light);
-      --clr-surface: var(--clr-surface-light);
-      --clr-card: var(--clr-card-light);
-      --clr-text: var(--clr-text-light);
-      --clr-muted: var(--clr-muted-light);
-      --clr-border: var(--clr-border-light);
-      @media (prefers-color-scheme: dark) {
-        --clr-bg: var(--clr-bg-dark);
-        --clr-surface: var(--clr-surface-dark);
-        --clr-card: var(--clr-card-dark);
-        --clr-text: var(--clr-text-dark);
-        --clr-muted: var(--clr-muted-dark);
-        --clr-border: var(--clr-border-dark);
-      }
-      color-scheme: light dark;
-      --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
-      --shadow-md: 0 8px 24px rgba(0,0,0,.12);
-      --shadow-lg: 0 16px 48px rgba(0,0,0,.18);
-      --radius: 16px;
-      --radius-sm: 8px;
-      --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
-      --font: 'Poppins', system-ui, sans-serif;
-    }
-    :root[data-theme="dark"] {
-      --clr-bg: var(--clr-bg-dark); --clr-surface: var(--clr-surface-dark);
-      --clr-card: var(--clr-card-dark); --clr-text: var(--clr-text-dark);
-      --clr-muted: var(--clr-muted-dark); --clr-border: var(--clr-border-dark);
-    }
-    :root[data-theme="light"] {
-      --clr-bg: var(--clr-bg-light); --clr-surface: var(--clr-surface-light);
-      --clr-card: var(--clr-card-light); --clr-text: var(--clr-text-light);
-      --clr-muted: var(--clr-muted-light); --clr-border: var(--clr-border-light);
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    /* Dark mode transition */
     body {
-      font-family: var(--font);
-      background-color: var(--clr-bg);
-      color: var(--clr-text);
-      transition: background-color var(--transition), color var(--transition);
-      overflow-x: hidden;
-      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-
-    /* Scroll Reveal */
-    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .reveal-left.visible { opacity: 1; transform: translateX(0); }
-    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .reveal-right.visible { opacity: 1; transform: translateX(0); }
-
-    /* Utility */
-    .container { width: min(100%, 1120px); margin-inline: auto; padding-inline: 1.5rem; }
-    .section { padding-block: 5rem; }
-    .section-label { display: inline-block; font-size:.8rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--clr-primary-light); margin-bottom:.75rem; }
-    .section-title { font-size: clamp(1.75rem,4vw,2.8rem); font-weight:800; line-height:1.2; color:var(--clr-text); margin-bottom:1rem; }
-    .section-subtitle { font-size:1rem; color:var(--clr-muted); max-width:600px; }
-    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.85rem 1.75rem; border-radius:50px; font-family:var(--font); font-size:.95rem; font-weight:600; cursor:pointer; border:none; text-decoration:none; transition:all var(--transition); }
-    .btn-primary { background:linear-gradient(135deg,var(--clr-primary-light),var(--clr-primary-dark)); color:#fff; box-shadow:0 4px 20px rgba(46,125,50,.35); }
-    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(46,125,50,.45); }
-    .btn-whatsapp { background:linear-gradient(135deg,#25d366,#128c7e); color:#fff; box-shadow:0 4px 20px rgba(37,211,102,.35); }
-    .btn-whatsapp:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,.45); }
-    .btn-outline { background:transparent; color:var(--clr-text); border:2px solid var(--clr-border); }
-    .btn-outline:hover { border-color:var(--clr-primary-light); color:var(--clr-primary-light); }
-
-    /* Navbar */
-    .navbar { position:fixed; top:0; left:0; right:0; z-index:100; background:color-mix(in srgb,var(--clr-surface) 88%,transparent); -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); border-bottom:1px solid var(--clr-border); transition:background var(--transition),border-color var(--transition); }
-    .navbar-inner { display:flex; align-items:center; justify-content:space-between; padding-block:1rem; }
-    .navbar-logo { display:flex; align-items:center; gap:.75rem; }
-    .navbar-logo .logo-icon { width:42px; height:42px; background:linear-gradient(135deg,var(--clr-primary-light),var(--clr-primary-dark)); border-radius:10px; display:grid; place-items:center; font-size:1.4rem; flex-shrink:0; }
-    .navbar-logo .logo-text { font-size:.95rem; font-weight:700; line-height:1.2; color:var(--clr-text); }
-    .navbar-logo .logo-sub { font-size:.7rem; color:var(--clr-primary-light); font-weight:500; }
-    .nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
-    .nav-links a { font-size:.9rem; font-weight:500; color:var(--clr-muted); transition:color var(--transition); }
-    .nav-links a:hover { color:var(--clr-primary-light); }
-    .nav-actions { display:flex; align-items:center; gap:.75rem; }
-    .theme-toggle { width:40px; height:40px; border-radius:50%; border:1.5px solid var(--clr-border); background:var(--clr-card); color:var(--clr-text); font-size:1.1rem; cursor:pointer; display:grid; place-items:center; transition:all var(--transition); }
-    .theme-toggle:hover { border-color:var(--clr-primary-light); color:var(--clr-primary-light); }
-    .hamburger { display:none; width:40px; height:40px; border-radius:var(--radius-sm); border:1.5px solid var(--clr-border); background:transparent; cursor:pointer; flex-direction:column; align-items:center; justify-content:center; gap:5px; }
-    .hamburger span { display:block; width:20px; height:2px; background:var(--clr-text); border-radius:2px; transition:all var(--transition); }
-    .mobile-nav { display:none; position:fixed; inset:0; z-index:99; background:color-mix(in srgb,var(--clr-surface) 97%,transparent); -webkit-backdrop-filter:blur(20px); backdrop-filter:blur(20px); flex-direction:column; align-items:center; justify-content:center; gap:2rem; list-style:none; }
-    .mobile-nav.open { display:flex; }
-    .mobile-nav a { font-size:1.5rem; font-weight:700; color:var(--clr-text); transition:color var(--transition); }
-    .mobile-nav a:hover { color:var(--clr-primary-light); }
-    .mobile-nav-close { position:absolute; top:1.5rem; right:1.5rem; background:none; border:none; font-size:2rem; cursor:pointer; color:var(--clr-text); }
-
-    /* Hero */
-    .hero { min-height:100svh; display:flex; align-items:center; position:relative; overflow:hidden; padding-top:80px; }
-    .hero-bg { position:absolute; inset:0; background: radial-gradient(ellipse 80% 60% at 70% 40%,color-mix(in srgb,var(--clr-primary) 12%,transparent) 0%,transparent 70%), radial-gradient(ellipse 50% 40% at 20% 80%,color-mix(in srgb,var(--clr-accent) 8%,transparent) 0%,transparent 60%); }
-    .hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
-    .hero-badge { display:inline-flex; align-items:center; gap:.5rem; background:color-mix(in srgb,var(--clr-primary-light) 15%,transparent); color:var(--clr-primary-light); border:1px solid color-mix(in srgb,var(--clr-primary-light) 30%,transparent); border-radius:50px; padding:.35rem 1rem; font-size:.8rem; font-weight:600; margin-bottom:1.5rem; }
-    .hero-title { font-size:clamp(2rem,5vw,3.5rem); font-weight:800; line-height:1.15; margin-bottom:1.25rem; }
-    .hero-title .highlight { background:linear-gradient(135deg,var(--clr-primary-light),var(--clr-accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-    .hero-desc { font-size:1.05rem; color:var(--clr-muted); margin-bottom:2rem; max-width:480px; }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:2.5rem; }
-    .hero-stats { display:flex; gap:2rem; flex-wrap:wrap; }
-    .hero-stat .stat-number { font-size:1.5rem; font-weight:800; color:var(--clr-primary-light); }
-    .hero-stat .stat-label { font-size:.78rem; color:var(--clr-muted); font-weight:500; }
-    .hero-visual { display:flex; flex-direction:column; gap:1rem; }
-    .hero-card-main { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); overflow:hidden; box-shadow:var(--shadow-lg); aspect-ratio:4/3; position:relative; display:grid; place-items:center; }
-    .hero-card-main .net-pattern { position:absolute; inset:0; opacity:.05; background-image: linear-gradient(rgba(76,175,80,1) 1px,transparent 1px), linear-gradient(90deg,rgba(76,175,80,1) 1px,transparent 1px); background-size:30px 30px; }
-    .hero-card-main .content-center { position:relative; z-index:1; text-align:center; }
-    .hero-card-main .illustration { font-size:5rem; }
-    .hero-card-main .illustration-text { font-family:'Dancing Script',cursive; font-size:1.6rem; color:var(--clr-primary-light); margin-top:.5rem; }
-    .hero-cards-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-    .hero-mini-card { background:var(--clr-card); border-radius:var(--radius-sm); border:1px solid var(--clr-border); padding:1rem; box-shadow:var(--shadow-sm); display:flex; align-items:center; gap:.75rem; }
-    .hero-mini-card .mini-icon { font-size:1.8rem; }
-    .hero-mini-card .mini-title { font-size:.85rem; font-weight:600; color:var(--clr-text); }
-    .hero-mini-card .mini-sub { font-size:.72rem; color:var(--clr-muted); }
-    .open-badge { position:absolute; top:1rem; right:1rem; background:#22c55e; color:#fff; border-radius:50px; padding:.3rem .9rem; font-size:.75rem; font-weight:700; display:flex; align-items:center; gap:.4rem; z-index:2; }
-    .open-badge::before { content:''; width:7px; height:7px; border-radius:50%; background:#fff; animation:pulse 1.5s infinite; }
-    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
-
-    /* Services */
-    .services { background:var(--clr-surface); }
-    .services-header { text-align:center; margin-bottom:3.5rem; }
-    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
-    .service-card { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); padding:2rem 1.5rem; box-shadow:var(--shadow-sm); transition:all var(--transition); position:relative; overflow:hidden; }
-    .service-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--clr-primary-light),var(--clr-accent)); transform:scaleX(0); transform-origin:left; transition:transform var(--transition); }
-    .service-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); border-color:var(--clr-primary-light); }
-    .service-card:hover::before { transform:scaleX(1); }
-    .service-icon { font-size:2.8rem; margin-bottom:1.25rem; display:block; }
-    .service-title { font-size:1.1rem; font-weight:700; margin-bottom:.5rem; color:var(--clr-text); }
-    .service-desc { font-size:.88rem; color:var(--clr-muted); line-height:1.7; }
-
-    /* Why Choose Us */
-    .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
-    .why-features { display:flex; flex-direction:column; gap:1.5rem; }
-    .why-feature { display:flex; gap:1rem; align-items:flex-start; }
-    .why-feature-icon { width:48px; height:48px; border-radius:var(--radius-sm); background:color-mix(in srgb,var(--clr-primary-light) 12%,transparent); display:grid; place-items:center; font-size:1.4rem; flex-shrink:0; }
-    .why-feature-title { font-size:1rem; font-weight:700; margin-bottom:.3rem; }
-    .why-feature-desc { font-size:.875rem; color:var(--clr-muted); }
-    .why-visual { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); padding:2rem; box-shadow:var(--shadow-md); }
-    .why-visual-title { font-size:1.2rem; font-weight:700; margin-bottom:1.5rem; text-align:center; }
-    .hours-list { display:flex; flex-direction:column; gap:.75rem; }
-    .hours-row { display:flex; justify-content:space-between; align-items:center; padding:.75rem 1rem; border-radius:var(--radius-sm); background:color-mix(in srgb,var(--clr-primary-light) 8%,transparent); border:1px solid color-mix(in srgb,var(--clr-primary-light) 15%,transparent); }
-    .hours-day { font-weight:600; font-size:.9rem; }
-    .hours-time { font-size:.85rem; color:var(--clr-primary-light); font-weight:700; }
-    .hours-open-badge { background:#22c55e; color:#fff; font-size:.7rem; font-weight:700; padding:.2rem .65rem; border-radius:50px; }
-
-    /* About */
-    .about { background:var(--clr-surface); }
-    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
-    .about-visual { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); padding:2.5rem; box-shadow:var(--shadow-md); text-align:center; }
-    .about-big-icon { font-size:5rem; margin-bottom:1rem; }
-    .about-visual-title { font-family:'Dancing Script',cursive; font-size:1.8rem; color:var(--clr-primary-light); margin-bottom:.5rem; }
-    .about-visual-sub { font-size:.9rem; color:var(--clr-muted); }
-    .about-tags { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; margin-top:1.5rem; }
-    .tag { background:color-mix(in srgb,var(--clr-primary-light) 12%,transparent); color:var(--clr-primary-light); border:1px solid color-mix(in srgb,var(--clr-primary-light) 25%,transparent); border-radius:50px; padding:.3rem .9rem; font-size:.78rem; font-weight:600; }
-    .about-text { font-size:1rem; color:var(--clr-muted); line-height:1.8; margin-top:1.5rem; }
-    .about-cta { display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem; }
-
-    /* Contact */
-    .contact { background:var(--clr-bg); }
-    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:start; }
-    .contact-info { display:flex; flex-direction:column; gap:1.25rem; }
-    .contact-card { background:var(--clr-card); border:1px solid var(--clr-border); border-radius:var(--radius); padding:1.5rem; box-shadow:var(--shadow-sm); display:flex; align-items:flex-start; gap:1rem; transition:all var(--transition); }
-    .contact-card:hover { border-color:var(--clr-primary-light); transform:translateY(-2px); box-shadow:var(--shadow-md); }
-    .contact-card a { color:inherit; }
-    .contact-card-icon { width:48px; height:48px; border-radius:var(--radius-sm); display:grid; place-items:center; font-size:1.4rem; flex-shrink:0; }
-    .icon-green { background:color-mix(in srgb,#22c55e 15%,transparent); }
-    .icon-blue { background:color-mix(in srgb,#3b82f6 15%,transparent); }
-    .icon-orange { background:color-mix(in srgb,#f97316 15%,transparent); }
-    .icon-whatsapp { background:color-mix(in srgb,#25d366 15%,transparent); }
-    .contact-card-label { font-size:.75rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--clr-muted); margin-bottom:.25rem; }
-    .contact-card-value { font-size:1rem; font-weight:600; color:var(--clr-text); }
-    .contact-card-sub { font-size:.8rem; color:var(--clr-muted); margin-top:.15rem; }
-    .map-wrapper { border-radius:var(--radius); overflow:hidden; border:1px solid var(--clr-border); box-shadow:var(--shadow-md); height:400px; }
-    .map-wrapper iframe { width:100%; height:100%; border:none; display:block; }
-
-    /* CTA */
-    .cta-section { background:linear-gradient(135deg,var(--clr-primary-dark),var(--clr-primary)); color:#fff; text-align:center; padding-block:5rem; position:relative; overflow:hidden; }
-    .cta-section::before { content:''; position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px), linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px); background-size:40px 40px; }
-    .cta-inner { position:relative; z-index:1; }
-    .cta-title { font-size:clamp(1.8rem,4vw,3rem); font-weight:800; margin-bottom:1rem; color:#fff; }
-    .cta-desc { font-size:1.05rem; color:rgba(255,255,255,.8); margin-bottom:2.5rem; max-width:520px; margin-inline:auto; }
-    .cta-actions { display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; }
-    .btn-outline-white { background:transparent; color:#fff; border:2px solid rgba(255,255,255,.5); }
-    .btn-outline-white:hover { border-color:#fff; background:rgba(255,255,255,.1); }
-
-    /* Footer */
-    .footer { background:var(--clr-surface); border-top:1px solid var(--clr-border); padding-block:3rem 2rem; }
-    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem; }
-    .footer-brand-name { font-size:1.1rem; font-weight:700; margin-bottom:.5rem; }
-    .footer-brand-desc { font-size:.875rem; color:var(--clr-muted); line-height:1.7; margin-bottom:1.25rem; }
-    .social-links { display:flex; gap:.75rem; }
-    .social-link { width:38px; height:38px; border-radius:var(--radius-sm); border:1.5px solid var(--clr-border); display:grid; place-items:center; font-size:1rem; transition:all var(--transition); background:var(--clr-card); color:var(--clr-text); }
-    .social-link:hover { border-color:var(--clr-primary-light); background:color-mix(in srgb,var(--clr-primary-light) 10%,transparent); color:var(--clr-primary-light); }
-    .footer-col-title { font-size:.9rem; font-weight:700; margin-bottom:1.25rem; color:var(--clr-text); }
-    .footer-links { list-style:none; display:flex; flex-direction:column; gap:.6rem; }
-    .footer-links a { font-size:.875rem; color:var(--clr-muted); transition:color var(--transition); }
-    .footer-links a:hover { color:var(--clr-primary-light); }
-    .footer-bottom { border-top:1px solid var(--clr-border); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
-    .footer-copy { font-size:.8rem; color:var(--clr-muted); }
-
-    /* Floating WhatsApp */
-    .whatsapp-float { position:fixed; bottom:2rem; right:2rem; z-index:50; width:60px; height:60px; border-radius:50%; background:linear-gradient(135deg,#25d366,#128c7e); display:grid; place-items:center; font-size:1.8rem; box-shadow:0 8px 28px rgba(37,211,102,.5); text-decoration:none; transition:transform var(--transition),box-shadow var(--transition); animation:float 3s ease-in-out infinite; }
-    .whatsapp-float:hover { transform:scale(1.1); box-shadow:0 12px 36px rgba(37,211,102,.6); animation:none; }
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
-    .whatsapp-tooltip { position:absolute; right:70px; white-space:nowrap; background:#1a1a1a; color:#fff; font-size:.78rem; font-weight:600; padding:.4rem .85rem; border-radius:50px; pointer-events:none; opacity:0; transition:opacity .25s ease; }
-    .whatsapp-float:hover .whatsapp-tooltip { opacity:1; }
-
-    /* Responsive */
-    @media (max-width:900px) {
-      .hero-grid,.why-grid,.about-grid,.contact-grid { grid-template-columns:1fr; }
-      .nav-links { display:none; }
-      .hamburger { display:flex; }
-      .footer-grid { grid-template-columns:1fr 1fr; }
+    
+    /* Scroll reveal animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    @media (max-width:600px) {
-      .hero-stats { gap:1.25rem; }
-      .footer-grid { grid-template-columns:1fr; }
-      .footer-bottom { flex-direction:column; text-align:center; }
-      .hero-cards-row { grid-template-columns:1fr; }
-      .hero-visual { display:none; }
-    }
-    @media (prefers-reduced-motion:reduce) {
-      .reveal,.reveal-left,.reveal-right { opacity:1; transform:none; transition:none; }
-      .whatsapp-float { animation:none; }
-    }
-  
-    /* ===== Designer Credit Styling (Truegridleaf) ===== */
-    .designer-credit-container {
-      margin-top: 1.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px dashed var(--clr-border);
-      text-align: center;
-      width: 100%;
-    }
-    .designer-credit-text {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--clr-muted);
-      letter-spacing: 0.02em;
-    }
-    .designer-credit-link {
-      color: var(--clr-primary-light);
-      font-weight: 700;
-      text-decoration: none;
-      transition: all var(--transition);
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-sm);
-      background: color-mix(in srgb, var(--clr-primary-light) 10%, transparent);
-      border: 1px solid color-mix(in srgb, var(--clr-primary-light) 25%, transparent);
-      display: inline-block;
-    }
-    .designer-credit-link:hover {
-      color: #fff;
-      background: var(--clr-primary-light);
-      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.35);
-      transform: translateY(-1px);
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    /* Fixed Floating Badge - Bottom Right */
-    .designer-floating-badge {
-      position: fixed;
-      bottom: 20px;
-      right: 95px;
-      z-index: 49;
-      background: var(--clr-surface);
-      color: var(--clr-text);
-      border: 1px solid var(--clr-border);
-      padding: 7px 16px;
-      border-radius: 50px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      text-decoration: none;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Pulse animation for 24/7 indicator */
+    @keyframes statusPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.5; }
     }
-    .designer-floating-badge .badge-icon {
-      font-size: 0.9rem;
-      display: inline-block;
-      transition: transform 0.3s ease;
+    .status-pulse {
+      animation: statusPulse 2s infinite ease-in-out;
     }
-    .designer-floating-badge .badge-brand {
-      color: var(--clr-primary-light);
-      font-weight: 700;
-    }
-    .designer-floating-badge:hover {
-      transform: translateY(-3px);
-      border-color: var(--clr-primary-light);
-      box-shadow: 0 8px 24px rgba(46, 125, 50, 0.25);
-      color: var(--clr-text);
-    }
-    .designer-floating-badge:hover .badge-icon {
-      transform: rotate(15deg) scale(1.15);
-    }
-
-    @media (max-width: 600px) {
-      .designer-floating-badge {
-        bottom: 85px;
-        right: 20px;
-        font-size: 0.72rem;
-        padding: 5px 12px;
-      }
-    }
-
   </style>
-</head>
-<body>
 
-  <header class="navbar" role="banner">
-    <div class="container navbar-inner">
-      <a href="#home" class="navbar-logo" aria-label="Lalit Pigeon Net Shop Home">
-        <div class="logo-icon" aria-hidden="true">&#x1F985;</div>
-        <div>
-          <div class="logo-text">Lalit Pigeon Net</div>
-          <div class="logo-sub">Bamboo Chick Blind Shop</div>
+  <script>
+    // Theme initialization
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased overflow-x-hidden pb-20 md:pb-0 selection:bg-brand-500 selection:text-white">
+
+  <!-- ================= TOP NOTICE BAR ================= -->
+  <div class="bg-brand-900 text-white text-xs sm:text-sm py-2 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 bg-green-400 rounded-full status-pulse"></span>
+        <span class="font-medium tracking-wide">Open 24 Hours, 7 Days a Week in Gurugram</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:09516447391" class="hover:text-brand-300 font-semibold transition-colors flex items-center gap-1">
+          <span>📞</span> 09516447391
+        </a>
+        <span class="hidden md:inline text-brand-400">|</span>
+        <span class="hidden md:inline text-slate-300 text-xs">HP Petrol Pump, Sector 12, Gurugram</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= STICKY RESPONSIVE NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg p-1">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-xl sm:text-2xl shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          🦅
+        </div>
+        <div class="flex flex-col text-left">
+          <span class="font-heading font-extrabold text-base sm:text-lg lg:text-xl text-slate-900 dark:text-white leading-tight">
+            Lalit Pigeon Net
+          </span>
+          <span class="text-xs sm:text-xs font-semibold text-brand-600 dark:text-brand-400 tracking-wider">
+            &amp; Bamboo Chick Blind Shop
+          </span>
         </div>
       </a>
-      <nav aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+      <!-- Desktop & Tablet Navigation -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-sm lg:text-base">
+        <a href="#home" class="text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
+        <a href="#services" class="text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Services</a>
+        <a href="#about" class="text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">About</a>
+        <a href="#hours" class="text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Hours</a>
+        <a href="#contact" class="text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Contact</a>
       </nav>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">&#x1F319;</button>
-        <a href="tel:09516447391" class="btn btn-primary" style="display:none" id="navCall">&#x1F4DE; Call Now</a>
-        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
-          <span></span><span></span><span></span>
+
+      <!-- Right Actions: Theme Toggle & Call CTA -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Dark Mode Toggle Button -->
+        <button id="themeToggle" type="button" aria-label="Toggle dark/light mode" class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center text-lg hover:border-brand-500 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500">
+          <span id="themeIcon">🌙</span>
         </button>
+
+        <!-- Desktop Quick Call -->
+        <a href="tel:09516447391" class="hidden sm:inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm lg:text-base px-4 py-2 sm:px-5 sm:py-2.5 rounded-full shadow-lg shadow-brand-600/25 transition-all hover:scale-105 active:scale-95">
+          <span>📞</span> Call Now
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="menuBtn" type="button" aria-expanded="false" aria-label="Toggle Navigation Menu" class="md:hidden w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-brand-500">
+          <span class="w-5 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all duration-300" id="bar1"></span>
+          <span class="w-5 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all duration-300" id="bar2"></span>
+          <span class="w-5 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all duration-300" id="bar3"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white/98 dark:bg-slate-900/98 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 px-4 pt-3 pb-6 space-y-3 transition-all">
+      <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-slate-800 dark:text-slate-100 hover:bg-brand-50 dark:hover:bg-slate-800">Home</a>
+      <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-slate-800 dark:text-slate-100 hover:bg-brand-50 dark:hover:bg-slate-800">Services</a>
+      <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-slate-800 dark:text-slate-100 hover:bg-brand-50 dark:hover:bg-slate-800">About Us</a>
+      <a href="#hours" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-slate-800 dark:text-slate-100 hover:bg-brand-50 dark:hover:bg-slate-800">Working Hours (24/7)</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-slate-800 dark:text-slate-100 hover:bg-brand-50 dark:hover:bg-slate-800">Contact &amp; Location</a>
+      <div class="pt-2 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2">
+        <a href="tel:09516447391" class="w-full text-center py-2.5 rounded-lg bg-brand-600 text-white font-semibold text-sm shadow-md">
+          📞 Direct Call: 09516447391
+        </a>
+        <a href="https://wa.me/919516447391?text=Hello%20Lalit%20Pigeon%20Net%20Shop%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="w-full text-center py-2.5 rounded-lg bg-whatsapp text-white font-semibold text-sm shadow-md">
+          💬 WhatsApp Message
+        </a>
       </div>
     </div>
   </header>
 
-  <ul class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
-    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">&#x2715;</button>
-    <li><a href="#home" class="mobile-link">Home</a></li>
-    <li><a href="#services" class="mobile-link">Services</a></li>
-    <li><a href="#about" class="mobile-link">About</a></li>
-    <li><a href="#contact" class="mobile-link">Contact</a></li>
-    <li><a href="tel:09516447391" class="btn btn-primary">&#x1F4DE; Call Now</a></li>
-  </ul>
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="relative overflow-hidden pt-8 pb-12 sm:pt-14 sm:pb-20 md:pt-16 md:pb-24 lg:pt-20 lg:pb-32">
+    <!-- Ambient Gradient Blobs -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] lg:w-[800px] h-[300px] sm:h-[500px] lg:h-[800px] bg-gradient-to-tr from-brand-500/15 via-accent-500/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
-  <main>
-    <section class="hero section" id="home" aria-label="Hero section">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="hero-badge reveal" style="transition-delay:.1s">
-              <span>&#x1F4CD;</span> Gurugram, Haryana
-            </div>
-            <h1 class="hero-title reveal" style="transition-delay:.2s">
-              Expert <span class="highlight">Bird Control</span><br/>
-              Solutions for Your<br/>Home &amp; Business
-            </h1>
-            <p class="hero-desc reveal" style="transition-delay:.3s">
-              Durable pigeon nets, stylish bamboo chick blinds, and custom-fit solutions for balconies, windows &amp; open areas. Available <strong>24 hours, 7 days</strong> a week.
-            </p>
-            <div class="hero-actions reveal" style="transition-delay:.4s">
-              <a href="https://wa.me/919516447391?text=Hello%2C%20I%20am%20interested%20in%20your%20pigeon%20net%20and%20bamboo%20chick%20blind%20services.%20Please%20share%20details."
-                 target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-                <span>&#x1F4AC;</span> WhatsApp Us
-              </a>
-              <a href="tel:09516447391" class="btn btn-outline">&#x1F4DE; Call: 09516447391</a>
-            </div>
-            <div class="hero-stats reveal" style="transition-delay:.5s">
-              <div class="hero-stat"><div class="stat-number">24/7</div><div class="stat-label">Always Open</div></div>
-              <div class="hero-stat"><div class="stat-number">100%</div><div class="stat-label">Custom Fit</div></div>
-              <div class="hero-stat"><div class="stat-number">&#x2705;</div><div class="stat-label">Trusted Service</div></div>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-4 sm:space-y-6 reveal">
+          <!-- Tagline Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 dark:bg-brand-950/60 border border-brand-300 dark:border-brand-800 text-brand-800 dark:text-brand-300 text-xs sm:text-sm font-semibold shadow-sm">
+            <span class="inline-block w-2 h-2 rounded-full bg-brand-500"></span>
+            #1 Bird Control &amp; Blinds in Gurugram
           </div>
-          <div class="hero-visual" aria-hidden="true">
-            <div class="hero-card-main reveal-right" style="transition-delay:.3s">
-              <div class="net-pattern"></div>
-              <div class="open-badge">Open 24 Hours</div>
-              <div class="content-center">
-                <div class="illustration">&#x1F985;&#x1F512;</div>
-                <div class="illustration-text">Pigeon Free Since Day One</div>
-                <p style="color:var(--clr-muted);font-size:.85rem;margin-top:.5rem;">Secure your space with our expert nets</p>
-              </div>
-            </div>
-            <div class="hero-cards-row">
-              <div class="hero-mini-card reveal" style="transition-delay:.4s">
-                <span class="mini-icon">&#x1FAA2;</span>
-                <div><div class="mini-title">Pigeon Nets</div><div class="mini-sub">Durable &amp; Strong</div></div>
-              </div>
-              <div class="hero-mini-card reveal" style="transition-delay:.5s">
-                <span class="mini-icon">&#x1F38B;</span>
-                <div><div class="mini-title">Bamboo Blinds</div><div class="mini-sub">Elegant &amp; Functional</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="services section" id="services" aria-label="Our Services">
-      <div class="container">
-        <div class="services-header">
-          <span class="section-label reveal">What We Offer</span>
-          <h2 class="section-title reveal">Our Bird Control Services</h2>
-          <p class="section-subtitle reveal" style="margin-inline:auto">Comprehensive solutions to keep your spaces clean, safe, and free from unwanted birds.</p>
-        </div>
-        <div class="services-grid">
-          <div class="service-card reveal" style="transition-delay:.1s">
-            <span class="service-icon">&#x1FAA2;</span>
-            <h3 class="service-title">Pigeon Nets Installation</h3>
-            <p class="service-desc">Heavy-duty, UV-resistant pigeon nets custom-fitted for balconies, terraces, windows, and any open area to prevent birds from entering.</p>
-          </div>
-          <div class="service-card reveal" style="transition-delay:.15s">
-            <span class="service-icon">&#x1F38B;</span>
-            <h3 class="service-title">Bamboo Chick Blinds</h3>
-            <p class="service-desc">Stylish and eco-friendly bamboo chick blinds that add a natural aesthetic while providing privacy and keeping birds away from your spaces.</p>
-          </div>
-          <div class="service-card reveal" style="transition-delay:.2s">
-            <span class="service-icon">&#x1F3E0;</span>
-            <h3 class="service-title">Balcony Bird Proofing</h3>
-            <p class="service-desc">Complete balcony bird-proofing solutions using high-quality nets and fixtures that are transparent, durable, and maintenance-free.</p>
-          </div>
-          <div class="service-card reveal" style="transition-delay:.25s">
-            <span class="service-icon">&#x1F3E2;</span>
-            <h3 class="service-title">Commercial Solutions</h3>
-            <p class="service-desc">Large-scale bird control for office buildings, warehouses, factories, and commercial complexes. Protect your business premises effectively.</p>
-          </div>
-          <div class="service-card reveal" style="transition-delay:.3s">
-            <span class="service-icon">&#x1FA9F;</span>
-            <h3 class="service-title">Window &amp; Door Nets</h3>
-            <p class="service-desc">Precision-fitted nets for windows and doors that keep pigeons and birds outside while allowing air and light to flow freely.</p>
-          </div>
-          <div class="service-card reveal" style="transition-delay:.35s">
-            <span class="service-icon">&#x1F527;</span>
-            <h3 class="service-title">Repair &amp; Maintenance</h3>
-            <p class="service-desc">Professional repair and maintenance services for existing bird nets and bamboo blinds. We ensure your protection stays in perfect condition.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <!-- Hero Heading -->
+          <h1 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+            Durable <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500">Pigeon Nets</span> &amp; Elegant <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-accent-500">Bamboo Chick Blinds</span>
+          </h1>
 
-    <section class="section" id="why" aria-label="Why Choose Us">
-      <div class="container">
-        <div class="why-grid">
-          <div>
-            <span class="section-label reveal-left">Why Choose Us</span>
-            <h2 class="section-title reveal-left">Trusted Bird Control Experts in Gurugram</h2>
-            <p class="section-subtitle reveal-left">We combine quality materials, skilled craftsmanship, and round-the-clock availability.</p>
-            <div class="why-features" style="margin-top:2rem">
-              <div class="why-feature reveal-left" style="transition-delay:.1s">
-                <div class="why-feature-icon">&#x23F0;</div>
-                <div><div class="why-feature-title">Open 24 Hours, 7 Days</div><div class="why-feature-desc">We're always available whenever you need us — day or night, weekdays or weekends.</div></div>
-              </div>
-              <div class="why-feature reveal-left" style="transition-delay:.15s">
-                <div class="why-feature-icon">&#x1F4D0;</div>
-                <div><div class="why-feature-title">Custom-Fit Solutions</div><div class="why-feature-desc">Every net and blind is measured and cut to perfectly fit your specific space.</div></div>
-              </div>
-              <div class="why-feature reveal-left" style="transition-delay:.2s">
-                <div class="why-feature-icon">&#x1F33F;</div>
-                <div><div class="why-feature-title">Eco-Friendly Materials</div><div class="why-feature-desc">Environment-friendly, non-toxic materials safe for birds, people, and the planet.</div></div>
-              </div>
-              <div class="why-feature reveal-left" style="transition-delay:.25s">
-                <div class="why-feature-icon">&#x1F4B0;</div>
-                <div><div class="why-feature-title">Affordable Pricing</div><div class="why-feature-desc">Competitive rates with transparent pricing. Quality bird control that doesn't break the bank.</div></div>
-              </div>
-              <div class="why-feature reveal-left" style="transition-delay:.3s">
-                <div class="why-feature-icon">&#x1F6E1;&#xFE0F;</div>
-                <div><div class="why-feature-title">Quality Guaranteed</div><div class="why-feature-desc">All installations done with precision ensuring long-lasting protection and satisfaction.</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="why-visual reveal-right">
-            <div class="why-visual-title">&#x23F0; Working Hours</div>
-            <div class="hours-list">
-              <div class="hours-row"><span class="hours-day">Monday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
-              <div class="hours-row"><span class="hours-day">Tuesday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
-              <div class="hours-row"><span class="hours-day">Wednesday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
-              <div class="hours-row"><span class="hours-day">Thursday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
-              <div class="hours-row"><span class="hours-day">Friday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
-              <div class="hours-row"><span class="hours-day">Saturday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
-              <div class="hours-row"><span class="hours-day">Sunday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
-            </div>
-            <a href="tel:09516447391" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1.5rem">&#x1F4DE; Call: 09516447391</a>
-          </div>
-        </div>
-      </div>
-    </section>
+          <!-- Hero Description -->
+          <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Protect your balconies, windows, and open spaces with custom-fitted bird nets and premium bamboo blinds. Expert craftsmanship, durable materials, and <strong>24/7 service</strong> across Gurugram.
+          </p>
 
-    <section class="about section" id="about" aria-label="About Us">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-visual reveal-left">
-            <div class="about-big-icon">&#x1F3EA;</div>
-            <div class="about-visual-title">Lalit Pigeon Net</div>
-            <div class="about-visual-sub">Bamboo Chick Blind Shop</div>
-            <div class="about-tags">
-              <span class="tag">Pigeon Nets</span>
-              <span class="tag">Bamboo Blinds</span>
-              <span class="tag">Bird Control</span>
-              <span class="tag">Custom Fit</span>
-              <span class="tag">Gurugram</span>
-              <span class="tag">24/7 Service</span>
-            </div>
-          </div>
-          <div class="reveal-right">
-            <span class="section-label">Our Story</span>
-            <h2 class="section-title">About Lalit Pigeon Net &amp; Bamboo Chick Blind Shop</h2>
-            <p class="about-text">Discover effective and elegant solutions for bird control at Lalit Pigeon Net Bamboo Chick Blind Shop. Specialising in durable nets and stylish bamboo chick blinds, this shop offers the perfect blend of functionality and aesthetic appeal for your home or business.</p>
-            <p class="about-text">Located conveniently near the HP Petrol Pump in West Rajiv Nagar, Gurugram, we provide expertly crafted products to keep your spaces clean and secure from unwanted avian visitors. Visit us to find the ideal custom-fit solution for your windows, balconies, and other open areas.</p>
-            <div class="about-cta">
-              <a href="https://wa.me/919516447391?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">&#x1F4AC; Chat on WhatsApp</a>
-              <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="btn btn-outline">&#x1F4CD; Get Directions</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact" aria-label="Contact Us">
-      <div class="container">
-        <div style="text-align:center;margin-bottom:3.5rem">
-          <span class="section-label reveal">Get In Touch</span>
-          <h2 class="section-title reveal">Find &amp; Contact Us</h2>
-          <p class="section-subtitle reveal" style="margin-inline:auto">We're always here to help. Reach out via phone, WhatsApp, or visit our shop anytime.</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <a href="tel:09516447391" class="contact-card reveal" style="transition-delay:.05s">
-              <div class="contact-card-icon icon-blue">&#x1F4DE;</div>
-              <div><div class="contact-card-label">Phone</div><div class="contact-card-value">09516447391</div><div class="contact-card-sub">Tap to call us directly</div></div>
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
+            <a href="https://wa.me/919516447391?text=Hello%20Lalit%20Pigeon%20Net%20Shop%2C%20I%20would%20like%20to%20get%20a%20free%20quote%20for%20bird%20netting%20or%20bamboo%20blinds." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-green-600 text-white font-bold text-base px-6 py-3.5 rounded-full shadow-lg shadow-green-500/30 transition-all hover:scale-105 active:scale-95">
+              <span>💬</span> Chat on WhatsApp
             </a>
-            <a href="https://wa.me/919516447391?text=Hello%2C%20I%20want%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="contact-card reveal" style="transition-delay:.1s">
-              <div class="contact-card-icon icon-whatsapp">&#x1F4AC;</div>
-              <div><div class="contact-card-label">WhatsApp</div><div class="contact-card-value">09516447391</div><div class="contact-card-sub">Chat with us on WhatsApp</div></div>
+            <a href="tel:09516447391" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-semibold text-base px-6 py-3.5 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 border border-slate-700">
+              <span>📞</span> Call: 09516447391
             </a>
-            <div class="contact-card reveal" style="transition-delay:.15s">
-              <div class="contact-card-icon icon-orange">&#x1F4CD;</div>
-              <div><div class="contact-card-label">Address</div><div class="contact-card-value" style="font-size:.9rem;line-height:1.5">Shop 50, HP Petrol Pump, near Gurgaon,<br/>West Rajiv Nagar, Sector 12,<br/>Gurugram, Haryana 122001</div></div>
-            </div>
-            <div class="contact-card reveal" style="transition-delay:.2s">
-              <div class="contact-card-icon icon-green">&#x23F0;</div>
-              <div><div class="contact-card-label">Working Hours</div><div class="contact-card-value">Open 24 Hours</div><div class="contact-card-sub">Monday to Sunday — Always available!</div></div>
-            </div>
-            <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center">&#x1F4CD; Open in Google Maps</a>
           </div>
-          <div class="map-wrapper reveal-right">
-            <iframe
-              src="https://maps.google.com/maps?q=Shop+50,+HP+PETROL+PUMP,+West+Rajiv+Nagar,+Sector+12,+Gurugram,+Haryana+122001&output=embed"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Lalit Pigeon Net Bamboo Chick Blind Shop on Google Maps">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="cta-section" aria-label="Call to action">
-      <div class="container cta-inner">
-        <h2 class="cta-title reveal">Ready to Bird-Proof Your Space?</h2>
-        <p class="cta-desc reveal">Contact Lalit Pigeon Net &amp; Bamboo Chick Blind Shop today for a free consultation and custom quote. We're open 24/7 and ready to help!</p>
-        <div class="cta-actions reveal">
-          <a href="https://wa.me/919516447391?text=Hello%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20bird%20control%20solutions." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">&#x1F4AC; Get Free Quote on WhatsApp</a>
-          <a href="tel:09516447391" class="btn btn-outline-white">&#x1F4DE; Call 09516447391</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand-name">&#x1F985; Lalit Pigeon Net &amp; Bamboo Chick Blind Shop</div>
-          <p class="footer-brand-desc">Expert bird control solutions with durable pigeon nets and stylish bamboo chick blinds in Gurugram, Haryana. Open 24 hours, 7 days a week.</p>
-          <div class="social-links">
-            <a href="https://wa.me/919516447391" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">&#x1F4AC;</a>
-            <a href="tel:09516447391" class="social-link" aria-label="Call Us">&#x1F4DE;</a>
-            <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Maps">&#x1F4CD;</a>
+          <!-- Feature Badges Row -->
+          <div class="grid grid-cols-3 gap-3 pt-6 border-t border-slate-200 dark:border-slate-800 text-center sm:text-left">
+            <div>
+              <div class="text-xl sm:text-2xl font-bold text-brand-600 dark:text-brand-400 font-heading">24/7</div>
+              <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Always Open</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-bold text-brand-600 dark:text-brand-400 font-heading">100%</div>
+              <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Custom Fit</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-bold text-brand-600 dark:text-brand-400 font-heading">5★ Rated</div>
+              <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Trusted Quality</div>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="footer-col-title">Quick Links</div>
-          <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+        <!-- Right Hero Interactive Visual Card -->
+        <div class="lg:col-span-5 reveal">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative outline glow -->
+            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-600 to-accent-500 opacity-20 blur-lg"></div>
+
+            <div class="relative bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-200 dark:border-slate-800 space-y-6">
+              
+              <!-- Card Header -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-brand-100 dark:bg-brand-900/60 text-brand-700 dark:text-brand-300 flex items-center justify-center text-2xl">
+                    🛡️
+                  </div>
+                  <div>
+                    <h3 class="font-heading font-bold text-slate-900 dark:text-white text-base sm:text-lg">Reliable Protection</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Zero bird nuisance guaranteed</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-green-100 dark:bg-green-950 text-green-800 dark:text-green-300">
+                  Active
+                </span>
+              </div>
+
+              <!-- Interactive Feature Checklist -->
+              <div class="space-y-3">
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                  <span class="text-brand-600 dark:text-brand-400 text-lg">✓</span>
+                  <div>
+                    <span class="text-sm font-semibold text-slate-900 dark:text-white block">Balcony Pigeon Netting</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400">Heavy-duty UV stabilised nylon nets</span>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                  <span class="text-brand-600 dark:text-brand-400 text-lg">✓</span>
+                  <div>
+                    <span class="text-sm font-semibold text-slate-900 dark:text-white block">Handcrafted Bamboo Chick Blinds</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400">Eco-friendly heat &amp; sun protection</span>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                  <span class="text-brand-600 dark:text-brand-400 text-lg">✓</span>
+                  <div>
+                    <span class="text-sm font-semibold text-slate-900 dark:text-white block">Same-Day Site Inspection</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400">Rapid response anywhere in Gurugram</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Call-to-Action inside Card -->
+              <div class="bg-gradient-to-r from-brand-600 to-brand-700 rounded-xl p-4 text-white text-center">
+                <p class="text-xs uppercase tracking-wider font-semibold text-brand-200">Need Immediate Assistance?</p>
+                <a href="tel:09516447391" class="text-xl sm:text-2xl font-heading font-extrabold block hover:text-accent-400 transition-colors mt-0.5">
+                  📞 09516447391
+                </a>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="footer-col-title">Contact</div>
-          <ul class="footer-links">
-            <li><a href="tel:09516447391">&#x1F4DE; 09516447391</a></li>
-            <li><a href="https://wa.me/919516447391" target="_blank" rel="noopener noreferrer">&#x1F4AC; WhatsApp</a></li>
-            <li><a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer">&#x1F4CD; Get Directions</a></li>
-            <li style="color:var(--clr-muted);font-size:.875rem">&#x23F0; Open 24/7</li>
-          </ul>
-        </div>
+
       </div>
-      <div class="footer-bottom">
-        <span class="footer-copy">&copy; 2025 Lalit Pigeon Net &amp; Bamboo Chick Blind Shop. All rights reserved.</span>
-        <span class="footer-copy">West Rajiv Nagar, Sector 12, Gurugram, Haryana 122001</span>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section id="services" class="py-12 sm:py-16 md:py-20 lg:py-28 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="designer-credit-container">
-        <p class="designer-credit-text">
-          Designed &amp; Developed by <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" class="designer-credit-link">Truegridleaf.com</a>
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14 md:mb-16 reveal">
+        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">Our Comprehensive Offerings</span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 dark:text-white mt-1">
+          Complete Bird Control &amp; Blind Solutions
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base md:text-lg mt-3">
+          We offer "All Services" for residential flats, bungalows, offices, and commercial establishments with durable, weather-resistant materials.
         </p>
       </div>
+
+      <!-- Responsive Grid: 1 col (mobile), 2 cols (tablet), 3 cols (desktop) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-xl bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-400 flex items-center justify-center text-3xl mb-5 group-hover:scale-110 transition-transform">
+            🪢
+          </div>
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 dark:text-white mb-2">Pigeon Net Installation</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
+            High-tensile, UV-stabilised transparent netting tailored for high-rise balconies, terraces, and ducts without blocking airflow or daylight.
+          </p>
+          <a href="https://wa.me/919516447391?text=I%20need%20Pigeon%20Net%20Installation%20service." target="_blank" rel="noopener noreferrer" class="text-brand-600 dark:text-brand-400 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Enquire Now <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-xl bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-400 flex items-center justify-center text-3xl mb-5 group-hover:scale-110 transition-transform">
+            🎋
+          </div>
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 dark:text-white mb-2">Bamboo Chick Blinds</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
+            Traditional and modern bamboo blinds offering natural insulation from heat, privacy from neighbours, and a stylish barrier against birds.
+          </p>
+          <a href="https://wa.me/919516447391?text=I%20need%20Bamboo%20Chick%20Blinds." target="_blank" rel="noopener noreferrer" class="text-brand-600 dark:text-brand-400 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Enquire Now <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 flex items-center justify-center text-3xl mb-5 group-hover:scale-110 transition-transform">
+            🏠
+          </div>
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 dark:text-white mb-2">Balcony Bird Proofing</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
+            Complete enclosure solutions using anti-rust stainless steel fasteners and cables ensuring long-term durability against extreme weather.
+          </p>
+          <a href="https://wa.me/919516447391?text=I%20need%20Balcony%20Bird%20Proofing." target="_blank" rel="noopener noreferrer" class="text-brand-600 dark:text-brand-400 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Enquire Now <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 flex items-center justify-center text-3xl mb-5 group-hover:scale-110 transition-transform">
+            🏢
+          </div>
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 dark:text-white mb-2">Commercial Bird Control</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
+            Industrial-grade nets and bird spikes for warehouses, factory sheds, corporate campuses, hotels, and retail complexes across NCR.
+          </p>
+          <a href="https://wa.me/919516447391?text=I%20need%20Commercial%20Bird%20Control." target="_blank" rel="noopener noreferrer" class="text-brand-600 dark:text-brand-400 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Enquire Now <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 flex items-center justify-center text-3xl mb-5 group-hover:scale-110 transition-transform">
+            🪟
+          </div>
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 dark:text-white mb-2">Window &amp; Duct Netting</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
+            Custom-fitted invisible netting for apartment window shafts, AC outdoor units, and open ducts preventing pigeon roosting and nesting.
+          </p>
+          <a href="https://wa.me/919516447391?text=I%20need%20Window%20and%20Duct%20Netting." target="_blank" rel="noopener noreferrer" class="text-brand-600 dark:text-brand-400 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Enquire Now <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-xl bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-400 flex items-center justify-center text-3xl mb-5 group-hover:scale-110 transition-transform">
+            🔧
+          </div>
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 dark:text-white mb-2">Repair &amp; Re-fitting Service</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
+            Re-tightening, patching, and restoration of worn-out bird nets or repairing torn pulleys and ropes in older bamboo chick blinds.
+          </p>
+          <a href="https://wa.me/919516447391?text=I%20need%20Repair%20and%20Maintenance%20service." target="_blank" rel="noopener noreferrer" class="text-brand-600 dark:text-brand-400 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Enquire Now <span>→</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Quick Action Banner -->
+      <div class="mt-12 text-center bg-brand-50 dark:bg-brand-950/40 border border-brand-200 dark:border-brand-800/50 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-center sm:text-left">
+          <h4 class="font-heading font-bold text-lg text-slate-900 dark:text-white">Custom Size Requirements?</h4>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Call us anytime 24/7 for a free onsite measurement &amp; quote.</p>
+        </div>
+        <a href="tel:09516447391" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-6 py-2.5 rounded-full text-sm shadow-md transition-all whitespace-nowrap">
+          📞 09516447391
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="py-12 sm:py-16 md:py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Side: Visual Experience Box -->
+        <div class="lg:col-span-5 reveal">
+          <div class="relative bg-gradient-to-br from-brand-700 via-brand-800 to-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-2xl overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-accent-500/20 rounded-full blur-2xl"></div>
+            
+            <div class="text-5xl mb-6">🏪</div>
+            <h3 class="font-heading font-extrabold text-2xl sm:text-3xl leading-tight mb-4">
+              Lalit Pigeon Net &amp; Bamboo Chick Blind Shop
+            </h3>
+            <p class="text-brand-100 text-sm sm:text-base leading-relaxed mb-6 font-light">
+              "Discover effective and elegant solutions for bird control at Lalit Pigeon Net Bamboo Chick Blind Shop. Specialising in durable nets and stylish bamboo chick blinds, this shop offers the perfect blend of functionality and aesthetic appeal for your home or business."
+            </p>
+            <div class="space-y-3 border-t border-brand-600/60 pt-6">
+              <div class="flex items-center gap-3 text-sm">
+                <span class="text-lg">📍</span>
+                <span>Near HP Petrol Pump, West Rajiv Nagar, Gurugram</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <span class="text-lg">⏰</span>
+                <span>Available Round the Clock: 24 Hours / 7 Days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Content Details -->
+        <div class="lg:col-span-7 space-y-6 reveal">
+          <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">About Our Business</span>
+          <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 dark:text-white">
+            Keeping Your Spaces Clean, Secure &amp; Bird-Free
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
+            Located conveniently near the HP Petrol Pump in West Rajiv Nagar, Gurugram, we provide expertly crafted products to keep your spaces clean and secure from unwanted avian visitors. Visit us or call to find the ideal custom-fit solution for your windows, balconies, and other open areas.
+          </p>
+
+          <!-- Highlights Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700">
+              <span class="text-2xl mb-1 block">🌿</span>
+              <h4 class="font-bold text-slate-900 dark:text-white text-base">Eco-Friendly &amp; Bird Safe</h4>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Harmless solutions that keep birds out without causing any physical harm.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700">
+              <span class="text-2xl mb-1 block">📐</span>
+              <h4 class="font-bold text-slate-900 dark:text-white text-base">Exact Custom Fit</h4>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Measured and crafted to fit any balcony dimension, curved rail, or tall window.</p>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-white text-white dark:text-slate-900 font-semibold text-sm transition-all shadow-md">
+              <span>📍</span> Google Map Location
+            </a>
+            <a href="https://wa.me/919516447391" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-whatsapp hover:bg-green-600 text-white font-semibold text-sm transition-all shadow-md">
+              <span>💬</span> WhatsApp Direct
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORKING HOURS SECTION ================= -->
+  <section id="hours" class="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-100 dark:bg-slate-900/60 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">Availability</span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 dark:text-white mt-1">
+          Working Hours: Open 24 Hours
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
+          We are available around the clock every single day to serve all urgent pigeon netting and blind installation inquiries.
+        </p>
+      </div>
+
+      <!-- Responsive Working Hours Table -->
+      <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden reveal">
+        <div class="divide-y divide-slate-100 dark:divide-slate-700/60 text-sm sm:text-base">
+          
+          <div class="flex items-center justify-between px-6 py-3.5 bg-brand-50/50 dark:bg-brand-950/20">
+            <span class="font-semibold text-slate-800 dark:text-slate-200">Monday</span>
+            <div class="flex items-center gap-3">
+              <span class="text-brand-700 dark:text-brand-400 font-bold">Open 24 hours</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 dark:bg-green-900/60 text-green-800 dark:text-green-300">Open</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between px-6 py-3.5">
+            <span class="font-semibold text-slate-800 dark:text-slate-200">Tuesday</span>
+            <div class="flex items-center gap-3">
+              <span class="text-brand-700 dark:text-brand-400 font-bold">Open 24 hours</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 dark:bg-green-900/60 text-green-800 dark:text-green-300">Open</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between px-6 py-3.5 bg-brand-50/50 dark:bg-brand-950/20">
+            <span class="font-semibold text-slate-800 dark:text-slate-200">Wednesday</span>
+            <div class="flex items-center gap-3">
+              <span class="text-brand-700 dark:text-brand-400 font-bold">Open 24 hours</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 dark:bg-green-900/60 text-green-800 dark:text-green-300">Open</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between px-6 py-3.5">
+            <span class="font-semibold text-slate-800 dark:text-slate-200">Thursday</span>
+            <div class="flex items-center gap-3">
+              <span class="text-brand-700 dark:text-brand-400 font-bold">Open 24 hours</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 dark:bg-green-900/60 text-green-800 dark:text-green-300">Open</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between px-6 py-3.5 bg-brand-50/50 dark:bg-brand-950/20">
+            <span class="font-semibold text-slate-800 dark:text-slate-200">Friday</span>
+            <div class="flex items-center gap-3">
+              <span class="text-brand-700 dark:text-brand-400 font-bold">Open 24 hours</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 dark:bg-green-900/60 text-green-800 dark:text-green-300">Open</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between px-6 py-3.5">
+            <span class="font-semibold text-slate-800 dark:text-slate-200">Saturday</span>
+            <div class="flex items-center gap-3">
+              <span class="text-brand-700 dark:text-brand-400 font-bold">Open 24 hours</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 dark:bg-green-900/60 text-green-800 dark:text-green-300">Open</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between px-6 py-3.5 bg-brand-50/50 dark:bg-brand-950/20">
+            <span class="font-semibold text-slate-800 dark:text-slate-200">Sunday</span>
+            <div class="flex items-center gap-3">
+              <span class="text-brand-700 dark:text-brand-400 font-bold">Open 24 hours</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 dark:bg-green-900/60 text-green-800 dark:text-green-300">Open</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="p-4 sm:p-6 bg-slate-50 dark:bg-slate-800/90 text-center border-t border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Need emergency pigeon proofing right now?</span>
+          <a href="tel:09516447391" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all">
+            📞 09516447391
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS / TRUST SECTION ================= -->
+  <section class="py-12 sm:py-16 md:py-20 bg-white dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">Customer Satisfaction</span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 dark:text-white mt-1">
+          What Gurugram Residents Say
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Review 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm reveal">
+          <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 italic mb-4 leading-relaxed">
+            "Extremely fast service! Called them at night and they arrived the next morning for our balcony in Sector 14. Net quality is superb and practically invisible."
+          </p>
+          <div class="font-bold text-sm text-slate-900 dark:text-white">— Rajesh Verma, Sector 14</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm reveal">
+          <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 italic mb-4 leading-relaxed">
+            "We ordered custom bamboo chick blinds for our terrace. The finish is fantastic, blocks the sun beautifully and keeps birds away. Highly recommended shop!"
+          </p>
+          <div class="font-bold text-sm text-slate-900 dark:text-white">— Sunita Rao, Sector 12</div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm reveal">
+          <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 italic mb-4 leading-relaxed">
+            "Best bird control service in Gurgaon. Very polite technicians, clean fitting, and fair pricing. The 24-hour availability was a lifesaver for our office building."
+          </p>
+          <div class="font-bold text-sm text-slate-900 dark:text-white">— Amit Chawla, DLF Phase 3</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & MAP SECTION ================= -->
+  <section id="contact" class="py-12 sm:py-16 md:py-20 lg:py-28 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 reveal">
+        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">Get In Touch</span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 dark:text-white mt-1">
+          Visit Us or Contact Directly
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
+          We are located at Shop 50, near HP Petrol Pump in West Rajiv Nagar, Sector 12, Gurugram.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        
+        <!-- Contact Cards Column -->
+        <div class="lg:col-span-5 space-y-4 reveal">
+          
+          <!-- Phone Card -->
+          <a href="tel:09516447391" class="block p-5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-500 shadow-sm hover:shadow-md transition-all group">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                📞
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Phone Number</span>
+                <div class="font-bold text-base sm:text-lg text-slate-900 dark:text-white">09516447391</div>
+                <span class="text-xs text-brand-600 dark:text-brand-400">Tap to call instantly (24/7)</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/919516447391?text=Hello%20Lalit%20Pigeon%20Net%20Shop%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener noreferrer" class="block p-5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-500 shadow-sm hover:shadow-md transition-all group">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-950/60 text-whatsapp flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                💬
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">WhatsApp Number</span>
+                <div class="font-bold text-base sm:text-lg text-slate-900 dark:text-white">09516447391</div>
+                <span class="text-xs text-brand-600 dark:text-brand-400">Instant quotes &amp; photo estimates</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Address Card -->
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-2xl flex-shrink-0">
+                📍
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Shop Address</span>
+                <div class="font-semibold text-sm sm:text-base text-slate-900 dark:text-white leading-relaxed mt-1">
+                  Shop 50, HP PETROL PUMP, near Gurgaon,<br />
+                  West Rajiv Nagar, Sector 12,<br />
+                  Gurugram, Haryana 122001
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Open in Maps Button -->
+          <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition-all text-sm sm:text-base">
+            <span>🗺️</span> Open In Google Maps App
+          </a>
+
+        </div>
+
+        <!-- Google Maps Embed Column -->
+        <div class="lg:col-span-7 reveal">
+          <div class="bg-white dark:bg-slate-800 p-2 sm:p-3 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xl">
+            <div class="relative w-full h-[320px] sm:h-[400px] md:h-[450px] rounded-xl overflow-hidden">
+              <iframe 
+                src="https://maps.google.com/maps?q=Shop+50,+HP+PETROL+PUMP,+near+Gurgaon,+West+Rajiv+Nagar,+Sector+12,+Gurugram,+Haryana+122001&output=embed" 
+                class="absolute inset-0 w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lalit Pigeon Net Bamboo Chick Blind Shop on Google Maps">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FAST ENQUIRY FORM ================= -->
+  <section class="py-12 sm:py-16 bg-brand-900 text-white relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl mb-3">
+        Book a Free Site Inspection
+      </h2>
+      <p class="text-brand-200 text-sm sm:text-base max-w-xl mx-auto mb-8">
+        Leave your requirement and we will contact you immediately to schedule a free measurement in Gurugram.
+      </p>
+
+      <!-- Fast Quick WhatsApp Lead Generator Form -->
+      <form id="leadForm" class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
+        <input type="text" id="custName" placeholder="Your Name" required class="px-4 py-3 rounded-xl bg-white/10 border border-brand-700 text-white placeholder-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-400 text-sm" />
+        <select id="custService" class="px-4 py-3 rounded-xl bg-brand-800 border border-brand-700 text-white focus:outline-none focus:ring-2 focus:ring-brand-400 text-sm">
+          <option value="Pigeon Net Installation">Pigeon Net Installation</option>
+          <option value="Bamboo Chick Blinds">Bamboo Chick Blinds</option>
+          <option value="Balcony Bird Proofing">Balcony Bird Proofing</option>
+          <option value="Commercial Bird Netting">Commercial Bird Netting</option>
+          <option value="Other Service">Other Service</option>
+        </select>
+        <button type="submit" class="bg-whatsapp hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md text-sm whitespace-nowrap">
+          Send via WhatsApp 💬
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 text-slate-400 text-sm py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      
+      <!-- Top Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🦅</span>
+            <span class="font-heading font-extrabold text-white text-lg">Lalit Pigeon Net Shop</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Professional bird control solutions and stylish bamboo chick blinds in Gurugram, Haryana. Dedicated to keeping your homes hygienic, clean, and bird-proof.
+          </p>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-950 border border-brand-800 text-brand-400 text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-green-400 status-pulse"></span> Open 24/7
+          </div>
+        </div>
+
+        <!-- Col 2: Services List -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Services</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#services" class="hover:text-white transition-colors">Pigeon Net Installation</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Bamboo Chick Blinds</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Balcony Bird Proofing</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Industrial &amp; Warehouse Nets</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Window Duct Netting</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#hours" class="hover:text-white transition-colors">Working Hours</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Location Map</a></li>
+            <li><a href="tel:09516447391" class="hover:text-white transition-colors">Emergency 24/7 Call</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Direct Reach -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Contact Details</h4>
+          <div class="space-y-2 text-xs sm:text-sm">
+            <p><strong>Phone:</strong> <a href="tel:09516447391" class="text-white hover:underline">09516447391</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/919516447391" target="_blank" rel="noopener noreferrer" class="text-whatsapp hover:underline">09516447391</a></p>
+            <p><strong>Location:</strong> Shop 50, HP Petrol Pump, West Rajiv Nagar, Sector 12, Gurugram 122001</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & MANDATORY DESIGNER CREDIT -->
+      <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left text-xs sm:text-sm">
+        <p class="text-slate-500">
+          &copy; 2025 Lalit Pigeon Net Bamboo Chick Blind Shop. All rights reserved.
+        </p>
+
+        <!-- MANDATORY DESIGNER CREDIT -->
+        <div class="py-1 px-3 rounded-full bg-slate-800/80 border border-slate-700/80 text-slate-300 font-medium inline-flex items-center gap-1.5 shadow-sm">
+          <span>Designed &amp; Developed by</span>
+          <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" class="font-bold text-brand-400 hover:text-brand-300 underline underline-offset-4 decoration-brand-400/50 hover:decoration-brand-300 transition-colors">
+            Truegridleaf.com
+          </a>
+        </div>
+      </div>
+
     </div>
   </footer>
 
-  <a href="https://wa.me/919516447391?text=Hello%2C%20I%20am%20interested%20in%20your%20pigeon%20net%20and%20bird%20control%20services."
-     target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <span aria-hidden="true">&#x1F4AC;</span>
-    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  <!-- ================= FLOATING ACTION CONTROLS ================= -->
+  
+  <!-- Subtle Designer Floating Badge (Bottom-Right, always visible) -->
+  <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" class="fixed bottom-20 md:bottom-5 right-4 md:right-24 z-40 bg-white/95 dark:bg-slate-800/95 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-lg backdrop-blur-md hover:scale-105 hover:border-brand-500 transition-all flex items-center gap-1.5 group" title="Website by Truegridleaf.com" aria-label="Website by Truegridleaf.com">
+    <span class="text-brand-500 group-hover:rotate-12 transition-transform">⚡</span>
+    <span>Website by <span class="text-brand-600 dark:text-brand-400 font-bold">Truegridleaf.com</span></span>
   </a>
 
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/919516447391?text=Hello%20Lalit%20Pigeon%20Net%20Shop%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="fixed bottom-20 md:bottom-5 right-4 md:right-5 z-40 w-12 h-12 md:w-14 md:h-14 bg-whatsapp hover:bg-green-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-xl shadow-green-500/40 hover:scale-110 active:scale-95 transition-all" aria-label="Chat on WhatsApp" title="WhatsApp Us">
+    💬
+  </a>
+
+  <!-- Mobile Sticky Bottom Bar (Sticky Call Now on Mobile) -->
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-white/95 dark:bg-slate-900/95 border-t border-slate-200 dark:border-slate-800 p-2.5 flex sm:hidden items-center justify-around gap-2 backdrop-blur-lg shadow-2xl">
+    <a href="tel:09516447391" class="flex-1 bg-brand-600 hover:bg-brand-700 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm flex items-center justify-center gap-2 shadow-md">
+      <span>📞</span> Call: 09516447391
+    </a>
+    <a href="https://wa.me/919516447391" target="_blank" rel="noopener noreferrer" class="flex-1 bg-whatsapp hover:bg-green-600 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm flex items-center justify-center gap-2 shadow-md">
+      <span>💬</span> WhatsApp
+    </a>
+  </div>
+
+  <!-- ================= JAVASCRIPT ================= -->
   <script>
+    // Theme Toggle Functionality
     const themeToggle = document.getElementById('themeToggle');
-    const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
-    const root = document.documentElement;
-    function getSystemTheme() { return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
-    function applyTheme(theme) {
-      root.dataset.theme = theme;
-      metaColorScheme.content = theme;
-      themeToggle.textContent = theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
-      themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    const themeIcon = document.getElementById('themeIcon');
+
+    function updateThemeIcon() {
+      if (document.documentElement.classList.contains('dark')) {
+        themeIcon.textContent = '☀️';
+      } else {
+        themeIcon.textContent = '🌙';
+      }
     }
-    function toggleTheme() {
-      const cur = root.dataset.theme || getSystemTheme();
-      const next = cur === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('color-scheme', next);
-      applyTheme(next);
+    updateThemeIcon();
+
+    themeToggle.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+      updateThemeIcon();
+    });
+
+    // Responsive Mobile Menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+
+    function toggleMenu() {
+      const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+
+      if (!isExpanded) {
+        bar1.classList.add('rotate-45', 'translate-y-2');
+        bar2.classList.add('opacity-0');
+        bar3.classList.add('-rotate-45', '-translate-y-2');
+      } else {
+        bar1.classList.remove('rotate-45', 'translate-y-2');
+        bar2.classList.remove('opacity-0');
+        bar3.classList.remove('-rotate-45', '-translate-y-2');
+      }
     }
-    const savedTheme = localStorage.getItem('color-scheme');
-    if (savedTheme) { applyTheme(savedTheme); } else { themeToggle.textContent = getSystemTheme() === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19'; }
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => { if (!localStorage.getItem('color-scheme')) { themeToggle.textContent = e.matches ? '\u2600\uFE0F' : '\uD83C\uDF19'; } });
-    themeToggle.addEventListener('click', toggleTheme);
 
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobileNav');
-    const mobileNavClose = document.getElementById('mobileNavClose');
-    function openMobileNav() { mobileNav.classList.add('open'); hamburger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
-    function closeMobileNav() { mobileNav.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
-    hamburger.addEventListener('click', openMobileNav);
-    mobileNavClose.addEventListener('click', closeMobileNav);
-    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMobileNav));
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobileNav.classList.contains('open')) { closeMobileNav(); hamburger.focus(); } });
+    menuBtn.addEventListener('click', toggleMenu);
 
-    const navCall = document.getElementById('navCall');
-    window.addEventListener('scroll', () => { navCall.style.display = window.scrollY > 200 ? 'inline-flex' : 'none'; }, { passive: true });
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!mobileMenu.classList.contains('hidden')) {
+          toggleMenu();
+        }
+      });
+    });
 
-    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(el => observer.observe(el));
+    // Quick Lead Form -> WhatsApp
+    const leadForm = document.getElementById('leadForm');
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('custName').value.trim();
+      const service = document.getElementById('custService').value;
+      const text = `Hello Lalit Pigeon Net Shop, my name is ${name}. I am looking for ${service}. Please contact me.`;
+      const url = `https://wa.me/919516447391?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      leadForm.reset();
+    });
+
+    // Scroll Reveal Observer
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealEls.forEach(el => revealObserver.observe(el));
   </script>
-
-  <!-- Subtle Designer Floating Badge -->
-  <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" class="designer-floating-badge" title="Website Designed and Developed by Truegridleaf.com" aria-label="Website by Truegridleaf.com">
-    <span class="badge-icon">&#x26A1;</span>
-    <span>Website by <span class="badge-brand">Truegridleaf.com</span></span>
-  </a>
 
 </body>
 </html>
