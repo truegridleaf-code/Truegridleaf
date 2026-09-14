@@ -1,1 +1,743 @@
-﻿<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Truegridleaf - Premium Web Developer</title><meta name="description" content="Truegridleaf is a premium web developer offering custom websites, eCommerce solutions, SEO, UI/UX design, and digital marketing. Affordable. Fast. Stunning."/><meta name="keywords" content="web developer, website design, web development, Truegridleaf, SEO, digital marketing"/><meta name="author" content="Truegridleaf"/><meta name="robots" content="index, follow"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/><style>:root{--clr-bg:#050510;--clr-surface:#0d0d20;--clr-card:#11112a;--clr-border:rgba(120,100,255,.18);--clr-primary:#7c5cfc;--clr-accent:#00e5ff;--clr-green:#00ffb2;--clr-text:#e8e8f4;--clr-muted:#8888aa;--font-display:"Outfit",sans-serif;--font-body:"Inter",sans-serif;--radius-lg:20px;--radius-xl:32px;--transition:.35s cubic-bezier(.4,0,.2,1);}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:var(--font-body);background:var(--clr-bg);color:var(--clr-text);overflow-x:hidden;line-height:1.7;}a{color:inherit;text-decoration:none;}ul{list-style:none;}button{cursor:pointer;border:none;background:none;font-family:inherit;}h1,h2,h3,h4,h5{font-family:var(--font-display);line-height:1.2;}.gradient-text{background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.container{width:min(1200px,92%);margin-inline:auto;}.section{padding:100px 0;}.section-label{display:inline-flex;align-items:center;gap:8px;background:rgba(124,92,252,.12);border:1px solid rgba(124,92,252,.3);border-radius:50px;padding:6px 18px;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--clr-primary);margin-bottom:20px;}.section-title{font-size:clamp(2rem,4vw,3.2rem);font-weight:800;margin-bottom:18px;}.section-sub{font-size:1.05rem;color:var(--clr-muted);max-width:580px;}.text-center{text-align:center;}.text-center .section-sub{margin-inline:auto;}.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:50px;font-family:var(--font-display);font-weight:600;font-size:1rem;transition:var(--transition);}.btn-primary{background:linear-gradient(135deg,var(--clr-primary),#9c6fff);color:#fff;box-shadow:0 6px 32px rgba(124,92,252,.45);}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(124,92,252,.6);}.btn-outline{border:1.5px solid var(--clr-border);color:var(--clr-text);}.btn-outline:hover{border-color:var(--clr-primary);color:var(--clr-primary);transform:translateY(-3px);}#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 0;transition:var(--transition);}#navbar.scrolled{background:rgba(5,5,16,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--clr-border);padding:12px 0;}.nav-inner{display:flex;align-items:center;justify-content:space-between;}.logo{font-family:var(--font-display);font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.logo-dot{display:inline-block;width:8px;height:8px;background:var(--clr-accent);border-radius:50%;margin-left:3px;vertical-align:super;}.nav-links{display:flex;align-items:center;gap:36px;}.nav-links a{font-size:.9rem;font-weight:500;color:var(--clr-muted);transition:color var(--transition);position:relative;}.nav-links a::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--clr-primary);border-radius:2px;transition:width var(--transition);}.nav-links a:hover{color:var(--clr-text);}.nav-links a:hover::after{width:100%;}.nav-cta .btn{padding:10px 24px;font-size:.9rem;}.hamburger{display:none;flex-direction:column;gap:5px;padding:4px;}.hamburger span{display:block;width:26px;height:2px;background:var(--clr-text);border-radius:2px;transition:var(--transition);}.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:rgba(5,5,16,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--clr-border);padding:24px;flex-direction:column;gap:20px;z-index:999;}.mobile-menu.open{display:flex;}.mobile-menu a{font-size:1.1rem;color:var(--clr-muted);padding:8px 0;border-bottom:1px solid var(--clr-border);}.mobile-menu a:hover{color:var(--clr-text);}#hero{min-height:100vh;display:flex;align-items:center;padding-top:100px;position:relative;overflow:hidden;}.hero-glow{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none;}.hero-glow-1{width:600px;height:600px;background:rgba(124,92,252,.25);top:-150px;left:-150px;}.hero-glow-2{width:500px;height:500px;background:rgba(0,229,255,.15);bottom:-100px;right:-100px;}.hero-glow-3{width:300px;height:300px;background:rgba(0,255,178,.1);top:40%;left:50%;transform:translate(-50%,-50%);}.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.25);border-radius:50px;padding:7px 18px;font-size:.8rem;font-weight:600;color:var(--clr-accent);margin-bottom:24px;letter-spacing:.05em;}.hero-badge::before{content:"";width:8px;height:8px;background:var(--clr-accent);border-radius:50%;animation:pulse-dot 2s ease-in-out infinite;}@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.6);}}.hero-title{font-size:clamp(2.8rem,5.5vw,5rem);font-weight:900;line-height:1.08;margin-bottom:24px;}.hero-title .line-2{display:block;background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.hero-desc{font-size:1.1rem;color:var(--clr-muted);max-width:500px;margin-bottom:40px;line-height:1.8;}.hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:60px;}.hero-stats{display:flex;gap:40px;}.hero-stat-num{font-family:var(--font-display);font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.hero-stat-label{font-size:.82rem;color:var(--clr-muted);margin-top:2px;}.hero-visual{position:relative;}.hero-card-main{background:var(--clr-card);border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:32px;position:relative;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.5);}.hero-card-main::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--clr-primary),var(--clr-accent),transparent);}.code-block{background:rgba(0,0,0,.4);border-radius:12px;padding:20px;font-family:"Courier New",monospace;font-size:.82rem;line-height:1.8;color:#a0a0c0;border:1px solid rgba(124,92,252,.15);}.code-block .kw{color:#bd93f9;}.code-block .fn{color:#50fa7b;}.code-block .str{color:#f1fa8c;}.code-block .cm{color:#6272a4;}.typing-cursor{display:inline-block;width:2px;height:1em;background:var(--clr-accent);margin-left:3px;vertical-align:text-bottom;animation:blink .8s step-end infinite;}@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}.tech-badge{background:rgba(124,92,252,.12);border:1px solid rgba(124,92,252,.25);border-radius:8px;padding:6px 14px;font-size:.78rem;font-weight:600;color:var(--clr-primary);transition:var(--transition);display:inline-block;}.tech-badge:hover{background:rgba(124,92,252,.25);transform:translateY(-2px);}.hero-float-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}.float-card{position:absolute;background:var(--clr-card);border:1px solid var(--clr-border);border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:10px;box-shadow:0 16px 40px rgba(0,0,0,.4);animation:float 4s ease-in-out infinite;font-family:var(--font-display);font-size:.85rem;font-weight:600;white-space:nowrap;}.float-card-1{top:-30px;right:-20px;}.float-card-2{bottom:-20px;left:-30px;animation-delay:2s;}@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}.float-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;}.marquee-section{padding:32px 0;border-top:1px solid var(--clr-border);border-bottom:1px solid var(--clr-border);overflow:hidden;background:rgba(13,13,32,.5);}.marquee-track{display:flex;gap:60px;animation:marquee 22s linear infinite;width:max-content;}.marquee-track:hover{animation-play-state:paused;}@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}.marquee-item{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:1.1rem;color:var(--clr-muted);white-space:nowrap;}.marquee-item i{color:var(--clr-primary);}.marquee-dot{color:var(--clr-accent);font-size:.5rem;align-self:center;}#services{background:var(--clr-surface);}.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:60px;}.service-card{background:var(--clr-card);border:1px solid var(--clr-border);border-radius:var(--radius-lg);padding:36px 28px;transition:var(--transition);position:relative;overflow:hidden;}.service-card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--clr-primary),var(--clr-accent));transform:scaleX(0);transition:transform var(--transition);}.service-card:hover::after{transform:scaleX(1);}.service-card:hover{border-color:rgba(124,92,252,.4);transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.4);}.service-icon{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;}.service-card h3{font-size:1.25rem;font-weight:700;margin-bottom:12px;}.service-card p{color:var(--clr-muted);font-size:.92rem;line-height:1.75;}.learn-more{display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-size:.88rem;font-weight:600;color:var(--clr-primary);transition:gap var(--transition);}.learn-more:hover{gap:12px;}#process{background:var(--clr-bg);}.process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:60px;position:relative;}.process-grid::before{content:"";position:absolute;top:44px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--clr-primary),var(--clr-accent),transparent);}.process-step{text-align:center;padding:0 20px 40px;}.step-num{width:88px;height:88px;border-radius:50%;border:2px solid var(--clr-border);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-family:var(--font-display);font-size:1.8rem;font-weight:800;background:var(--clr-bg);transition:var(--transition);}.process-step:hover .step-num{border-color:var(--clr-primary);background:rgba(124,92,252,.1);box-shadow:0 0 30px rgba(124,92,252,.3);}.step-num-inner{background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.process-step h4{font-size:1.1rem;font-weight:700;margin-bottom:10px;}.process-step p{color:var(--clr-muted);font-size:.88rem;}#portfolio{background:var(--clr-surface);}.portfolio-filter{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:48px 0 40px;}.filter-btn{padding:8px 22px;border-radius:50px;font-size:.85rem;font-weight:600;border:1px solid var(--clr-border);color:var(--clr-muted);transition:var(--transition);cursor:pointer;background:none;}.filter-btn:hover,.filter-btn.active{background:var(--clr-primary);border-color:var(--clr-primary);color:#fff;}.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;}.portfolio-card{border-radius:var(--radius-lg);overflow:hidden;position:relative;aspect-ratio:16/10;border:1px solid var(--clr-border);transition:var(--transition);cursor:pointer;}.portfolio-card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.5);}.portfolio-thumb{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;}.thumb-icon{font-size:3rem;opacity:.5;}.thumb-label{font-family:var(--font-display);font-weight:700;font-size:1rem;opacity:.5;}.portfolio-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(124,92,252,.92),rgba(0,229,255,.78));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;opacity:0;transition:var(--transition);}.portfolio-card:hover .portfolio-overlay{opacity:1;}.portfolio-overlay h4{font-size:1.3rem;font-weight:700;color:#fff;}.portfolio-overlay p{font-size:.85rem;color:rgba(255,255,255,.8);}.overlay-links{display:flex;gap:12px;margin-top:4px;}.overlay-links a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem;transition:background var(--transition);}.overlay-links a:hover{background:rgba(255,255,255,.35);}.pc-1{background:linear-gradient(135deg,#1a103a,#0d1a30);}.pc-2{background:linear-gradient(135deg,#0d2018,#102030);}.pc-3{background:linear-gradient(135deg,#2a1020,#1a0d30);}.pc-4{background:linear-gradient(135deg,#1a200a,#0d2020);}.pc-5{background:linear-gradient(135deg,#201010,#2a1020);}.pc-6{background:linear-gradient(135deg,#10202a,#0d103a);}#about{background:var(--clr-bg);}.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}.about-img-wrapper{border-radius:var(--radius-xl);background:var(--clr-card);border:1px solid var(--clr-border);padding:32px;position:relative;overflow:hidden;}.about-img-wrapper::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--clr-primary),var(--clr-accent));}.about-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;}.about-stat{background:rgba(124,92,252,.08);border:1px solid rgba(124,92,252,.2);border-radius:14px;padding:20px;text-align:center;}.about-stat-n{font-family:var(--font-display);font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.about-stat-l{font-size:.78rem;color:var(--clr-muted);margin-top:4px;}.checklist{margin-top:32px;display:flex;flex-direction:column;gap:16px;}.checklist-item{display:flex;gap:14px;align-items:flex-start;}.check-icon{width:28px;height:28px;border-radius:50%;background:rgba(0,255,178,.12);border:1px solid rgba(0,255,178,.3);display:flex;align-items:center;justify-content:center;color:var(--clr-green);font-size:.75rem;flex-shrink:0;margin-top:2px;}.checklist-item strong{font-weight:600;display:block;margin-bottom:3px;}.checklist-item p{color:var(--clr-muted);font-size:.88rem;}#pricing{background:var(--clr-surface);}.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:60px;}.pricing-card{background:var(--clr-card);border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:40px 32px;position:relative;overflow:hidden;transition:var(--transition);}.pricing-card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.4);}.pricing-card.featured{border-color:var(--clr-primary);background:linear-gradient(135deg,rgba(124,92,252,.08),rgba(0,229,255,.04));}.pricing-card.featured::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--clr-primary),var(--clr-accent));}.pricing-popular{position:absolute;top:20px;right:20px;background:var(--clr-primary);color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.06em;}.pricing-name{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--clr-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em;}.pricing-price{font-family:var(--font-display);font-size:3rem;font-weight:900;line-height:1;margin-bottom:6px;}.pricing-price .curr{font-size:1.4rem;font-weight:600;vertical-align:super;}.pricing-price .period{font-size:.9rem;color:var(--clr-muted);font-weight:400;}.pricing-desc{color:var(--clr-muted);font-size:.88rem;margin-bottom:28px;}.pricing-features{display:flex;flex-direction:column;gap:13px;margin-bottom:36px;}.pricing-feature{display:flex;gap:10px;align-items:center;font-size:.9rem;color:var(--clr-muted);}.pricing-feature i{color:var(--clr-green);font-size:.8rem;width:16px;}.pricing-feature.unavail{opacity:.4;}.pricing-btn{display:block;text-align:center;padding:14px;border-radius:50px;font-family:var(--font-display);font-weight:700;font-size:1rem;transition:var(--transition);border:1.5px solid var(--clr-border);color:var(--clr-text);}.pricing-btn:hover{border-color:var(--clr-primary);color:var(--clr-primary);}.pricing-card.featured .pricing-btn{background:linear-gradient(135deg,var(--clr-primary),#9c6fff);border-color:transparent;color:#fff;box-shadow:0 6px 24px rgba(124,92,252,.4);}#testimonials{background:var(--clr-bg);}.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:60px;}.testimonial-card{background:var(--clr-card);border:1px solid var(--clr-border);border-radius:var(--radius-lg);padding:32px;transition:var(--transition);position:relative;}.testimonial-card::before{content:"\201C";position:absolute;top:20px;left:24px;font-size:6rem;font-family:var(--font-display);color:var(--clr-primary);opacity:.15;line-height:1;}.testimonial-card:hover{border-color:rgba(124,92,252,.4);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.35);}.stars{color:#fbbf24;font-size:.9rem;margin-bottom:16px;}.testimonial-text{color:var(--clr-muted);font-size:.92rem;line-height:1.8;margin-bottom:24px;position:relative;z-index:1;}.testimonial-author{display:flex;align-items:center;gap:14px;}.author-avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:#fff;flex-shrink:0;}.author-name{font-weight:600;font-size:.92rem;}.author-role{color:var(--clr-muted);font-size:.78rem;margin-top:2px;}#contact{background:var(--clr-surface);}.contact-inner{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:start;margin-top:60px;}.contact-links{display:flex;flex-direction:column;gap:16px;margin-top:24px;}.contact-link-item{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--clr-card);border:1px solid var(--clr-border);border-radius:14px;transition:var(--transition);font-size:.9rem;}.contact-link-item:hover{border-color:var(--clr-primary);transform:translateX(6px);}.contact-link-icon{width:42px;height:42px;border-radius:12px;background:rgba(124,92,252,.12);display:flex;align-items:center;justify-content:center;color:var(--clr-primary);font-size:1rem;flex-shrink:0;}.contact-form-wrapper{background:var(--clr-card);border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:40px;position:relative;overflow:hidden;}.contact-form-wrapper::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--clr-primary),var(--clr-accent));}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}.form-group{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}.form-group label{font-size:.85rem;font-weight:600;}.form-group input,.form-group select,.form-group textarea{background:rgba(0,0,0,.3);border:1px solid var(--clr-border);border-radius:12px;padding:13px 16px;color:var(--clr-text);font-family:var(--font-body);font-size:.92rem;outline:none;transition:border-color var(--transition);width:100%;}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--clr-primary);box-shadow:0 0 0 3px rgba(124,92,252,.15);}.form-group textarea{resize:vertical;min-height:120px;}.form-group select option{background:#1a1a3a;}.form-submit{width:100%;background:linear-gradient(135deg,var(--clr-primary),#9c6fff);color:#fff;border:none;padding:16px;border-radius:12px;font-family:var(--font-display);font-size:1rem;font-weight:700;cursor:pointer;transition:var(--transition);box-shadow:0 6px 24px rgba(124,92,252,.4);}.form-submit:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(124,92,252,.6);}#seo-keywords{background:var(--clr-bg);padding:60px 0 80px;border-top:1px solid var(--clr-border);}.seo-keywords-header{text-align:center;margin-bottom:40px;}.seo-keywords-header h2{font-size:1.4rem;font-weight:700;color:var(--clr-muted);margin-bottom:8px;}.seo-keywords-header p{color:rgba(120,120,160,.5);font-size:.8rem;}.keywords-container{column-count:5;column-gap:10px;}.kw-tag{display:inline-block;width:100%;margin-bottom:8px;font-size:.75rem;color:rgba(120,120,160,.55);line-height:1.4;word-break:break-word;transition:color var(--transition);}.kw-tag:hover{color:rgba(124,92,252,.7);}#footer{background:var(--clr-surface);border-top:1px solid var(--clr-border);padding:60px 0 30px;}.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}.footer-brand p{color:var(--clr-muted);font-size:.88rem;margin-top:16px;line-height:1.8;max-width:280px;}.footer-social{display:flex;gap:10px;margin-top:24px;}.footer-social a{width:38px;height:38px;border-radius:10px;background:var(--clr-card);border:1px solid var(--clr-border);display:flex;align-items:center;justify-content:center;color:var(--clr-muted);font-size:.9rem;transition:var(--transition);}.footer-social a:hover{background:var(--clr-primary);border-color:var(--clr-primary);color:#fff;transform:translateY(-3px);}.footer-col h5{font-size:.95rem;font-weight:700;margin-bottom:20px;}.footer-links{display:flex;flex-direction:column;gap:10px;}.footer-links a{font-size:.85rem;color:var(--clr-muted);transition:color var(--transition);}.footer-links a:hover{color:var(--clr-primary);}.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid var(--clr-border);font-size:.82rem;color:var(--clr-muted);flex-wrap:wrap;gap:12px;}.footer-bottom-links{display:flex;gap:24px;}.footer-bottom-links a{color:var(--clr-muted);transition:color var(--transition);}.footer-bottom-links a:hover{color:var(--clr-primary);}#scroll-top{position:fixed;bottom:32px;right:32px;width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--clr-primary),#9c6fff);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 6px 24px rgba(124,92,252,.5);cursor:pointer;opacity:0;transform:translateY(20px);transition:var(--transition);z-index:800;}#scroll-top.visible{opacity:1;transform:translateY(0);}#scroll-top:hover{transform:translateY(-4px);}#whatsapp-btn{position:fixed;bottom:32px;left:32px;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 6px 24px rgba(37,211,102,.5);z-index:800;transition:var(--transition);animation:float 3s ease-in-out infinite;text-decoration:none;}#whatsapp-btn:hover{transform:scale(1.1);}[data-aos]{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease;}[data-aos].aos-animate{opacity:1;transform:translateY(0);}[data-aos][data-aos-delay="100"]{transition-delay:.1s;}[data-aos][data-aos-delay="200"]{transition-delay:.2s;}[data-aos][data-aos-delay="300"]{transition-delay:.3s;}[data-aos][data-aos-delay="400"]{transition-delay:.4s;}[data-aos][data-aos-delay="500"]{transition-delay:.5s;}.gradient-divider{height:1px;background:linear-gradient(90deg,transparent,var(--clr-primary),var(--clr-accent),transparent);}@media(max-width:1024px){.hero-inner{grid-template-columns:1fr;}.hero-visual{display:none;}.about-inner{grid-template-columns:1fr;gap:40px;}.contact-inner{grid-template-columns:1fr;}.footer-top{grid-template-columns:1fr 1fr;}}@media(max-width:768px){.nav-links,.nav-cta{display:none;}.hamburger{display:flex;}.section{padding:70px 0;}.hero-title{font-size:2.5rem;}.form-row{grid-template-columns:1fr;}.footer-top{grid-template-columns:1fr;gap:32px;}.footer-bottom{flex-direction:column;text-align:center;}.keywords-container{column-count:3;}}@media(max-width:480px){.pricing-grid,.testimonials-grid{grid-template-columns:1fr;}.keywords-container{column-count:2;}}</style></head><body><nav id="navbar"><div class="container nav-inner"><a href="#hero" class="logo">Truegridleaf<span class="logo-dot"></span></a><ul class="nav-links"><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#about">About</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li></ul><div class="nav-cta"><a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a></div><button class="hamburger" id="hamburger-btn" aria-label="Open menu"><span></span><span></span><span></span></button></div></nav><div class="mobile-menu" id="mobile-menu"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div><section id="hero"><div class="hero-glow hero-glow-1"></div><div class="hero-glow hero-glow-2"></div><div class="hero-glow hero-glow-3"></div><div class="container"><div class="hero-inner"><div class="hero-content"><div class="hero-badge">Available for Projects</div><h1 class="hero-title">Crafting Digital<br><span class="line-2" id="typed-text">Experiences</span></h1><p class="hero-desc">I am <strong>Truegridleaf</strong> - a full-stack web developer building premium, high-performance websites that convert visitors into customers. Modern. Fast. Results-driven.</p><div class="hero-actions"><a href="#portfolio" class="btn btn-primary"><i class="fas fa-eye"></i> View Portfolio</a><a href="#contact" class="btn btn-outline"><i class="fas fa-comments"></i> Lets Talk</a></div><div class="hero-stats"><div><div class="hero-stat-num">150+</div><div class="hero-stat-label">Projects Delivered</div></div><div><div class="hero-stat-num">5 Star</div><div class="hero-stat-label">Client Rating</div></div><div><div class="hero-stat-num">3+</div><div class="hero-stat-label">Years Experience</div></div></div></div><div class="hero-visual"><div class="float-card float-card-1"><div class="float-icon" style="background:rgba(0,229,255,.15)">&#x26A1;</div><div><div style="font-size:.85rem">PageSpeed</div><div style="color:var(--clr-green);font-size:.8rem">99 / 100</div></div></div><div class="hero-card-main"><div style="display:flex;align-items:center;gap:8px;margin-bottom:16px"><div style="width:12px;height:12px;border-radius:50%;background:#ff5f57"></div><div style="width:12px;height:12px;border-radius:50%;background:#febc2e"></div><div style="width:12px;height:12px;border-radius:50%;background:#28c840"></div><span style="margin-left:8px;font-size:.78rem;color:var(--clr-muted)">truegridleaf.js</span></div><div class="code-block"><span class="cm">// Truegridleaf - Premium Dev</span><br><span class="kw">const</span> <span class="fn">developer</span> = {<br>&nbsp;&nbsp;name: <span class="str">"Truegridleaf"</span>,<br>&nbsp;&nbsp;skills: [<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"React"</span>, <span class="str">"Next.js"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"WordPress"</span>, <span class="str">"SEO"</span><br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;available: <span class="kw">true</span><br>};<span class="typing-cursor"></span></div><div class="hero-float-badges"><span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">JavaScript</span><span class="tech-badge">React</span><span class="tech-badge">Next.js</span><span class="tech-badge">WordPress</span><span class="tech-badge">Node.js</span><span class="tech-badge">SEO</span><span class="tech-badge">Figma</span></div></div><div class="float-card float-card-2"><div class="float-icon" style="background:rgba(0,255,178,.15)">&#x1F680;</div><div><div style="font-size:.85rem">Projects Done</div><div style="color:var(--clr-accent);font-size:.8rem">150+ Delivered</div></div></div></div></div></div></section><div class="marquee-section" aria-hidden="true"><div class="marquee-track"><div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-js-square"></i> JavaScript</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-react"></i> React</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-node-js"></i> Node.js</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-wordpress"></i> WordPress</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-figma"></i> Figma</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-github"></i> GitHub</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fas fa-database"></i> MongoDB</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fas fa-search"></i> SEO</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-php"></i> PHP</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-js-square"></i> JavaScript</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-react"></i> React</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-node-js"></i> Node.js</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-wordpress"></i> WordPress</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-figma"></i> Figma</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-github"></i> GitHub</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fas fa-database"></i> MongoDB</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fas fa-search"></i> SEO</div><div class="marquee-dot">&#x25CF;</div><div class="marquee-item"><i class="fab fa-php"></i> PHP</div></div></div><section id="services" class="section"><div class="container"><div class="text-center" data-aos><div class="section-label"><i class="fas fa-bolt"></i> What I Do</div><h2 class="section-title">Services That <span class="gradient-text">Drive Results</span></h2><p class="section-sub">From concept to launch - full-spectrum web development and digital marketing solutions tailored for your business.</p></div><div class="services-grid"><div class="service-card" data-aos data-aos-delay="100"><div class="service-icon" style="background:rgba(124,92,252,.15)"><i class="fas fa-code" style="color:var(--clr-primary)"></i></div><h3>Custom Web Development</h3><p>Pixel-perfect, fully responsive websites built from scratch with clean code, blazing speed, and modern frameworks.</p><a href="#contact" class="learn-more">Get Started <i class="fas fa-arrow-right"></i></a></div><div class="service-card" data-aos data-aos-delay="200"><div class="service-icon" style="background:rgba(0,229,255,.1)"><i class="fas fa-shopping-cart" style="color:var(--clr-accent)"></i></div><h3>eCommerce Solutions</h3><p>WooCommerce, Shopify and custom eCommerce stores designed to maximize conversions and streamline your sales funnel.</p><a href="#contact" class="learn-more">Get Started <i class="fas fa-arrow-right"></i></a></div><div class="service-card" data-aos data-aos-delay="300"><div class="service-icon" style="background:rgba(0,255,178,.1)"><i class="fas fa-search" style="color:var(--clr-green)"></i></div><h3>SEO Optimization</h3><p>Rank number 1 on Google with technical SEO, on-page optimization, keyword strategy, and authority link building.</p><a href="#contact" class="learn-more">Get Started <i class="fas fa-arrow-right"></i></a></div><div class="service-card" data-aos data-aos-delay="100"><div class="service-icon" style="background:rgba(251,191,36,.1)"><i class="fas fa-paint-brush" style="color:#fbbf24"></i></div><h3>UI / UX Design</h3><p>Stunning, user-centric interface designs in Figma - wireframes, prototypes, and complete design systems.</p><a href="#contact" class="learn-more">Get Started <i class="fas fa-arrow-right"></i></a></div><div class="service-card" data-aos data-aos-delay="200"><div class="service-icon" style="background:rgba(239,68,68,.1)"><i class="fas fa-mobile-alt" style="color:#ef4444"></i></div><h3>Responsive Websites</h3><p>Mobile-first designs that look flawless on every screen - phones, tablets, laptops, and desktops.</p><a href="#contact" class="learn-more">Get Started <i class="fas fa-arrow-right"></i></a></div><div class="service-card" data-aos data-aos-delay="300"><div class="service-icon" style="background:rgba(124,92,252,.15)"><i class="fas fa-chart-line" style="color:var(--clr-primary)"></i></div><h3>Digital Marketing</h3><p>Social media ads, Google Ads, email campaigns, and analytics-driven strategies to grow your online presence.</p><a href="#contact" class="learn-more">Get Started <i class="fas fa-arrow-right"></i></a></div></div></div></section><div class="gradient-divider"></div><section id="process" class="section"><div class="container"><div class="text-center" data-aos><div class="section-label"><i class="fas fa-route"></i> How It Works</div><h2 class="section-title">My <span class="gradient-text">Development Process</span></h2><p class="section-sub">A streamlined, transparent workflow that delivers results on time, every time.</p></div><div class="process-grid"><div class="process-step" data-aos data-aos-delay="100"><div class="step-num"><span class="step-num-inner">01</span></div><h4>Discovery</h4><p>We discuss your vision, goals, and target audience to create a strategic plan.</p></div><div class="process-step" data-aos data-aos-delay="200"><div class="step-num"><span class="step-num-inner">02</span></div><h4>Design</h4><p>Wireframes and high-fidelity mockups are crafted for your approval.</p></div><div class="process-step" data-aos data-aos-delay="300"><div class="step-num"><span class="step-num-inner">03</span></div><h4>Develop</h4><p>Clean, optimized code built with performance and scalability in mind.</p></div><div class="process-step" data-aos data-aos-delay="400"><div class="step-num"><span class="step-num-inner">04</span></div><h4>Test</h4><p>Cross-browser, mobile, and performance testing to ensure perfection.</p></div><div class="process-step" data-aos data-aos-delay="500"><div class="step-num"><span class="step-num-inner">05</span></div><h4>Launch</h4><p>Deployment, SSL, speed optimization, and going live seamlessly.</p></div></div></div></section><div class="gradient-divider"></div><section id="portfolio" class="section"><div class="container"><div class="text-center" data-aos><div class="section-label"><i class="fas fa-briefcase"></i> My Work</div><h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2><p class="section-sub">A showcase of websites, apps, and digital experiences crafted for clients worldwide.</p></div><div class="portfolio-filter"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="web">Websites</button><button class="filter-btn" data-filter="ecommerce">eCommerce</button><button class="filter-btn" data-filter="landing">Landing Pages</button><button class="filter-btn" data-filter="seo">SEO Projects</button></div><div class="portfolio-grid"><div class="portfolio-card" data-category="landing" data-aos data-aos-delay="100"><div class="portfolio-thumb pc-1"><div class="thumb-icon">&#x1F3AF;</div><div class="thumb-label">Pricing Landing Page</div></div><div class="portfolio-overlay"><h4>Premium Pricing Page</h4><p>Static Website Plans - Interactive UI</p><div class="overlay-links"><a href="https://truegridleaf-code.github.io/Pricing-Detail/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a><a href="#contact"><i class="fas fa-comment"></i></a></div></div></div><div class="portfolio-card" data-category="web" data-aos data-aos-delay="200"><div class="portfolio-thumb pc-2"><div class="thumb-icon">&#x1F4BC;</div><div class="thumb-label">Business Website</div></div><div class="portfolio-overlay"><h4>Corporate Business Site</h4><p>Modern Design - Fast Loading</p><div class="overlay-links"><a href="#contact"><i class="fas fa-comment"></i></a></div></div></div><div class="portfolio-card" data-category="ecommerce" data-aos data-aos-delay="300"><div class="portfolio-thumb pc-3"><div class="thumb-icon">&#x1F6D2;</div><div class="thumb-label">eCommerce Store</div></div><div class="portfolio-overlay"><h4>Fashion eCommerce</h4><p>WooCommerce - Payment Integration</p><div class="overlay-links"><a href="#contact"><i class="fas fa-comment"></i></a></div></div></div><div class="portfolio-card" data-category="seo" data-aos data-aos-delay="100"><div class="portfolio-thumb pc-4"><div class="thumb-icon">&#x1F4C8;</div><div class="thumb-label">SEO Campaign</div></div><div class="portfolio-overlay"><h4>Local Business SEO</h4><p>+300% Organic Traffic in 3 months</p><div class="overlay-links"><a href="#contact"><i class="fas fa-comment"></i></a></div></div></div><div class="portfolio-card" data-category="landing" data-aos data-aos-delay="200"><div class="portfolio-thumb pc-5"><div class="thumb-icon">&#x1F680;</div><div class="thumb-label">SaaS Landing Page</div></div><div class="portfolio-overlay"><h4>SaaS Product Launch</h4><p>High-conversion Landing Page</p><div class="overlay-links"><a href="#contact"><i class="fas fa-comment"></i></a></div></div></div><div class="portfolio-card" data-category="web" data-aos data-aos-delay="300"><div class="portfolio-thumb pc-6"><div class="thumb-icon">&#x1F3E5;</div><div class="thumb-label">Healthcare Website</div></div><div class="portfolio-overlay"><h4>Healthcare Portal</h4><p>Appointment Booking - Secure</p><div class="overlay-links"><a href="#contact"><i class="fas fa-comment"></i></a></div></div></div></div><div class="text-center" style="margin-top:48px" data-aos><a href="#contact" class="btn btn-primary"><i class="fas fa-folder-open"></i> Start Your Project</a></div></div></section><div class="gradient-divider"></div><section id="about" class="section"><div class="container"><div class="about-inner"><div class="about-visual" data-aos><div class="about-img-wrapper"><div style="text-align:center;padding:20px 0"><div style="font-size:5rem;margin-bottom:16px">&#x1F468;&#x200D;&#x1F4BB;</div><div style="font-family:var(--font-display);font-size:1.4rem;font-weight:800">Truegridleaf</div><div style="color:var(--clr-primary);font-size:.9rem;margin-top:6px">Full-Stack Web Developer</div><div style="display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap"><span class="tech-badge">React</span><span class="tech-badge">Next.js</span><span class="tech-badge">WordPress</span><span class="tech-badge">Node.js</span></div></div><div class="about-stats-grid"><div class="about-stat"><div class="about-stat-n">150+</div><div class="about-stat-l">Projects Delivered</div></div><div class="about-stat"><div class="about-stat-n">50+</div><div class="about-stat-l">Happy Clients</div></div><div class="about-stat"><div class="about-stat-n">3+</div><div class="about-stat-l">Years Experience</div></div><div class="about-stat"><div class="about-stat-n">5 Star</div><div class="about-stat-l">Average Rating</div></div></div></div></div><div data-aos data-aos-delay="200"><div class="section-label"><i class="fas fa-user"></i> About Me</div><h2 class="section-title">Why Choose <span class="gradient-text">Truegridleaf?</span></h2><p style="color:var(--clr-muted);line-height:1.9;margin-bottom:8px">I am a passionate full-stack web developer with a proven track record of delivering exceptional digital experiences. I combine technical expertise with creative design thinking to build websites that not only look stunning but also drive real business results.</p><div class="checklist"><div class="checklist-item"><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Premium Quality Code</strong><p>Clean, semantic, well-documented code following industry best practices.</p></div></div><div class="checklist-item"><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>SEO-First Approach</strong><p>Every website is built with search engine optimization baked in from day one.</p></div></div><div class="checklist-item"><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Lightning-Fast Delivery</strong><p>Fast turnaround without compromising on quality or attention to detail.</p></div></div><div class="checklist-item"><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Ongoing Support</strong><p>Post-launch maintenance, updates, and support to keep your site running perfectly.</p></div></div><div class="checklist-item"><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Transparent Communication</strong><p>Regular updates and complete transparency throughout the project lifecycle.</p></div></div></div><div style="margin-top:40px"><a href="#contact" class="btn btn-primary" style="margin-right:16px"><i class="fas fa-rocket"></i> Start a Project</a><a href="https://truegridleaf-code.github.io/Pricing-Detail/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fas fa-tag"></i> View Pricing</a></div></div></div></div></section><div class="gradient-divider"></div><section id="pricing" class="section"><div class="container"><div class="text-center" data-aos><div class="section-label"><i class="fas fa-rocket"></i> Fast, Secure &amp; Fully Managed</div><h2 class="section-title">Static Website <span class="gradient-text">Plans</span></h2><p class="section-sub" style="max-width:800px; margin-inline:auto;">Bina tension ke apna business online le jayein &mdash; Domain, hosting, security aur SEO sab kuch included. Aap sirf requirement bataiye, baaki humari responsibility.</p></div><div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 40px;"><div class="pricing-card" data-aos data-aos-delay="100"><div class="pricing-name">Monthly</div><div class="pricing-price"><span class="curr">&#8377;</span>1,499<span class="period">/mo</span></div><p class="pricing-desc" style="margin-bottom:15px; font-weight:600;">Total: &#8377;1,499 / 1 Month<br><span style="color:transparent;font-size:0.8rem;">&nbsp;</span></p><div class="pricing-features"><div class="pricing-feature"><i class="fas fa-check-circle"></i> 2 Small Updates</div></div><a href="#contact" class="pricing-btn">Select Plan</a></div><div class="pricing-card" data-aos data-aos-delay="200"><div class="pricing-name">Quarterly</div><div class="pricing-price"><span class="curr">&#8377;</span>1,333<span class="period">/mo</span></div><p class="pricing-desc" style="margin-bottom:15px; font-weight:600;">Total: &#8377;3,999 / 3 Months<br><span style="color:var(--clr-green);font-size:0.85rem;">Aapki Bachat: &#8377;498 (~11%)</span></p><div class="pricing-features"><div class="pricing-feature"><i class="fas fa-check-circle"></i> 6 Small Updates</div></div><a href="#contact" class="pricing-btn">Select Plan</a></div><div class="pricing-card" data-aos data-aos-delay="300"><div class="pricing-name">Half-Yearly</div><div class="pricing-price"><span class="curr">&#8377;</span>1,250<span class="period">/mo</span></div><p class="pricing-desc" style="margin-bottom:15px; font-weight:600;">Total: &#8377;7,499 / 6 Months<br><span style="color:var(--clr-green);font-size:0.85rem;">Aapki Bachat: &#8377;1,495 (~17%)</span></p><div class="pricing-features"><div class="pricing-feature"><i class="fas fa-check-circle"></i> 15 Small Updates</div></div><a href="#contact" class="pricing-btn">Select Plan</a></div><div class="pricing-card featured" data-aos data-aos-delay="400"><span class="pricing-popular">&#x1F525; BEST VALUE</span><div class="pricing-name">Yearly</div><div class="pricing-price" style="background:linear-gradient(135deg,var(--clr-primary),var(--clr-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"><span class="curr">&#8377;</span>1,167<span class="period" style="-webkit-text-fill-color:var(--clr-muted)">/mo</span></div><p class="pricing-desc" style="margin-bottom:15px; font-weight:600;">Total: &#8377;13,999 / 12 Months<br><span style="color:var(--clr-green);font-size:0.85rem;">Aapki Bachat: &#8377;3,989 (~22%)</span></p><div class="pricing-features"><div class="pricing-feature"><i class="fas fa-check-circle"></i> Unlimited Small Updates</div></div><a href="#contact" class="pricing-btn">Select Plan</a></div></div><p class="text-center" style="color:var(--clr-muted);font-size:.85rem;margin-top:20px; font-style:italic;">* Yearly plan ek saath one-time payment hai - koi monthly deduction nahi.</p><div style="margin-top:60px;background:var(--clr-card);border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:40px;" data-aos><div class="text-center" style="margin-bottom:40px;"><h3 style="font-size:1.8rem;font-weight:700;">Har Plan Mein Ye Sab Milega &#x2728;</h3><p style="color:var(--clr-muted);font-size:.95rem;margin-top:10px;">Premium features standard ke roop mein, bina kisi extra chhupe hue kharch ke.</p></div><div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:30px;"><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-mobile-alt"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Fully Responsive</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">Mobile, Tablet &amp; Desktop friendly website.</p></div></div><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-globe"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">1 Free Domain</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">.shop / .online / .space / .sbs / .fun / .com / .in / .co.in</p></div></div><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-server"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Unlimited Hosting</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">Netlify/Vercel par fast loading speed &amp; 99.9% uptime.</p></div></div><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-lock"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Free SSL</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">HTTPS secure browsing and data protection.</p></div></div><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-search"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">On-Page SEO</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">Google rank ke liye fully ready technical setup.</p></div></div><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-envelope-open-text"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Contact Form</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">Working form, direct aapke email pe enquiries.</p></div></div><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-chart-pie"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Analytics Setup</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">Google Search Console &amp; Analytics integration.</p></div></div><div style="display:flex;gap:15px;align-items:flex-start;"><div style="color:var(--clr-primary);font-size:1.8rem;width:35px;text-align:center;"><i class="fas fa-headset"></i></div><div><h4 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Premium Support</h4><p style="color:var(--clr-muted);font-size:.9rem;line-height:1.5;">Direct WhatsApp/Email support &amp; monitoring.</p></div></div></div></div></div></section><div class="gradient-divider"></div><section id="testimonials" class="section"><div class="container"><div class="text-center" data-aos><div class="section-label"><i class="fas fa-star"></i> Testimonials</div><h2 class="section-title">What Clients <span class="gradient-text">Say About Me</span></h2><p class="section-sub">Real feedback from real clients who trusted me with their digital presence.</p></div><div class="testimonials-grid"><div class="testimonial-card" data-aos data-aos-delay="100"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">Truegridleaf delivered an absolutely stunning website for my business. The attention to detail, speed of delivery, and post-launch support were all exceptional. Highly recommend!</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,#7c5cfc,#9c6fff)">R</div><div><div class="author-name">Rahul Sharma</div><div class="author-role">CEO, TechStartup India</div></div></div></div><div class="testimonial-card" data-aos data-aos-delay="200"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">My eCommerce store went from zero to 200+ orders per month after Truegridleaf redesigned it and implemented SEO. The ROI has been incredible. Best investment I have made.</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,#00e5ff,#0099cc)">P</div><div><div class="author-name">Priya Mehta</div><div class="author-role">Owner, FashionBoutique.in</div></div></div></div><div class="testimonial-card" data-aos data-aos-delay="300"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">Professional, communicative, and incredibly talented. The website was delivered on time, within budget, and looks better than I ever imagined. Will definitely work with him again!</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,#00ffb2,#009966)">A</div><div><div class="author-name">Arjun Patel</div><div class="author-role">Founder, GreenEarth NGO</div></div></div></div><div class="testimonial-card" data-aos data-aos-delay="100"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">I needed a landing page urgently and Truegridleaf had it done in 48 hours. It looks stunning and my conversion rate jumped by 40%. Absolutely worth every rupee!</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,#fbbf24,#f59e0b)">S</div><div><div class="author-name">Sanjay Kumar</div><div class="author-role">Marketing Director, EduPlatform</div></div></div></div><div class="testimonial-card" data-aos data-aos-delay="200"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">The SEO work done by Truegridleaf brought my website from page 10 to page 1 on Google in just 2 months. I am now getting 500+ organic visitors daily. Game changer!</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,#ef4444,#dc2626)">M</div><div><div class="author-name">Meera Singh</div><div class="author-role">Blogger and Content Creator</div></div></div></div><div class="testimonial-card" data-aos data-aos-delay="300"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">Working with Truegridleaf was a seamless experience. Clear communication, fast revisions, and the final product exceeded all expectations. A truly skilled developer!</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,#7c5cfc,#00e5ff)">V</div><div><div class="author-name">Vikram Nair</div><div class="author-role">Restaurant Owner, Kerala</div></div></div></div></div></div></section><div class="gradient-divider"></div><section id="contact" class="section"><div class="container"><div class="text-center" data-aos><div class="section-label"><i class="fas fa-envelope"></i> Get In Touch</div><h2 class="section-title">Start Your <span class="gradient-text">Project Today</span></h2><p class="section-sub">Ready to build something amazing? Lets discuss your project and create a digital experience that drives real results.</p></div><div class="contact-inner"><div data-aos><p style="color:var(--clr-muted);margin-bottom:24px;font-size:.95rem;line-height:1.8">Whether you need a brand new website, a redesign, SEO optimization, or a full eCommerce store - I am here to help. Reach out directly.</p><div class="contact-links"><a href="mailto:truegridleaf@gmail.com" class="contact-link-item"><div class="contact-link-icon"><i class="fas fa-envelope"></i></div><div><div style="font-weight:600;margin-bottom:2px">Email Me</div><div style="color:var(--clr-muted);font-size:.83rem">truegridleaf@gmail.com</div></div><i class="fas fa-arrow-right" style="margin-left:auto;color:var(--clr-primary)"></i></a><a href="https://wa.me/919999999999" target="_blank" rel="noopener" class="contact-link-item"><div class="contact-link-icon" style="background:rgba(37,211,102,.12);color:#25d366"><i class="fab fa-whatsapp"></i></div><div><div style="font-weight:600;margin-bottom:2px">WhatsApp</div><div style="color:var(--clr-muted);font-size:.83rem">Chat for quick response</div></div><i class="fas fa-arrow-right" style="margin-left:auto;color:#25d366"></i></a><a href="https://truegridleaf-code.github.io/Pricing-Detail/" target="_blank" rel="noopener" class="contact-link-item"><div class="contact-link-icon"><i class="fas fa-tag"></i></div><div><div style="font-weight:600;margin-bottom:2px">Detailed Pricing</div><div style="color:var(--clr-muted);font-size:.83rem">View all plans and packages</div></div><i class="fas fa-arrow-right" style="margin-left:auto;color:var(--clr-primary)"></i></a><div class="contact-link-item" style="cursor:default"><div class="contact-link-icon" style="background:rgba(0,255,178,.12);color:var(--clr-green)"><i class="fas fa-clock"></i></div><div><div style="font-weight:600;margin-bottom:2px">Response Time</div><div style="color:var(--clr-muted);font-size:.83rem">Within 2-4 hours</div></div></div></div></div><div class="contact-form-wrapper" data-aos data-aos-delay="200"><h3 style="font-size:1.3rem;font-weight:700;margin-bottom:24px">Send Me a Message</h3><form id="contact-form" novalidate><div class="form-row"><div class="form-group"><label for="c-name">Full Name</label><input type="text" id="c-name" name="name" placeholder="Your full name" required/></div><div class="form-group"><label for="c-email">Email Address</label><input type="email" id="c-email" name="email" placeholder="your@email.com" required/></div></div><div class="form-row"><div class="form-group"><label for="c-phone">Phone / WhatsApp</label><input type="tel" id="c-phone" name="phone" placeholder="+91 00000 00000"/></div><div class="form-group"><label for="c-budget">Budget Range</label><select id="c-budget" name="budget"><option value="">Select your budget</option><option>Under &#8377;5,000</option><option>&#8377;5,000 - &#8377;15,000</option><option>&#8377;15,000 - &#8377;35,000</option><option>&#8377;35,000+</option><option>Lets Discuss</option></select></div></div><div class="form-group"><label for="c-service">Service Needed</label><select id="c-service" name="service"><option value="">Select a service</option><option>Custom Website</option><option>eCommerce Store</option><option>SEO Optimization</option><option>Landing Page</option><option>Website Redesign</option><option>Digital Marketing</option><option>Other</option></select></div><div class="form-group"><label for="c-msg">Project Details</label><textarea id="c-msg" name="message" placeholder="Tell me about your project..." required></textarea></div><button type="submit" class="form-submit" id="contact-submit-btn"><i class="fas fa-paper-plane" style="margin-right:8px"></i> Send Message</button><div id="form-success" style="display:none;text-align:center;margin-top:16px;color:var(--clr-green);font-weight:600;padding:12px;border-radius:10px;background:rgba(0,255,178,.08)"><i class="fas fa-check-circle"></i> Message sent! I will get back to you within 2-4 hours.</div></form></div></div></div></section><div class="gradient-divider"></div><section id="seo-keywords"><div class="container"><div class="seo-keywords-header"><h2>Web Development and Digital Services Keywords</h2><p>Truegridleaf - Premium Web Developer covering all web and digital marketing keywords. Add more keywords below.</p></div><!-- ======================================================= ADD YOUR KEYWORDS BELOW. Each keyword = one span tag. Copy: <span class="kw-tag">your keyword here</span> There is NO LIMIT. Add as many as you want! ======================================================= --><div class="keywords-container" id="keywords-container"><span class="kw-tag">web developer</span><span class="kw-tag">website design</span><span class="kw-tag">web development</span><span class="kw-tag">custom website</span><span class="kw-tag">website designer</span><span class="kw-tag">affordable web design</span><span class="kw-tag">professional website</span><span class="kw-tag">business website</span><span class="kw-tag">eCommerce website</span><span class="kw-tag">online store development</span><span class="kw-tag">WordPress developer</span><span class="kw-tag">WordPress website</span><span class="kw-tag">React developer</span><span class="kw-tag">Next.js developer</span><span class="kw-tag">full stack developer</span><span class="kw-tag">front end developer</span><span class="kw-tag">back end developer</span><span class="kw-tag">HTML CSS developer</span><span class="kw-tag">JavaScript developer</span><span class="kw-tag">Node.js developer</span><span class="kw-tag">SEO optimization</span><span class="kw-tag">search engine optimization</span><span class="kw-tag">local SEO</span><span class="kw-tag">technical SEO</span><span class="kw-tag">on-page SEO</span><span class="kw-tag">off-page SEO</span><span class="kw-tag">Google ranking</span><span class="kw-tag">keyword research</span><span class="kw-tag">backlink building</span><span class="kw-tag">digital marketing</span><span class="kw-tag">social media marketing</span><span class="kw-tag">Google Ads</span><span class="kw-tag">Facebook Ads</span><span class="kw-tag">Instagram marketing</span><span class="kw-tag">email marketing</span><span class="kw-tag">content marketing</span><span class="kw-tag">UI UX design</span><span class="kw-tag">user interface design</span><span class="kw-tag">user experience design</span><span class="kw-tag">Figma design</span><span class="kw-tag">responsive design</span><span class="kw-tag">mobile-friendly website</span><span class="kw-tag">landing page design</span><span class="kw-tag">high-converting landing page</span><span class="kw-tag">portfolio website</span><span class="kw-tag">freelance web developer</span><span class="kw-tag">hire web developer</span><span class="kw-tag">web developer India</span><span class="kw-tag">cheap website design</span><span class="kw-tag">fast website delivery</span><span class="kw-tag">website redesign</span><span class="kw-tag">website maintenance</span><span class="kw-tag">website speed optimization</span><span class="kw-tag">website hosting</span><span class="kw-tag">domain registration</span><span class="kw-tag">SSL certificate</span><span class="kw-tag">WooCommerce developer</span><span class="kw-tag">Shopify developer</span><span class="kw-tag">payment gateway integration</span><span class="kw-tag">online payment setup</span><span class="kw-tag">Razorpay integration</span><span class="kw-tag">PayPal integration</span><span class="kw-tag">small business website</span><span class="kw-tag">startup website</span><span class="kw-tag">corporate website</span><span class="kw-tag">NGO website</span><span class="kw-tag">school website</span><span class="kw-tag">hospital website</span><span class="kw-tag">restaurant website</span><span class="kw-tag">hotel website</span><span class="kw-tag">travel website</span><span class="kw-tag">real estate website</span><span class="kw-tag">education website</span><span class="kw-tag">blog website</span><span class="kw-tag">news website</span><span class="kw-tag">fashion website</span><span class="kw-tag">beauty salon website</span><span class="kw-tag">gym website</span><span class="kw-tag">dental clinic website</span><span class="kw-tag">law firm website</span><span class="kw-tag">CA website</span><span class="kw-tag">coaching website</span><span class="kw-tag">photography website</span><span class="kw-tag">event management website</span><span class="kw-tag">logistics website</span><span class="kw-tag">manufacturing website</span><span class="kw-tag">construction company website</span><span class="kw-tag">interior design website</span><span class="kw-tag">architecture website</span><span class="kw-tag">SaaS website</span><span class="kw-tag">app landing page</span><span class="kw-tag">agency website</span><span class="kw-tag">web design agency</span><span class="kw-tag">website development company</span><span class="kw-tag">Google Analytics setup</span><span class="kw-tag">Google Search Console</span><span class="kw-tag">website audit</span><span class="kw-tag">competitor analysis</span><span class="kw-tag">conversion rate optimization</span><span class="kw-tag">lead generation website</span><span class="kw-tag">contact form integration</span><span class="kw-tag">WhatsApp chat integration</span><span class="kw-tag">booking system website</span><span class="kw-tag">appointment booking website</span><span class="kw-tag">membership website</span><span class="kw-tag">online course website</span><span class="kw-tag">LMS website</span><span class="kw-tag">multi-language website</span><span class="kw-tag">dark mode website</span><span class="kw-tag">animations website</span><span class="kw-tag">glassmorphism design</span><span class="kw-tag">parallax website</span><span class="kw-tag">one page website</span><span class="kw-tag">single page application</span><span class="kw-tag">Progressive Web App</span><span class="kw-tag">PWA development</span><span class="kw-tag">API integration</span><span class="kw-tag">REST API development</span><span class="kw-tag">MongoDB database</span><span class="kw-tag">MySQL database</span><span class="kw-tag">Firebase integration</span><span class="kw-tag">cloud hosting setup</span><span class="kw-tag">AWS deployment</span><span class="kw-tag">Vercel deployment</span><span class="kw-tag">Netlify deployment</span><span class="kw-tag">GitHub Pages</span><span class="kw-tag">website performance</span><span class="kw-tag">core web vitals</span><span class="kw-tag">page speed</span><span class="kw-tag">lazy loading</span><span class="kw-tag">image optimization</span><span class="kw-tag">schema markup</span><span class="kw-tag">structured data</span><span class="kw-tag">Open Graph tags</span><span class="kw-tag">meta tags optimization</span><span class="kw-tag">sitemap creation</span><span class="kw-tag">robots.txt setup</span><span class="kw-tag">canonical URL</span><span class="kw-tag">301 redirect setup</span><span class="kw-tag">broken link fix</span><span class="kw-tag">website security</span><span class="kw-tag">GDPR compliance</span><span class="kw-tag">privacy policy page</span><span class="kw-tag">terms and conditions page</span><span class="kw-tag">accessibility website</span><span class="kw-tag">web developer for hire</span><span class="kw-tag">best web developer</span><span class="kw-tag">top web developer India</span><span class="kw-tag">website developer near me</span><span class="kw-tag">Truegridleaf</span><span class="kw-tag">truegridleaf web developer</span><span class="kw-tag">truegridleaf website</span><span class="kw-tag">truegridleaf SEO</span><span class="kw-tag">truegridleaf design</span><span class="kw-tag">truegridleaf portfolio</span><span class="kw-tag">truegridleaf ecommerce</span><span class="kw-tag">truegridleaf landing page</span><!-- ADD MORE KEYWORDS HERE: <span class="kw-tag">your keyword</span> --></div></div></section><footer id="footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a href="#hero" class="logo">Truegridleaf<span class="logo-dot"></span></a><p>Premium web development and digital marketing solutions. Building beautiful, fast, and SEO-optimized websites that grow your business.</p><div class="footer-social"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://wa.me/919999999999" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col"><h5>Services</h5><div class="footer-links"><a href="#services">Web Development</a><a href="#services">eCommerce</a><a href="#services">SEO Optimization</a><a href="#services">UI/UX Design</a><a href="#services">Digital Marketing</a><a href="#services">Landing Pages</a></div></div><div class="footer-col"><h5>Company</h5><div class="footer-links"><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div></div><div class="footer-col"><h5>Quick Links</h5><div class="footer-links"><a href="https://truegridleaf-code.github.io/Pricing-Detail/" target="_blank" rel="noopener">Detailed Pricing</a><a href="#contact">Get a Quote</a><a href="#contact">Hire Me</a><a href="#contact">Free Consultation</a></div></div></div><div class="footer-bottom"><div>&#169; 2026 Truegridleaf. All rights reserved. Crafted with &#10084;</div><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div></div></div></footer><a href="https://wa.me/919999999999" id="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a><button id="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button><script>const navbar=document.getElementById("navbar");window.addEventListener("scroll",()=>{navbar.classList.toggle("scrolled",window.scrollY>50);document.getElementById("scroll-top").classList.toggle("visible",window.scrollY>400);});document.getElementById("scroll-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));const hamburger=document.getElementById("hamburger-btn");const mobileMenu=document.getElementById("mobile-menu");hamburger.addEventListener("click",()=>{const o=mobileMenu.classList.toggle("open");hamburger.setAttribute("aria-expanded",o);});mobileMenu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>mobileMenu.classList.remove("open")));const words=["Experiences","Websites","Solutions","Results","Success"];let wi=0,ci=0,del=false;const te=document.getElementById("typed-text");function tl(){const w=words[wi];te.textContent=del?w.slice(0,ci--):w.slice(0,++ci);if(!del&&ci===w.length){del=true;setTimeout(tl,1800);return;}if(del&&ci===0){del=false;wi=(wi+1)%words.length;}setTimeout(tl,del?60:100);}setTimeout(tl,1200);const obs=new IntersectionObserver((e)=>{e.forEach(i=>{if(i.isIntersecting){i.target.classList.add("aos-animate");obs.unobserve(i.target);}});},{threshold:0.12});document.querySelectorAll("[data-aos]").forEach(el=>obs.observe(el));document.querySelectorAll(".filter-btn").forEach(b=>{b.addEventListener("click",()=>{document.querySelectorAll(".filter-btn").forEach(x=>x.classList.remove("active"));b.classList.add("active");const f=b.dataset.filter;document.querySelectorAll(".portfolio-card").forEach(c=>{c.style.display=(f==="all"||c.dataset.category===f)?"":"none";});});});const form=document.getElementById("contact-form");form.addEventListener("submit",function(e){e.preventDefault();const btn=document.getElementById("contact-submit-btn");btn.innerHTML="<i class=\"fas fa-spinner fa-spin\" style=\"margin-right:8px\"></i> Sending...";btn.disabled=true;setTimeout(()=>{document.getElementById("form-success").style.display="block";btn.innerHTML="<i class=\"fas fa-check\" style=\"margin-right:8px\"></i> Sent!";form.reset();},1500);});document.querySelectorAll("a[href^=\"#\"]").forEach(l=>{l.addEventListener("click",(e)=>{const t=document.querySelector(l.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth"});}});});</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lalit Pigeon Net Bamboo Chick Blind Shop – Expert bird control solutions with durable nets and stylish bamboo chick blinds in Gurugram, Haryana. Open 24 hours, 7 days a week." />
+  <meta name="keywords" content="pigeon net, bamboo chick blind, bird control, Gurugram, Gurgaon, balcony net, window net, pigeon proofing" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    {
+      const colorScheme = localStorage.getItem("color-scheme");
+      if (colorScheme) {
+        document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+      }
+    }
+  </script>
+  <title>Lalit Pigeon Net &amp; Bamboo Chick Blind Shop | Gurugram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --clr-primary: #2e7d32;
+      --clr-primary-light: #4caf50;
+      --clr-primary-dark: #1b5e20;
+      --clr-accent: #ff8f00;
+      --clr-accent-light: #ffb300;
+      --clr-whatsapp: #25d366;
+      --clr-bg-light: #f9fafb;
+      --clr-bg-dark: #0f1117;
+      --clr-surface-light: #ffffff;
+      --clr-surface-dark: #1a1d27;
+      --clr-card-light: #ffffff;
+      --clr-card-dark: #22263a;
+      --clr-text-light: #1a1a2e;
+      --clr-text-dark: #e8eaf6;
+      --clr-muted-light: #5c6370;
+      --clr-muted-dark: #9da3b4;
+      --clr-border-light: #e0e7ef;
+      --clr-border-dark: #2c3050;
+      --clr-bg: var(--clr-bg-light);
+      --clr-surface: var(--clr-surface-light);
+      --clr-card: var(--clr-card-light);
+      --clr-text: var(--clr-text-light);
+      --clr-muted: var(--clr-muted-light);
+      --clr-border: var(--clr-border-light);
+      @media (prefers-color-scheme: dark) {
+        --clr-bg: var(--clr-bg-dark);
+        --clr-surface: var(--clr-surface-dark);
+        --clr-card: var(--clr-card-dark);
+        --clr-text: var(--clr-text-dark);
+        --clr-muted: var(--clr-muted-dark);
+        --clr-border: var(--clr-border-dark);
+      }
+      color-scheme: light dark;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+      --shadow-md: 0 8px 24px rgba(0,0,0,.12);
+      --shadow-lg: 0 16px 48px rgba(0,0,0,.18);
+      --radius: 16px;
+      --radius-sm: 8px;
+      --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+      --font: 'Poppins', system-ui, sans-serif;
+    }
+    :root[data-theme="dark"] {
+      --clr-bg: var(--clr-bg-dark); --clr-surface: var(--clr-surface-dark);
+      --clr-card: var(--clr-card-dark); --clr-text: var(--clr-text-dark);
+      --clr-muted: var(--clr-muted-dark); --clr-border: var(--clr-border-dark);
+    }
+    :root[data-theme="light"] {
+      --clr-bg: var(--clr-bg-light); --clr-surface: var(--clr-surface-light);
+      --clr-card: var(--clr-card-light); --clr-text: var(--clr-text-light);
+      --clr-muted: var(--clr-muted-light); --clr-border: var(--clr-border-light);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font);
+      background-color: var(--clr-bg);
+      color: var(--clr-text);
+      transition: background-color var(--transition), color var(--transition);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Scroll Reveal */
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* Utility */
+    .container { width: min(100%, 1120px); margin-inline: auto; padding-inline: 1.5rem; }
+    .section { padding-block: 5rem; }
+    .section-label { display: inline-block; font-size:.8rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--clr-primary-light); margin-bottom:.75rem; }
+    .section-title { font-size: clamp(1.75rem,4vw,2.8rem); font-weight:800; line-height:1.2; color:var(--clr-text); margin-bottom:1rem; }
+    .section-subtitle { font-size:1rem; color:var(--clr-muted); max-width:600px; }
+    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.85rem 1.75rem; border-radius:50px; font-family:var(--font); font-size:.95rem; font-weight:600; cursor:pointer; border:none; text-decoration:none; transition:all var(--transition); }
+    .btn-primary { background:linear-gradient(135deg,var(--clr-primary-light),var(--clr-primary-dark)); color:#fff; box-shadow:0 4px 20px rgba(46,125,50,.35); }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(46,125,50,.45); }
+    .btn-whatsapp { background:linear-gradient(135deg,#25d366,#128c7e); color:#fff; box-shadow:0 4px 20px rgba(37,211,102,.35); }
+    .btn-whatsapp:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,.45); }
+    .btn-outline { background:transparent; color:var(--clr-text); border:2px solid var(--clr-border); }
+    .btn-outline:hover { border-color:var(--clr-primary-light); color:var(--clr-primary-light); }
+
+    /* Navbar */
+    .navbar { position:fixed; top:0; left:0; right:0; z-index:100; background:color-mix(in srgb,var(--clr-surface) 88%,transparent); -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); border-bottom:1px solid var(--clr-border); transition:background var(--transition),border-color var(--transition); }
+    .navbar-inner { display:flex; align-items:center; justify-content:space-between; padding-block:1rem; }
+    .navbar-logo { display:flex; align-items:center; gap:.75rem; }
+    .navbar-logo .logo-icon { width:42px; height:42px; background:linear-gradient(135deg,var(--clr-primary-light),var(--clr-primary-dark)); border-radius:10px; display:grid; place-items:center; font-size:1.4rem; flex-shrink:0; }
+    .navbar-logo .logo-text { font-size:.95rem; font-weight:700; line-height:1.2; color:var(--clr-text); }
+    .navbar-logo .logo-sub { font-size:.7rem; color:var(--clr-primary-light); font-weight:500; }
+    .nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
+    .nav-links a { font-size:.9rem; font-weight:500; color:var(--clr-muted); transition:color var(--transition); }
+    .nav-links a:hover { color:var(--clr-primary-light); }
+    .nav-actions { display:flex; align-items:center; gap:.75rem; }
+    .theme-toggle { width:40px; height:40px; border-radius:50%; border:1.5px solid var(--clr-border); background:var(--clr-card); color:var(--clr-text); font-size:1.1rem; cursor:pointer; display:grid; place-items:center; transition:all var(--transition); }
+    .theme-toggle:hover { border-color:var(--clr-primary-light); color:var(--clr-primary-light); }
+    .hamburger { display:none; width:40px; height:40px; border-radius:var(--radius-sm); border:1.5px solid var(--clr-border); background:transparent; cursor:pointer; flex-direction:column; align-items:center; justify-content:center; gap:5px; }
+    .hamburger span { display:block; width:20px; height:2px; background:var(--clr-text); border-radius:2px; transition:all var(--transition); }
+    .mobile-nav { display:none; position:fixed; inset:0; z-index:99; background:color-mix(in srgb,var(--clr-surface) 97%,transparent); -webkit-backdrop-filter:blur(20px); backdrop-filter:blur(20px); flex-direction:column; align-items:center; justify-content:center; gap:2rem; list-style:none; }
+    .mobile-nav.open { display:flex; }
+    .mobile-nav a { font-size:1.5rem; font-weight:700; color:var(--clr-text); transition:color var(--transition); }
+    .mobile-nav a:hover { color:var(--clr-primary-light); }
+    .mobile-nav-close { position:absolute; top:1.5rem; right:1.5rem; background:none; border:none; font-size:2rem; cursor:pointer; color:var(--clr-text); }
+
+    /* Hero */
+    .hero { min-height:100svh; display:flex; align-items:center; position:relative; overflow:hidden; padding-top:80px; }
+    .hero-bg { position:absolute; inset:0; background: radial-gradient(ellipse 80% 60% at 70% 40%,color-mix(in srgb,var(--clr-primary) 12%,transparent) 0%,transparent 70%), radial-gradient(ellipse 50% 40% at 20% 80%,color-mix(in srgb,var(--clr-accent) 8%,transparent) 0%,transparent 60%); }
+    .hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
+    .hero-badge { display:inline-flex; align-items:center; gap:.5rem; background:color-mix(in srgb,var(--clr-primary-light) 15%,transparent); color:var(--clr-primary-light); border:1px solid color-mix(in srgb,var(--clr-primary-light) 30%,transparent); border-radius:50px; padding:.35rem 1rem; font-size:.8rem; font-weight:600; margin-bottom:1.5rem; }
+    .hero-title { font-size:clamp(2rem,5vw,3.5rem); font-weight:800; line-height:1.15; margin-bottom:1.25rem; }
+    .hero-title .highlight { background:linear-gradient(135deg,var(--clr-primary-light),var(--clr-accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .hero-desc { font-size:1.05rem; color:var(--clr-muted); margin-bottom:2rem; max-width:480px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:2.5rem; }
+    .hero-stats { display:flex; gap:2rem; flex-wrap:wrap; }
+    .hero-stat .stat-number { font-size:1.5rem; font-weight:800; color:var(--clr-primary-light); }
+    .hero-stat .stat-label { font-size:.78rem; color:var(--clr-muted); font-weight:500; }
+    .hero-visual { display:flex; flex-direction:column; gap:1rem; }
+    .hero-card-main { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); overflow:hidden; box-shadow:var(--shadow-lg); aspect-ratio:4/3; position:relative; display:grid; place-items:center; }
+    .hero-card-main .net-pattern { position:absolute; inset:0; opacity:.05; background-image: linear-gradient(rgba(76,175,80,1) 1px,transparent 1px), linear-gradient(90deg,rgba(76,175,80,1) 1px,transparent 1px); background-size:30px 30px; }
+    .hero-card-main .content-center { position:relative; z-index:1; text-align:center; }
+    .hero-card-main .illustration { font-size:5rem; }
+    .hero-card-main .illustration-text { font-family:'Dancing Script',cursive; font-size:1.6rem; color:var(--clr-primary-light); margin-top:.5rem; }
+    .hero-cards-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .hero-mini-card { background:var(--clr-card); border-radius:var(--radius-sm); border:1px solid var(--clr-border); padding:1rem; box-shadow:var(--shadow-sm); display:flex; align-items:center; gap:.75rem; }
+    .hero-mini-card .mini-icon { font-size:1.8rem; }
+    .hero-mini-card .mini-title { font-size:.85rem; font-weight:600; color:var(--clr-text); }
+    .hero-mini-card .mini-sub { font-size:.72rem; color:var(--clr-muted); }
+    .open-badge { position:absolute; top:1rem; right:1rem; background:#22c55e; color:#fff; border-radius:50px; padding:.3rem .9rem; font-size:.75rem; font-weight:700; display:flex; align-items:center; gap:.4rem; z-index:2; }
+    .open-badge::before { content:''; width:7px; height:7px; border-radius:50%; background:#fff; animation:pulse 1.5s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
+
+    /* Services */
+    .services { background:var(--clr-surface); }
+    .services-header { text-align:center; margin-bottom:3.5rem; }
+    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
+    .service-card { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); padding:2rem 1.5rem; box-shadow:var(--shadow-sm); transition:all var(--transition); position:relative; overflow:hidden; }
+    .service-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--clr-primary-light),var(--clr-accent)); transform:scaleX(0); transform-origin:left; transition:transform var(--transition); }
+    .service-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); border-color:var(--clr-primary-light); }
+    .service-card:hover::before { transform:scaleX(1); }
+    .service-icon { font-size:2.8rem; margin-bottom:1.25rem; display:block; }
+    .service-title { font-size:1.1rem; font-weight:700; margin-bottom:.5rem; color:var(--clr-text); }
+    .service-desc { font-size:.88rem; color:var(--clr-muted); line-height:1.7; }
+
+    /* Why Choose Us */
+    .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+    .why-features { display:flex; flex-direction:column; gap:1.5rem; }
+    .why-feature { display:flex; gap:1rem; align-items:flex-start; }
+    .why-feature-icon { width:48px; height:48px; border-radius:var(--radius-sm); background:color-mix(in srgb,var(--clr-primary-light) 12%,transparent); display:grid; place-items:center; font-size:1.4rem; flex-shrink:0; }
+    .why-feature-title { font-size:1rem; font-weight:700; margin-bottom:.3rem; }
+    .why-feature-desc { font-size:.875rem; color:var(--clr-muted); }
+    .why-visual { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); padding:2rem; box-shadow:var(--shadow-md); }
+    .why-visual-title { font-size:1.2rem; font-weight:700; margin-bottom:1.5rem; text-align:center; }
+    .hours-list { display:flex; flex-direction:column; gap:.75rem; }
+    .hours-row { display:flex; justify-content:space-between; align-items:center; padding:.75rem 1rem; border-radius:var(--radius-sm); background:color-mix(in srgb,var(--clr-primary-light) 8%,transparent); border:1px solid color-mix(in srgb,var(--clr-primary-light) 15%,transparent); }
+    .hours-day { font-weight:600; font-size:.9rem; }
+    .hours-time { font-size:.85rem; color:var(--clr-primary-light); font-weight:700; }
+    .hours-open-badge { background:#22c55e; color:#fff; font-size:.7rem; font-weight:700; padding:.2rem .65rem; border-radius:50px; }
+
+    /* About */
+    .about { background:var(--clr-surface); }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+    .about-visual { background:var(--clr-card); border-radius:var(--radius); border:1px solid var(--clr-border); padding:2.5rem; box-shadow:var(--shadow-md); text-align:center; }
+    .about-big-icon { font-size:5rem; margin-bottom:1rem; }
+    .about-visual-title { font-family:'Dancing Script',cursive; font-size:1.8rem; color:var(--clr-primary-light); margin-bottom:.5rem; }
+    .about-visual-sub { font-size:.9rem; color:var(--clr-muted); }
+    .about-tags { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; margin-top:1.5rem; }
+    .tag { background:color-mix(in srgb,var(--clr-primary-light) 12%,transparent); color:var(--clr-primary-light); border:1px solid color-mix(in srgb,var(--clr-primary-light) 25%,transparent); border-radius:50px; padding:.3rem .9rem; font-size:.78rem; font-weight:600; }
+    .about-text { font-size:1rem; color:var(--clr-muted); line-height:1.8; margin-top:1.5rem; }
+    .about-cta { display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem; }
+
+    /* Contact */
+    .contact { background:var(--clr-bg); }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:start; }
+    .contact-info { display:flex; flex-direction:column; gap:1.25rem; }
+    .contact-card { background:var(--clr-card); border:1px solid var(--clr-border); border-radius:var(--radius); padding:1.5rem; box-shadow:var(--shadow-sm); display:flex; align-items:flex-start; gap:1rem; transition:all var(--transition); }
+    .contact-card:hover { border-color:var(--clr-primary-light); transform:translateY(-2px); box-shadow:var(--shadow-md); }
+    .contact-card a { color:inherit; }
+    .contact-card-icon { width:48px; height:48px; border-radius:var(--radius-sm); display:grid; place-items:center; font-size:1.4rem; flex-shrink:0; }
+    .icon-green { background:color-mix(in srgb,#22c55e 15%,transparent); }
+    .icon-blue { background:color-mix(in srgb,#3b82f6 15%,transparent); }
+    .icon-orange { background:color-mix(in srgb,#f97316 15%,transparent); }
+    .icon-whatsapp { background:color-mix(in srgb,#25d366 15%,transparent); }
+    .contact-card-label { font-size:.75rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--clr-muted); margin-bottom:.25rem; }
+    .contact-card-value { font-size:1rem; font-weight:600; color:var(--clr-text); }
+    .contact-card-sub { font-size:.8rem; color:var(--clr-muted); margin-top:.15rem; }
+    .map-wrapper { border-radius:var(--radius); overflow:hidden; border:1px solid var(--clr-border); box-shadow:var(--shadow-md); height:400px; }
+    .map-wrapper iframe { width:100%; height:100%; border:none; display:block; }
+
+    /* CTA */
+    .cta-section { background:linear-gradient(135deg,var(--clr-primary-dark),var(--clr-primary)); color:#fff; text-align:center; padding-block:5rem; position:relative; overflow:hidden; }
+    .cta-section::before { content:''; position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px), linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px); background-size:40px 40px; }
+    .cta-inner { position:relative; z-index:1; }
+    .cta-title { font-size:clamp(1.8rem,4vw,3rem); font-weight:800; margin-bottom:1rem; color:#fff; }
+    .cta-desc { font-size:1.05rem; color:rgba(255,255,255,.8); margin-bottom:2.5rem; max-width:520px; margin-inline:auto; }
+    .cta-actions { display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; }
+    .btn-outline-white { background:transparent; color:#fff; border:2px solid rgba(255,255,255,.5); }
+    .btn-outline-white:hover { border-color:#fff; background:rgba(255,255,255,.1); }
+
+    /* Footer */
+    .footer { background:var(--clr-surface); border-top:1px solid var(--clr-border); padding-block:3rem 2rem; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem; }
+    .footer-brand-name { font-size:1.1rem; font-weight:700; margin-bottom:.5rem; }
+    .footer-brand-desc { font-size:.875rem; color:var(--clr-muted); line-height:1.7; margin-bottom:1.25rem; }
+    .social-links { display:flex; gap:.75rem; }
+    .social-link { width:38px; height:38px; border-radius:var(--radius-sm); border:1.5px solid var(--clr-border); display:grid; place-items:center; font-size:1rem; transition:all var(--transition); background:var(--clr-card); color:var(--clr-text); }
+    .social-link:hover { border-color:var(--clr-primary-light); background:color-mix(in srgb,var(--clr-primary-light) 10%,transparent); color:var(--clr-primary-light); }
+    .footer-col-title { font-size:.9rem; font-weight:700; margin-bottom:1.25rem; color:var(--clr-text); }
+    .footer-links { list-style:none; display:flex; flex-direction:column; gap:.6rem; }
+    .footer-links a { font-size:.875rem; color:var(--clr-muted); transition:color var(--transition); }
+    .footer-links a:hover { color:var(--clr-primary-light); }
+    .footer-bottom { border-top:1px solid var(--clr-border); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-copy { font-size:.8rem; color:var(--clr-muted); }
+
+    /* Floating WhatsApp */
+    .whatsapp-float { position:fixed; bottom:2rem; right:2rem; z-index:50; width:60px; height:60px; border-radius:50%; background:linear-gradient(135deg,#25d366,#128c7e); display:grid; place-items:center; font-size:1.8rem; box-shadow:0 8px 28px rgba(37,211,102,.5); text-decoration:none; transition:transform var(--transition),box-shadow var(--transition); animation:float 3s ease-in-out infinite; }
+    .whatsapp-float:hover { transform:scale(1.1); box-shadow:0 12px 36px rgba(37,211,102,.6); animation:none; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+    .whatsapp-tooltip { position:absolute; right:70px; white-space:nowrap; background:#1a1a1a; color:#fff; font-size:.78rem; font-weight:600; padding:.4rem .85rem; border-radius:50px; pointer-events:none; opacity:0; transition:opacity .25s ease; }
+    .whatsapp-float:hover .whatsapp-tooltip { opacity:1; }
+
+    /* Responsive */
+    @media (max-width:900px) {
+      .hero-grid,.why-grid,.about-grid,.contact-grid { grid-template-columns:1fr; }
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width:600px) {
+      .hero-stats { gap:1.25rem; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; text-align:center; }
+      .hero-cards-row { grid-template-columns:1fr; }
+      .hero-visual { display:none; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      .reveal,.reveal-left,.reveal-right { opacity:1; transform:none; transition:none; }
+      .whatsapp-float { animation:none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="#home" class="navbar-logo" aria-label="Lalit Pigeon Net Shop Home">
+        <div class="logo-icon" aria-hidden="true">&#x1F985;</div>
+        <div>
+          <div class="logo-text">Lalit Pigeon Net</div>
+          <div class="logo-sub">Bamboo Chick Blind Shop</div>
+        </div>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">&#x1F319;</button>
+        <a href="tel:09516447391" class="btn btn-primary" style="display:none" id="navCall">&#x1F4DE; Call Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <ul class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">&#x2715;</button>
+    <li><a href="#home" class="mobile-link">Home</a></li>
+    <li><a href="#services" class="mobile-link">Services</a></li>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+    <li><a href="tel:09516447391" class="btn btn-primary">&#x1F4DE; Call Now</a></li>
+  </ul>
+
+  <main>
+    <section class="hero section" id="home" aria-label="Hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge reveal" style="transition-delay:.1s">
+              <span>&#x1F4CD;</span> Gurugram, Haryana
+            </div>
+            <h1 class="hero-title reveal" style="transition-delay:.2s">
+              Expert <span class="highlight">Bird Control</span><br/>
+              Solutions for Your<br/>Home &amp; Business
+            </h1>
+            <p class="hero-desc reveal" style="transition-delay:.3s">
+              Durable pigeon nets, stylish bamboo chick blinds, and custom-fit solutions for balconies, windows &amp; open areas. Available <strong>24 hours, 7 days</strong> a week.
+            </p>
+            <div class="hero-actions reveal" style="transition-delay:.4s">
+              <a href="https://wa.me/919516447391?text=Hello%2C%20I%20am%20interested%20in%20your%20pigeon%20net%20and%20bamboo%20chick%20blind%20services.%20Please%20share%20details."
+                 target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <span>&#x1F4AC;</span> WhatsApp Us
+              </a>
+              <a href="tel:09516447391" class="btn btn-outline">&#x1F4DE; Call: 09516447391</a>
+            </div>
+            <div class="hero-stats reveal" style="transition-delay:.5s">
+              <div class="hero-stat"><div class="stat-number">24/7</div><div class="stat-label">Always Open</div></div>
+              <div class="hero-stat"><div class="stat-number">100%</div><div class="stat-label">Custom Fit</div></div>
+              <div class="hero-stat"><div class="stat-number">&#x2705;</div><div class="stat-label">Trusted Service</div></div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card-main reveal-right" style="transition-delay:.3s">
+              <div class="net-pattern"></div>
+              <div class="open-badge">Open 24 Hours</div>
+              <div class="content-center">
+                <div class="illustration">&#x1F985;&#x1F512;</div>
+                <div class="illustration-text">Pigeon Free Since Day One</div>
+                <p style="color:var(--clr-muted);font-size:.85rem;margin-top:.5rem;">Secure your space with our expert nets</p>
+              </div>
+            </div>
+            <div class="hero-cards-row">
+              <div class="hero-mini-card reveal" style="transition-delay:.4s">
+                <span class="mini-icon">&#x1FAA2;</span>
+                <div><div class="mini-title">Pigeon Nets</div><div class="mini-sub">Durable &amp; Strong</div></div>
+              </div>
+              <div class="hero-mini-card reveal" style="transition-delay:.5s">
+                <span class="mini-icon">&#x1F38B;</span>
+                <div><div class="mini-title">Bamboo Blinds</div><div class="mini-sub">Elegant &amp; Functional</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services" aria-label="Our Services">
+      <div class="container">
+        <div class="services-header">
+          <span class="section-label reveal">What We Offer</span>
+          <h2 class="section-title reveal">Our Bird Control Services</h2>
+          <p class="section-subtitle reveal" style="margin-inline:auto">Comprehensive solutions to keep your spaces clean, safe, and free from unwanted birds.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal" style="transition-delay:.1s">
+            <span class="service-icon">&#x1FAA2;</span>
+            <h3 class="service-title">Pigeon Nets Installation</h3>
+            <p class="service-desc">Heavy-duty, UV-resistant pigeon nets custom-fitted for balconies, terraces, windows, and any open area to prevent birds from entering.</p>
+          </div>
+          <div class="service-card reveal" style="transition-delay:.15s">
+            <span class="service-icon">&#x1F38B;</span>
+            <h3 class="service-title">Bamboo Chick Blinds</h3>
+            <p class="service-desc">Stylish and eco-friendly bamboo chick blinds that add a natural aesthetic while providing privacy and keeping birds away from your spaces.</p>
+          </div>
+          <div class="service-card reveal" style="transition-delay:.2s">
+            <span class="service-icon">&#x1F3E0;</span>
+            <h3 class="service-title">Balcony Bird Proofing</h3>
+            <p class="service-desc">Complete balcony bird-proofing solutions using high-quality nets and fixtures that are transparent, durable, and maintenance-free.</p>
+          </div>
+          <div class="service-card reveal" style="transition-delay:.25s">
+            <span class="service-icon">&#x1F3E2;</span>
+            <h3 class="service-title">Commercial Solutions</h3>
+            <p class="service-desc">Large-scale bird control for office buildings, warehouses, factories, and commercial complexes. Protect your business premises effectively.</p>
+          </div>
+          <div class="service-card reveal" style="transition-delay:.3s">
+            <span class="service-icon">&#x1FA9F;</span>
+            <h3 class="service-title">Window &amp; Door Nets</h3>
+            <p class="service-desc">Precision-fitted nets for windows and doors that keep pigeons and birds outside while allowing air and light to flow freely.</p>
+          </div>
+          <div class="service-card reveal" style="transition-delay:.35s">
+            <span class="service-icon">&#x1F527;</span>
+            <h3 class="service-title">Repair &amp; Maintenance</h3>
+            <p class="service-desc">Professional repair and maintenance services for existing bird nets and bamboo blinds. We ensure your protection stays in perfect condition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why" aria-label="Why Choose Us">
+      <div class="container">
+        <div class="why-grid">
+          <div>
+            <span class="section-label reveal-left">Why Choose Us</span>
+            <h2 class="section-title reveal-left">Trusted Bird Control Experts in Gurugram</h2>
+            <p class="section-subtitle reveal-left">We combine quality materials, skilled craftsmanship, and round-the-clock availability.</p>
+            <div class="why-features" style="margin-top:2rem">
+              <div class="why-feature reveal-left" style="transition-delay:.1s">
+                <div class="why-feature-icon">&#x23F0;</div>
+                <div><div class="why-feature-title">Open 24 Hours, 7 Days</div><div class="why-feature-desc">We're always available whenever you need us — day or night, weekdays or weekends.</div></div>
+              </div>
+              <div class="why-feature reveal-left" style="transition-delay:.15s">
+                <div class="why-feature-icon">&#x1F4D0;</div>
+                <div><div class="why-feature-title">Custom-Fit Solutions</div><div class="why-feature-desc">Every net and blind is measured and cut to perfectly fit your specific space.</div></div>
+              </div>
+              <div class="why-feature reveal-left" style="transition-delay:.2s">
+                <div class="why-feature-icon">&#x1F33F;</div>
+                <div><div class="why-feature-title">Eco-Friendly Materials</div><div class="why-feature-desc">Environment-friendly, non-toxic materials safe for birds, people, and the planet.</div></div>
+              </div>
+              <div class="why-feature reveal-left" style="transition-delay:.25s">
+                <div class="why-feature-icon">&#x1F4B0;</div>
+                <div><div class="why-feature-title">Affordable Pricing</div><div class="why-feature-desc">Competitive rates with transparent pricing. Quality bird control that doesn't break the bank.</div></div>
+              </div>
+              <div class="why-feature reveal-left" style="transition-delay:.3s">
+                <div class="why-feature-icon">&#x1F6E1;&#xFE0F;</div>
+                <div><div class="why-feature-title">Quality Guaranteed</div><div class="why-feature-desc">All installations done with precision ensuring long-lasting protection and satisfaction.</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="why-visual reveal-right">
+            <div class="why-visual-title">&#x23F0; Working Hours</div>
+            <div class="hours-list">
+              <div class="hours-row"><span class="hours-day">Monday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
+              <div class="hours-row"><span class="hours-day">Tuesday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
+              <div class="hours-row"><span class="hours-day">Wednesday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
+              <div class="hours-row"><span class="hours-day">Thursday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
+              <div class="hours-row"><span class="hours-day">Friday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
+              <div class="hours-row"><span class="hours-day">Saturday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
+              <div class="hours-row"><span class="hours-day">Sunday</span><div style="display:flex;align-items:center;gap:.75rem"><span class="hours-time">Open 24 Hours</span><span class="hours-open-badge">Open</span></div></div>
+            </div>
+            <a href="tel:09516447391" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1.5rem">&#x1F4DE; Call: 09516447391</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-label="About Us">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal-left">
+            <div class="about-big-icon">&#x1F3EA;</div>
+            <div class="about-visual-title">Lalit Pigeon Net</div>
+            <div class="about-visual-sub">Bamboo Chick Blind Shop</div>
+            <div class="about-tags">
+              <span class="tag">Pigeon Nets</span>
+              <span class="tag">Bamboo Blinds</span>
+              <span class="tag">Bird Control</span>
+              <span class="tag">Custom Fit</span>
+              <span class="tag">Gurugram</span>
+              <span class="tag">24/7 Service</span>
+            </div>
+          </div>
+          <div class="reveal-right">
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title">About Lalit Pigeon Net &amp; Bamboo Chick Blind Shop</h2>
+            <p class="about-text">Discover effective and elegant solutions for bird control at Lalit Pigeon Net Bamboo Chick Blind Shop. Specialising in durable nets and stylish bamboo chick blinds, this shop offers the perfect blend of functionality and aesthetic appeal for your home or business.</p>
+            <p class="about-text">Located conveniently near the HP Petrol Pump in West Rajiv Nagar, Gurugram, we provide expertly crafted products to keep your spaces clean and secure from unwanted avian visitors. Visit us to find the ideal custom-fit solution for your windows, balconies, and other open areas.</p>
+            <div class="about-cta">
+              <a href="https://wa.me/919516447391?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">&#x1F4AC; Chat on WhatsApp</a>
+              <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="btn btn-outline">&#x1F4CD; Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-label="Contact Us">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:3.5rem">
+          <span class="section-label reveal">Get In Touch</span>
+          <h2 class="section-title reveal">Find &amp; Contact Us</h2>
+          <p class="section-subtitle reveal" style="margin-inline:auto">We're always here to help. Reach out via phone, WhatsApp, or visit our shop anytime.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a href="tel:09516447391" class="contact-card reveal" style="transition-delay:.05s">
+              <div class="contact-card-icon icon-blue">&#x1F4DE;</div>
+              <div><div class="contact-card-label">Phone</div><div class="contact-card-value">09516447391</div><div class="contact-card-sub">Tap to call us directly</div></div>
+            </a>
+            <a href="https://wa.me/919516447391?text=Hello%2C%20I%20want%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="contact-card reveal" style="transition-delay:.1s">
+              <div class="contact-card-icon icon-whatsapp">&#x1F4AC;</div>
+              <div><div class="contact-card-label">WhatsApp</div><div class="contact-card-value">09516447391</div><div class="contact-card-sub">Chat with us on WhatsApp</div></div>
+            </a>
+            <div class="contact-card reveal" style="transition-delay:.15s">
+              <div class="contact-card-icon icon-orange">&#x1F4CD;</div>
+              <div><div class="contact-card-label">Address</div><div class="contact-card-value" style="font-size:.9rem;line-height:1.5">Shop 50, HP Petrol Pump, near Gurgaon,<br/>West Rajiv Nagar, Sector 12,<br/>Gurugram, Haryana 122001</div></div>
+            </div>
+            <div class="contact-card reveal" style="transition-delay:.2s">
+              <div class="contact-card-icon icon-green">&#x23F0;</div>
+              <div><div class="contact-card-label">Working Hours</div><div class="contact-card-value">Open 24 Hours</div><div class="contact-card-sub">Monday to Sunday — Always available!</div></div>
+            </div>
+            <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center">&#x1F4CD; Open in Google Maps</a>
+          </div>
+          <div class="map-wrapper reveal-right">
+            <iframe
+              src="https://maps.google.com/maps?q=Shop+50,+HP+PETROL+PUMP,+West+Rajiv+Nagar,+Sector+12,+Gurugram,+Haryana+122001&output=embed"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Lalit Pigeon Net Bamboo Chick Blind Shop on Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Call to action">
+      <div class="container cta-inner">
+        <h2 class="cta-title reveal">Ready to Bird-Proof Your Space?</h2>
+        <p class="cta-desc reveal">Contact Lalit Pigeon Net &amp; Bamboo Chick Blind Shop today for a free consultation and custom quote. We're open 24/7 and ready to help!</p>
+        <div class="cta-actions reveal">
+          <a href="https://wa.me/919516447391?text=Hello%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20bird%20control%20solutions." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">&#x1F4AC; Get Free Quote on WhatsApp</a>
+          <a href="tel:09516447391" class="btn btn-outline-white">&#x1F4DE; Call 09516447391</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">&#x1F985; Lalit Pigeon Net &amp; Bamboo Chick Blind Shop</div>
+          <p class="footer-brand-desc">Expert bird control solutions with durable pigeon nets and stylish bamboo chick blinds in Gurugram, Haryana. Open 24 hours, 7 days a week.</p>
+          <div class="social-links">
+            <a href="https://wa.me/919516447391" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">&#x1F4AC;</a>
+            <a href="tel:09516447391" class="social-link" aria-label="Call Us">&#x1F4DE;</a>
+            <a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Maps">&#x1F4CD;</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="tel:09516447391">&#x1F4DE; 09516447391</a></li>
+            <li><a href="https://wa.me/919516447391" target="_blank" rel="noopener noreferrer">&#x1F4AC; WhatsApp</a></li>
+            <li><a href="https://maps.app.goo.gl/gemtcdNEKvCDWq9f8" target="_blank" rel="noopener noreferrer">&#x1F4CD; Get Directions</a></li>
+            <li style="color:var(--clr-muted);font-size:.875rem">&#x23F0; Open 24/7</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2025 Lalit Pigeon Net &amp; Bamboo Chick Blind Shop. All rights reserved.</span>
+        <span class="footer-copy">West Rajiv Nagar, Sector 12, Gurugram, Haryana 122001</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919516447391?text=Hello%2C%20I%20am%20interested%20in%20your%20pigeon%20net%20and%20bird%20control%20services."
+     target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <span aria-hidden="true">&#x1F4AC;</span>
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+    const root = document.documentElement;
+    function getSystemTheme() { return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    function applyTheme(theme) {
+      root.dataset.theme = theme;
+      metaColorScheme.content = theme;
+      themeToggle.textContent = theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+      themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    function toggleTheme() {
+      const cur = root.dataset.theme || getSystemTheme();
+      const next = cur === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('color-scheme', next);
+      applyTheme(next);
+    }
+    const savedTheme = localStorage.getItem('color-scheme');
+    if (savedTheme) { applyTheme(savedTheme); } else { themeToggle.textContent = getSystemTheme() === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19'; }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => { if (!localStorage.getItem('color-scheme')) { themeToggle.textContent = e.matches ? '\u2600\uFE0F' : '\uD83C\uDF19'; } });
+    themeToggle.addEventListener('click', toggleTheme);
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavClose = document.getElementById('mobileNavClose');
+    function openMobileNav() { mobileNav.classList.add('open'); hamburger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+    function closeMobileNav() { mobileNav.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+    hamburger.addEventListener('click', openMobileNav);
+    mobileNavClose.addEventListener('click', closeMobileNav);
+    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMobileNav));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobileNav.classList.contains('open')) { closeMobileNav(); hamburger.focus(); } });
+
+    const navCall = document.getElementById('navCall');
+    window.addEventListener('scroll', () => { navCall.style.display = window.scrollY > 200 ? 'inline-flex' : 'none'; }, { passive: true });
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>"""
+
+def run_git(args, input_data=None):
+    """Run a git command with the specified git-dir."""
+    cmd = ['git', '--git-dir', GIT_DIR] + args
+    result = subprocess.run(
+        cmd,
+        input=input_data,
+        capture_output=True,
+        text=True,
+        encoding='utf-8'
+    )
+    if result.returncode != 0:
+        raise RuntimeError(f"git {' '.join(args)} failed:\n{result.stderr}")
+    return result.stdout.strip()
+
+def main():
+    print("=== Committing new index.html via git plumbing ===\n")
+    
+    # Step 1: Get current tree from HEAD
+    print("1. Reading current HEAD commit tree...")
+    head_commit = run_git(['rev-parse', 'HEAD'])
+    print(f"   HEAD: {head_commit}")
+    head_tree = run_git(['rev-parse', 'HEAD^{tree}'])
+    print(f"   Tree: {head_tree}")
+    
+    # Step 2: Store new HTML content as a git blob
+    print("2. Creating blob for new index.html...")
+    # Use hash-object to write the blob
+    result = subprocess.run(
+        ['git', '--git-dir', GIT_DIR, 'hash-object', '-w', '--stdin'],
+        input=HTML_CONTENT,
+        capture_output=True,
+        text=True,
+        encoding='utf-8'
+    )
+    if result.returncode != 0:
+        print(f"   ERROR: {result.stderr}")
+        # Fall back to temp file approach
+        import tempfile, os
+        print("   Trying temp file approach...")
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', suffix='.html', delete=False) as tf:
+            tf.write(HTML_CONTENT)
+            temp_path = tf.name
+        
+        result = subprocess.run(
+            ['git', '--git-dir', GIT_DIR, 'hash-object', '-w', temp_path],
+            capture_output=True, text=True
+        )
+        os.unlink(temp_path)
+        if result.returncode != 0:
+            raise RuntimeError(f"hash-object failed: {result.stderr}")
+    
+    blob_sha = result.stdout.strip()
+    print(f"   Blob SHA: {blob_sha}")
+    
+    # Step 3: Get current tree listing and build new tree
+    print("3. Reading current tree contents...")
+    tree_items = run_git(['ls-tree', 'HEAD'])
+    print(f"   Current tree:\n{tree_items}")
+    
+    # Parse and replace index.html entry
+    new_tree_lines = []
+    found_index = False
+    for line in tree_items.split('\n'):
+        if not line.strip():
+            continue
+        parts = line.split('\t')
+        if len(parts) == 2:
+            meta, name = parts
+            if name == 'index.html':
+                new_tree_lines.append(f"100644 blob {blob_sha}\tindex.html")
+                found_index = True
+            else:
+                new_tree_lines.append(line)
+    
+    if not found_index:
+        new_tree_lines.append(f"100644 blob {blob_sha}\tindex.html")
+    
+    new_tree_content = '\n'.join(new_tree_lines) + '\n'
+    print(f"   New tree content:\n{new_tree_content}")
+    
+    # Step 4: Create new tree object
+    print("4. Creating new tree object...")
+    result = subprocess.run(
+        ['git', '--git-dir', GIT_DIR, 'mktree'],
+        input=new_tree_content,
+        capture_output=True, text=True, encoding='utf-8'
+    )
+    if result.returncode != 0:
+        raise RuntimeError(f"mktree failed: {result.stderr}")
+    new_tree_sha = result.stdout.strip()
+    print(f"   New tree SHA: {new_tree_sha}")
+    
+    # Step 5: Create commit
+    print("5. Creating commit object...")
+    env = os.environ.copy()
+    env['GIT_AUTHOR_NAME'] = 'Truegridleaf'
+    env['GIT_AUTHOR_EMAIL'] = ''
+    env['GIT_COMMITTER_NAME'] = 'Truegridleaf'
+    env['GIT_COMMITTER_EMAIL'] = ''
+    
+    result = subprocess.run(
+        ['git', '--git-dir', GIT_DIR, 'commit-tree', new_tree_sha, '-p', head_commit, '-m', 
+         'Add Lalit Pigeon Net Bamboo Chick Blind Shop website'],
+        capture_output=True, text=True, encoding='utf-8', env=env
+    )
+    if result.returncode != 0:
+        raise RuntimeError(f"commit-tree failed: {result.stderr}")
+    new_commit_sha = result.stdout.strip()
+    print(f"   New commit SHA: {new_commit_sha}")
+    
+    # Step 6: Update branch ref
+    print("6. Updating main branch ref...")
+    run_git(['update-ref', 'refs/heads/main', new_commit_sha])
+    print(f"   Branch 'main' now points to: {new_commit_sha}")
+    
+    print("\n=== SUCCESS! New commit created ===")
+    print(f"Commit: {new_commit_sha}")
+    print("\nTo push to GitHub, run:")
+    print(f"  git --git-dir \"{GIT_DIR}\" push origin main")
+    
+    return new_commit_sha
+
+if __name__ == '__main__':
+    try:
+        commit = main()
+        sys.exit(0)
+    except Exception as e:
+        print(f"\nERROR: {e}", file=sys.stderr)
+        sys.exit(1)
