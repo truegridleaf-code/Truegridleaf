@@ -261,6 +261,89 @@
       .reveal,.reveal-left,.reveal-right { opacity:1; transform:none; transition:none; }
       .whatsapp-float { animation:none; }
     }
+  
+    /* ===== Designer Credit Styling (Truegridleaf) ===== */
+    .designer-credit-container {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px dashed var(--clr-border);
+      text-align: center;
+      width: 100%;
+    }
+    .designer-credit-text {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--clr-muted);
+      letter-spacing: 0.02em;
+    }
+    .designer-credit-link {
+      color: var(--clr-primary-light);
+      font-weight: 700;
+      text-decoration: none;
+      transition: all var(--transition);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+      background: color-mix(in srgb, var(--clr-primary-light) 10%, transparent);
+      border: 1px solid color-mix(in srgb, var(--clr-primary-light) 25%, transparent);
+      display: inline-block;
+    }
+    .designer-credit-link:hover {
+      color: #fff;
+      background: var(--clr-primary-light);
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.35);
+      transform: translateY(-1px);
+    }
+
+    /* Fixed Floating Badge - Bottom Right */
+    .designer-floating-badge {
+      position: fixed;
+      bottom: 20px;
+      right: 95px;
+      z-index: 49;
+      background: var(--clr-surface);
+      color: var(--clr-text);
+      border: 1px solid var(--clr-border);
+      padding: 7px 16px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .designer-floating-badge .badge-icon {
+      font-size: 0.9rem;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    .designer-floating-badge .badge-brand {
+      color: var(--clr-primary-light);
+      font-weight: 700;
+    }
+    .designer-floating-badge:hover {
+      transform: translateY(-3px);
+      border-color: var(--clr-primary-light);
+      box-shadow: 0 8px 24px rgba(46, 125, 50, 0.25);
+      color: var(--clr-text);
+    }
+    .designer-floating-badge:hover .badge-icon {
+      transform: rotate(15deg) scale(1.15);
+    }
+
+    @media (max-width: 600px) {
+      .designer-floating-badge {
+        bottom: 85px;
+        right: 20px;
+        font-size: 0.72rem;
+        padding: 5px 12px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -558,6 +641,11 @@
       <div class="footer-bottom">
         <span class="footer-copy">&copy; 2025 Lalit Pigeon Net &amp; Bamboo Chick Blind Shop. All rights reserved.</span>
         <span class="footer-copy">West Rajiv Nagar, Sector 12, Gurugram, Haryana 122001</span>
+      
+      <div class="designer-credit-container">
+        <p class="designer-credit-text">
+          Designed &amp; Developed by <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" class="designer-credit-link">Truegridleaf.com</a>
+        </p>
       </div>
     </div>
   </footer>
@@ -609,135 +697,12 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     revealEls.forEach(el => observer.observe(el));
   </script>
+
+  <!-- Subtle Designer Floating Badge -->
+  <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" class="designer-floating-badge" title="Website Designed and Developed by Truegridleaf.com" aria-label="Website by Truegridleaf.com">
+    <span class="badge-icon">&#x26A1;</span>
+    <span>Website by <span class="badge-brand">Truegridleaf.com</span></span>
+  </a>
+
 </body>
-</html>"""
-
-def run_git(args, input_data=None):
-    """Run a git command with the specified git-dir."""
-    cmd = ['git', '--git-dir', GIT_DIR] + args
-    result = subprocess.run(
-        cmd,
-        input=input_data,
-        capture_output=True,
-        text=True,
-        encoding='utf-8'
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"git {' '.join(args)} failed:\n{result.stderr}")
-    return result.stdout.strip()
-
-def main():
-    print("=== Committing new index.html via git plumbing ===\n")
-    
-    # Step 1: Get current tree from HEAD
-    print("1. Reading current HEAD commit tree...")
-    head_commit = run_git(['rev-parse', 'HEAD'])
-    print(f"   HEAD: {head_commit}")
-    head_tree = run_git(['rev-parse', 'HEAD^{tree}'])
-    print(f"   Tree: {head_tree}")
-    
-    # Step 2: Store new HTML content as a git blob
-    print("2. Creating blob for new index.html...")
-    # Use hash-object to write the blob
-    result = subprocess.run(
-        ['git', '--git-dir', GIT_DIR, 'hash-object', '-w', '--stdin'],
-        input=HTML_CONTENT,
-        capture_output=True,
-        text=True,
-        encoding='utf-8'
-    )
-    if result.returncode != 0:
-        print(f"   ERROR: {result.stderr}")
-        # Fall back to temp file approach
-        import tempfile, os
-        print("   Trying temp file approach...")
-        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', suffix='.html', delete=False) as tf:
-            tf.write(HTML_CONTENT)
-            temp_path = tf.name
-        
-        result = subprocess.run(
-            ['git', '--git-dir', GIT_DIR, 'hash-object', '-w', temp_path],
-            capture_output=True, text=True
-        )
-        os.unlink(temp_path)
-        if result.returncode != 0:
-            raise RuntimeError(f"hash-object failed: {result.stderr}")
-    
-    blob_sha = result.stdout.strip()
-    print(f"   Blob SHA: {blob_sha}")
-    
-    # Step 3: Get current tree listing and build new tree
-    print("3. Reading current tree contents...")
-    tree_items = run_git(['ls-tree', 'HEAD'])
-    print(f"   Current tree:\n{tree_items}")
-    
-    # Parse and replace index.html entry
-    new_tree_lines = []
-    found_index = False
-    for line in tree_items.split('\n'):
-        if not line.strip():
-            continue
-        parts = line.split('\t')
-        if len(parts) == 2:
-            meta, name = parts
-            if name == 'index.html':
-                new_tree_lines.append(f"100644 blob {blob_sha}\tindex.html")
-                found_index = True
-            else:
-                new_tree_lines.append(line)
-    
-    if not found_index:
-        new_tree_lines.append(f"100644 blob {blob_sha}\tindex.html")
-    
-    new_tree_content = '\n'.join(new_tree_lines) + '\n'
-    print(f"   New tree content:\n{new_tree_content}")
-    
-    # Step 4: Create new tree object
-    print("4. Creating new tree object...")
-    result = subprocess.run(
-        ['git', '--git-dir', GIT_DIR, 'mktree'],
-        input=new_tree_content,
-        capture_output=True, text=True, encoding='utf-8'
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"mktree failed: {result.stderr}")
-    new_tree_sha = result.stdout.strip()
-    print(f"   New tree SHA: {new_tree_sha}")
-    
-    # Step 5: Create commit
-    print("5. Creating commit object...")
-    env = os.environ.copy()
-    env['GIT_AUTHOR_NAME'] = 'Truegridleaf'
-    env['GIT_AUTHOR_EMAIL'] = ''
-    env['GIT_COMMITTER_NAME'] = 'Truegridleaf'
-    env['GIT_COMMITTER_EMAIL'] = ''
-    
-    result = subprocess.run(
-        ['git', '--git-dir', GIT_DIR, 'commit-tree', new_tree_sha, '-p', head_commit, '-m', 
-         'Add Lalit Pigeon Net Bamboo Chick Blind Shop website'],
-        capture_output=True, text=True, encoding='utf-8', env=env
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"commit-tree failed: {result.stderr}")
-    new_commit_sha = result.stdout.strip()
-    print(f"   New commit SHA: {new_commit_sha}")
-    
-    # Step 6: Update branch ref
-    print("6. Updating main branch ref...")
-    run_git(['update-ref', 'refs/heads/main', new_commit_sha])
-    print(f"   Branch 'main' now points to: {new_commit_sha}")
-    
-    print("\n=== SUCCESS! New commit created ===")
-    print(f"Commit: {new_commit_sha}")
-    print("\nTo push to GitHub, run:")
-    print(f"  git --git-dir \"{GIT_DIR}\" push origin main")
-    
-    return new_commit_sha
-
-if __name__ == '__main__':
-    try:
-        commit = main()
-        sys.exit(0)
-    except Exception as e:
-        print(f"\nERROR: {e}", file=sys.stderr)
-        sys.exit(1)
+</html>
